@@ -1,0 +1,55 @@
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: $brand-charcoal;
+    position: absolute;
+    bottom: 0;
+    @include flex-space-between;
+    padding: 10px 20px;
+
+    .nav-left{
+        height: 100%;
+        width: 100%;
+        @include flex-left-center;
+        .nav-logo {
+            height: 78px;
+        }
+       
+    }
+    .nav-center{
+        height: 100%;
+        width: 100%;
+        @include flex-center-center;
+        .nav-logo-mid {
+            height: 60px;
+        }
+        .nav-list{
+            @include flex-center-center;
+
+            .nav-links{
+                padding: $square-padding;
+                font-size: $font-size-navbar;
+                font-weight: $app-font-weight-bold;
+            }
+        }
+    }
+    .nav-logo-left {
+        height: 60px;
+    }
+    .nav-right{
+        height: 100%;
+        width: 100%;
+        @include flex-right-center;
+
+    //should this go in BUTTONS?
+            .nav-download{
+                position: relative;
+                height: 43px;
+                white-space: nowrap;
+            }
+            .sidebar-ham{
+                font-size: 38px;
+            }
+        
+    }
+}

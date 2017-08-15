@@ -1,0 +1,59 @@
+
+
+// FONTS
+$primary-font-family: 'Open Sans', sans-serif;
+$secondary-font-family: 'Open Sans Condensed', sans-serif;
+$app-font-style: normal;
+$app-font-style-italic: italic;
+$app-font-weight: 300;
+$app-font-weight-med: 400;
+$app-font-weight-bold: 700;
+
+$font-size-h1:                 3.8em;
+$font-size-h2:                 2.6em;
+$font-size-h3:                 1.825em;
+$font-size-h4:                 1.5em;
+$font-size-h5:                 1.25em;
+$font-size-h6:                 1em;
+$font-paragraph:               20px;
+$font-size-navbar:             15px;
+$font-size-button:             15px;
+$font-size-small:              12px;
+$line-height:                  1.4em;
+
+//SECTIONS
+$section-bg-paper-white: url('../images/backgrounds/white_paper_texture.jpg') no-repeat center center fixed;
+
+
+
+//SHADOWS
+$fancy-shadow: 0 13px 39px -10px rgba(0, 0, 0, 0.65), 0 1px 25px 0px rgba(0, 0, 0, 0.15);
+$card-shadow: 5px 5px 5px rgba(0,0,0,0.65);
+
+//Border Radius
+$border-radius-sq: 3px;
+$border-radius-card: 6px;
+$border-radius-cir: 100px;
+
+//Button Padding
+$round-padding: 9px 15px;
+$square-padding: 12px 24px;
+
+//Left-right-padding for Section Content
+$section-text-padding: 0 600px;
+$section-content-padding: 0 400px;
+
+//ANIMATION
+$mdb-animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$mdb-animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$mdb-animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$mdb-animation-curve-default: $mdb-animation-curve-fast-out-slow-in;
+
+$general-transition-time:  300ms;
+
+$slow-transition-time:           370ms;
+$fast-transition-time:           150ms;
+
+$transition-linear:                                   linear;
+$transition-bezier:         cubic-bezier(0.34, 1.61, 0.7, 1);
+$transition-ease:           ease 0s;

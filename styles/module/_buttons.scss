@@ -1,0 +1,122 @@
+button{
+    margin: 15px;
+    border: none;
+    font-size: $font-size-button;
+    font-weight: $app-font-weight-med;
+
+    cursor: pointer;
+    text-shadow: rgba(0,0,0,0.9) 0px 1px 1px;
+    
+    @include flex-center-center;
+}
+button:focus{
+    outline: none;
+}
+button:hover {
+    box-shadow: rgba(0,0,0,0.5) 0px 2px 5px, inset rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(0,0,0,0.25) 0px 0px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+}
+
+button:active {
+    box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0) 0px 1px 0px, inset rgba(0,0,0,0.5) 0px 0px 5px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+}
+
+.btn-round{
+    border-radius: $border-radius-cir;
+    padding: $round-padding;
+    
+}
+.btn-square{
+    border-radius: $border-radius-sq;
+    padding: $square-padding;
+}
+
+
+&.btn-default {
+    @include btn-styles($gray-light);
+}
+
+&.btn-primary {
+    @include btn-styles($brand-black);
+}
+
+&.btn-info {
+    @include btn-styles($brand-orange);
+}
+
+&.btn-success {
+    @include btn-styles($brand-green);
+}
+
+&.btn-warning {
+    @include btn-styles($brand-gray);
+}
+
+&.btn-danger {
+    @include btn-styles($brand-purple);
+}
+
+&.btn-red {
+    @include btn-styles($brand-red);
+}
+
+&.btn-white {
+    &,
+    &:focus,
+    &:hover {
+        // background-color: $white-color;
+        color: $gray-light;
+    }
+    &.btn-simple {
+        color: #FFFFFF;
+        background: transparent;
+        box-shadow: none;
+    }
+
+} // social buttons
+&.btn-facebook {
+    @include social-buttons-color($social-facebook);
+}
+
+&.btn-twitter {
+    @include social-buttons-color($social-twitter);
+}
+
+&.btn-pinterest {
+    @include social-buttons-color($social-pinterest);
+}
+
+&.btn-google {
+    @include social-buttons-color($social-google);
+}
+
+&.btn-linkedin {
+    @include social-buttons-color($social-linkedin);
+}
+
+&.btn-dribbble {
+    @include social-buttons-color($social-dribbble);
+}
+
+&.btn-github {
+    @include social-buttons-color($social-github);
+}
+
+&.btn-youtube {
+    @include social-buttons-color($social-youtube);
+}
+
+&.btn-instagram {
+    @include social-buttons-color($social-instagram);
+}
+
+&.btn-reddit {
+    @include social-buttons-color($social-reddit);
+}
+
+&.btn-tumblr {
+    @include social-buttons-color($social-tumblr);
+}
+
+&.btn-behance {
+    @include social-buttons-color($social-behance);
+}

@@ -1,0 +1,11 @@
+.hero-container{
+    width: 100%;
+    height: 100%;
+    @include flex-center-center;
+    .dave-hero{
+        // width: 100%;
+        height: 85%;
+        // background: url('../images/photoshop/DaveBarrett-72.png') no-repeat center center;
+        // background-size: cover;
+    }
+}
