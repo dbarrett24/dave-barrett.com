@@ -12,7 +12,7 @@ $app-font-weight-bold: 700;
 $font-size-h1:                 3.8em;
 $font-size-h2:                 2.6em;
 $font-size-h3:                 1.825em;
-$font-size-h4:                 1.5em;
+$font-size-h4:                 30px;
 $font-size-h5:                 1.25em;
 $font-size-h6:                 1em;
 $font-paragraph:               20px;
@@ -40,8 +40,8 @@ $round-padding: 9px 15px;
 $square-padding: 12px 24px;
 
 //Left-right-padding for Section Content
-$section-text-padding: 0 600px;
-$section-content-padding: 0 400px;
+$section-text-padding: 0 200px;
+$section-content-padding: 0 100px;
 
 //ANIMATION
 $mdb-animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);

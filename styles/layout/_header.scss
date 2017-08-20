@@ -4,3 +4,12 @@
     overflow-x: hidden;
     @include flex-center-center;
 }
+#intro-header{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    @include flex-center-center;
+}

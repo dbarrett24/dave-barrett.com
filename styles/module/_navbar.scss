@@ -1,12 +1,13 @@
 .nav{
     height: 100px;
     width: 100%;
-    background-color: $brand-charcoal;
+    background-color: $brand-black;
     position: absolute;
     bottom: 0;
     @include flex-space-between;
     padding: 10px 20px;
-
+    z-index: 1001;
+    transition: all 0.5s;
     .nav-left{
         height: 100%;
         width: 100%;
@@ -30,6 +31,7 @@
                 padding: $square-padding;
                 font-size: $font-size-navbar;
                 font-weight: $app-font-weight-bold;
+                border-radius: 50px;
             }
         }
     }
@@ -53,3 +55,29 @@
         
     }
 }
+
+.is-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $brand-charcoal;
+    transition: all 0.5s;
+    
+}
+// .is-absolute{
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     z-index: 1001;
+// }
+
+.is-active{
+    background: linear-gradient(135deg, #13A89E 0%, #857BCE 100%);
+    box-shadow: 1px 2px 3px rgba(34,34,34,.5);
+    
+    transition: all 0.5s;
+
+}
+
+
+

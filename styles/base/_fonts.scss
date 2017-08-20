@@ -4,12 +4,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
 
-h1, h2, h3, h4, h5, h6, a, button, html, body{
+h1, h2, h3, a, button, html, body{
     font-family: $primary-font-family;
     font-weight: $app-font-weight;
     line-height: $line-height;
     
 }
+
+h4, h5, h6{
+    font-family: $secondary-font-family;
+    font-weight: $app-font-weight;
+    line-height: $line-height;
+
+}
+
 
 h1{
     font-size: $font-size-h1;
@@ -28,17 +36,17 @@ h3{
 
 h4{
     font-size: $font-size-h4;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
 }
 
 h5{
     font-size: $font-size-h5;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 h6{
     font-size: $font-size-h6;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
 
 p{

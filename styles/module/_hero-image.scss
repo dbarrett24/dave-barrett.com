@@ -2,10 +2,27 @@
     width: 100%;
     height: 100%;
     @include flex-center-center;
+    background: black;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     .dave-hero{
-        // width: 100%;
+        z-index: 101;
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        display: block;
         height: 85%;
-        // background: url('../images/photoshop/DaveBarrett-72.png') no-repeat center center;
-        // background-size: cover;
+ 
+
+    }
+    .full-size-bg{
+        height: calc(100vh - 100px);
+        width: 100vw;
+        background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
+        background-size: cover;
     }
 }

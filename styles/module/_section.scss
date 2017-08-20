@@ -1,63 +1,41 @@
 section{
     position: relative;
     overflow: visible;
-    .section-text{
-        @include flex-top-center-column;
+
+    .section-content-wrapper{
         width: 100%;
-        margin-top: 73px;
-        padding: $section-text-padding;
-    }
-    .section-content{
-        @include flex-space-between;
-        width: 100%;
-        margin-top: 73px;
-        padding: $section-content-padding;
+        padding: 100px 15px;
+
+        .section-text{
+            @include flex-top-center-column;
+            width: 100%;
+        }
+        .section-content{
+            @include flex-center-space-between;
+            width: 100%;
+            margin: 73px 0;
+            //THIS ONE I WAS WORKING ON (Fix Projects section to make it Flex-oriented and RESPONSIVE)
+            flex-wrap: wrap;
+        }
     }
 }
 
-.section-1{
-    width: 100%;
-    height: 300px;
-    // background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
-    background: black;
-
-    h3{
-        
-    }
-    p{
-
-    }
+.black-text{
+    color: black;
 }
-.section-2{
-    width: 100%;
-    height: 800px;
+
+//Backgrounds
+.bg-black{
+    background: $brand-black;
+}
+.bg-white-paper{
     background: url('../images/backgrounds/white_paper_texture.jpg') no-repeat center center;
 }
-.section-3{
-    width: 100%;
-    height: 800px;
-    // background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
-    background: black;
-}
-.section-4{
-    width: 100%;
-    height: 600px;
+.bg-gradient-paper{
     background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
 }
 
-.section-5{
-    width: 100%;
-    height: 800px;
-    // background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
-    background: black;
-}
 
-.section-6{
-    width: 100%;
-    height: 800px;
-    background: url('../images/backgrounds/white_paper_texture.jpg') no-repeat center center;
-
-}
 
 .rip-separator{
     width: 100%;
@@ -83,19 +61,23 @@ section{
     height: 600px;
     z-index: 2;
 }
+            
 
 
 .project-card{
     width: 250px;
     height: 450px;
     border-radius: $border-radius-card;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
     // margin-right: 66px;
     overflow: hidden;
     position: relative;
+
     .project-thumbnail{
         width: 100%;
         height: 100%;
-        background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
+        // background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
+        background: black;
         background-size: cover;
     }
     .card-info-wrapper{
@@ -104,7 +86,7 @@ section{
         height: 100%;
         position: relative;
         .card-info{
-            padding: 10px;
+            padding: 0 10px;
             position: relative;
             top: 76.5%;
             text-align: center;
@@ -128,4 +110,75 @@ section{
         transform: skewY(-4.2deg);
 
     }
+}
+
+
+.card-wrapper{
+    @include flex-center-center;
+    overflow: visible;
+    
+}
+
+
+.bg-splash-1{
+    background: url('../images/watercolor/splash1-opac.png') no-repeat center center;
+    transform: scale(1,1);
+    transition: all 1.5s ease;
+}
+.bg-splash-2{
+    background: url('../images/watercolor/splash2-opac.png') no-repeat center center;
+    transform: scale(1,1);
+    transition: all 1.5s ease;
+}
+.bg-splash-3{
+    background: url('../images/watercolor/splash3-opac.png') no-repeat center center;
+    transform: scale(1,1);
+    transition: all 1.5s ease;
+}
+.bg-splash-4{
+    background: url('../images/watercolor/splash4-opac.png') no-repeat center center;
+    transform: scale(1,1);
+    transition: all 1.5s ease;
+}
+
+.bg-splash-1:hover{
+    background: url('../images/watercolor/splash1-color.png') no-repeat center center;
+    transform: scale(1.05,1.05);
+    transition: all 1.5s ease;
+}
+.bg-splash-2:hover{
+    background: url('../images/watercolor/splash2-color.png') no-repeat center center;
+    transform: scale(1.05,1.05);
+    transition: all 1.5s ease;
+}
+.bg-splash-3:hover{
+    background: url('../images/watercolor/splash3-color.png') no-repeat center center;
+    transform: scale(1.05,1.05);
+    transition: all 1.5s ease;
+}
+.bg-splash-4:hover{
+    background: url('../images/watercolor/splash4-color.png') no-repeat center center;
+    transform: scale(1.05,1.05);
+    transition: all 1.5s ease;
+}
+
+
+.bg-splash-1:hover .project-card{
+    transform: scale(1.05,1.05);
+    transition: all 1s;
+  
+}
+.bg-splash-2:hover .project-card{
+    transform: scale(1.05,1.05);
+    transition: all 1s;
+
+}
+.bg-splash-3:hover .project-card{
+    transform: scale(1.05,1.05);
+    transition: all 1s;
+}
+.bg-splash-4:hover .project-card{
+    transform: scale(1.05,1.05);
+    transition: all 1s;
+  
 }

@@ -8,22 +8,24 @@
         <!--DIST-->
 
         <link href="./dist/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
     </head>
     <body ng-controller="mainCtrl">
         <!--*************************-->
-        {{test}}
+        <!-- {{test}} -->
         <!--*************************-->
 
-        <ui-view></ui-view>
         <nav-dir></nav-dir>
+        <ui-view></ui-view>
 
         <footer id="footer"></footer>
     <!--ANGULAR-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
     <script src="https://use.fontawesome.com/c3c9f13aa2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
     <!--DIST-->
     <script src="./dist/js/bundle.js"></script>
     </body>

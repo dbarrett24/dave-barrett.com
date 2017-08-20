@@ -81,6 +81,12 @@
     align-items: flex-start;
     flex-direction: row;
 }
+@mixin flex-center-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
 // Mixins for buttons
 
 @mixin btn-styles($btn-color) {

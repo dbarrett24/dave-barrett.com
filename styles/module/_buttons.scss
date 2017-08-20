@@ -58,6 +58,9 @@ button:active {
 &.btn-red {
     @include btn-styles($brand-red);
 }
+&.btn-teal {
+    @include btn-styles($purple-900);
+}
 
 &.btn-white {
     &,
