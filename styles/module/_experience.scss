@@ -1,0 +1,22 @@
+.job-logo{
+    img{
+        height: 150px;
+    }
+}
+.job-desc{
+    margin-left: 75px;
+    .job-title-wrap{
+        .job-title{
+
+        }
+        .job-mini-logo{
+            margin: 10px;
+            height: 50px;
+        }
+    }
+    .job-date{
+        font-style: italic;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}

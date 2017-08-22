@@ -19,7 +19,7 @@ angular.module('app').directive('navDir', function(){
 
             //Sticky Nav
             var targetPos = $('.nav').offset().top;
-            console.log(targetPos);
+            // console.log(targetPos);
 
             $(window).resize(function(){
                 targetPos = $('.nav').offset().top;

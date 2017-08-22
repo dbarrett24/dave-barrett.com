@@ -1,0 +1,125 @@
+[{
+   "skills": [
+        {
+            "id": 0,
+            "skill_name": "JavaScript",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/javascript.png"
+        },
+        {
+            "id": 1,
+            "skill_name": "HTML/CSS",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/html.png"
+        },
+        {
+            "id": 2,
+            "skill_name": "Angular",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/angular.png"
+        },
+        {
+            "id": 3,
+            "skill_name": "React",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/react.png"
+        },
+        {
+            "id": 4,
+            "skill_name": "Node.js",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/node.png"
+        },
+        {
+            "id": 5,
+            "skill_name": "jQuery",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/jquery.png"
+        },
+        {
+            "id": 6,
+            "skill_name": "Sass",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/sass.png"
+        },
+        {
+            "id": 7,
+            "skill_name": "D3",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/d3.png"
+        },
+        {
+            "id": 8,
+            "skill_name": "Gulp",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/gulp.png"
+        },
+        {
+            "id": 9,
+            "skill_name": "SQL",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/sql.png"
+        },
+        {
+            "id": 10,
+            "skill_name": "SMACSS",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/smacss.png"
+        },
+        {
+            "id": 11,
+            "skill_name": "Express",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/express.png"
+        },
+        {
+            "id": 12,
+            "skill_name": "Electron",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/electron.png"
+        },
+        {
+            "id": 13,
+            "skill_name": "GSAP",
+            "skill_category": "code",
+            "skill_logo": "./images/skill-logos/gsap.png"
+        },
+        {
+            "id": 14,
+            "skill_name": "Photoshop",
+            "skill_category": "design",
+            "skill_logo": "./images/skill-logos/photoshop.png"
+        },
+        {
+            "id": 15,
+            "skill_name": "Illustrator",
+            "skill_category": "design",
+            "skill_logo": "./images/skill-logos/illustrator.png"
+        },
+        {
+            "id": 16,
+            "skill_name": "After Effects",
+            "skill_category": "design, video, animation",
+            "skill_logo": "./images/skill-logos/after-effects.png"
+        },
+        {
+            "id": 17,
+            "skill_name": "Google Analytics",
+            "skill_category": "marketing",
+            "skill_logo": "./images/skill-logos/google-analytics.png"
+        },
+        {
+            "id": 18,
+            "skill_name": "SEO",
+            "skill_category": "marketing",
+            "skill_logo": "./images/skill-logos/seo.png"
+        },
+        {
+            "id": 19,
+            "skill_name": "Digital Marketing",
+            "skill_category": "marketing",
+            "skill_logo": "./images/skill-logos/digital-marketing.png"
+        }
+      
+    ]
+}]

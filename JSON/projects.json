@@ -1,0 +1,53 @@
+[{
+   "projects": [
+        {
+            "id": 0,
+            "project_name": "Basketbrawwl",
+            "project_desc": "NBA Player Stats Comparison App",
+            "project_short_desc": "NBA Stats Comparison App",
+            "project_date": "April 2017",
+            "thumbnail_img": "./images/projects/basketbrawwl.png",
+            "bg_img": "./images/watercolor/splash1-color.png",
+            "project_url": "null",
+            "category": "code",
+            "file": "jpg, png, mp4"
+        },
+        {
+            "id": 1,
+            "project_name": "Canva",
+            "project_desc": "Miniature clone of Canva.com pages.",
+            "project_short_desc": "Canva.com Clone",
+            "project_date": "May 2017",
+            "thumbnail_img": "./images/projects/canva.png",
+            "bg_img": "./images/watercolor/splash2-color.png",
+            "project_url": "null",
+            "category": "code",
+            "file": "jpg, png, mp4"
+        },
+        {
+            "id": 1,
+            "project_name": "Evolve",
+            "project_desc": "A Micro-Operating System for your Life.",
+            "project_short_desc": "Micro-Operating System for your Life",
+            "project_date": "June 2017",
+            "thumbnail_img": "./images/projects/evolve.png",
+            "bg_img": "./images/watercolor/splash3-color.png",
+            "project_url": "null",
+            "category": "code",
+            "file": "jpg, png, mp4"
+        },
+        {
+            "id": 1,
+            "project_name": "Scribble-Frames",
+            "project_desc": "An online Wireframe Creation Tool for your Mockups.",
+            "project_short_desc": "Wireframe Creation Tool",
+            "project_date": "June 2017",
+            "thumbnail_img": "./images/projects/scribble-frames.png",
+            "bg_img": "./images/watercolor/splash4-color.png",
+            "project_url": "null",
+            "category": "code",
+            "file": "jpg, png, mp4"
+        }
+      
+    ]
+}]

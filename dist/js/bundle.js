@@ -1,26 +1,86 @@
 'use strict';
 
 angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('home', {
+    $stateProvider.state('code', {
         url: '/',
-        templateUrl: '../views/home.html'
+        templateUrl: '../views/code.html',
+        controller: 'codeCtrl'
     });
 
     $urlRouterProvider.otherwise('/');
 });
 'use strict';
 
-angular.module('app').controller('mainCtrl', function ($scope, mainService) {
+angular.module('app').service('mainService', function ($http) {
     // *****************************
-    $scope.test = mainService.test;
+    this.test = "Controller & Service are working";
     // *****************************
+    this.getSkills = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/skills.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getExperience = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/experience.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getQuotes = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/quotes.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getProjects = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/projects.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+});
+'use strict';
 
+angular.module('app').controller('codeCtrl', function ($scope, mainService) {
+
+    mainService.getSkills().then(function (skills) {
+        $scope.skills = skills;
+        console.log("skills", skills);
+    });
+
+    mainService.getExperience().then(function (experience) {
+        $scope.experience = experience;
+        console.log("experience", experience);
+    });
+
+    mainService.getQuotes().then(function (quotes) {
+        $scope.quotes = quotes;
+        console.log("quotes", quotes);
+    });
+
+    mainService.getProjects().then(function (projects) {
+        $scope.projects = projects;
+        console.log("projects", projects);
+    });
 
     $(document).ready(function () {
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
-        console.log(scrollPos);
+        // console.log(scrollPos);
 
         var fadeStart = 100 // 100px scroll or less will equiv to 1 opacity
 
@@ -62,10 +122,11 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
 });
 'use strict';
 
-angular.module('app').service('mainService', function ($http) {
+angular.module('app').controller('mainCtrl', function ($scope, mainService) {
     // *****************************
-    this.test = "Controller & Service are working";
+    $scope.test = mainService.test;
     // *****************************
+
 });
 'use strict';
 
@@ -87,7 +148,7 @@ angular.module('app').directive('navDir', function () {
 
             //Sticky Nav
             var targetPos = $('.nav').offset().top;
-            console.log(targetPos);
+            // console.log(targetPos);
 
             $(window).resize(function () {
                 targetPos = $('.nav').offset().top;

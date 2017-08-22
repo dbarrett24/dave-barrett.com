@@ -1,0 +1,61 @@
+.quote-container{
+    width: auto;
+    position: relative;
+}
+.quote{
+    font-family: $primary-font-family;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.quote::before{
+    font-size: 72px !important;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: -70px;
+    font-family: 'Material Icons';
+    content: '\e244';
+    opacity: .2;
+}
+.quote::after{
+    font-size: 72px !important;
+    // transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    right: -55px;
+    font-family: 'Material Icons';
+    content: '\e244';
+    opacity: .2;
+//     font-size: 35px !important;
+    
+//     position: absolute;
+//     bottom: 0;
+//     right: -20px;
+//     font-family: 'Material Icons';
+//     content: '\e244';
+}
+
+.quote-by{
+    @include flex-center-center;
+    font-size: 24px;
+}
+
+.profile-circle {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100px;
+    position: relative;
+    img{
+        // object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.quote-start{
+}
+.quote-end{
+    font-size: 45px !important;
+}

@@ -60,7 +60,10 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: $brand-charcoal;
+    // background: $brand-charcoal;
+    // background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
+    // background-size: cover;
+    background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
     transition: all 0.5s;
     
 }
@@ -77,6 +80,10 @@
     
     transition: all 0.5s;
 
+}
+
+.is-active:hover{
+    color: $brand-black;
 }
 
 

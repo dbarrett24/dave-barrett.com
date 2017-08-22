@@ -7,11 +7,9 @@ section{
         padding: 100px 15px;
 
         .section-text{
-            @include flex-top-center-column;
-            width: 100%;
+            width: auto;
         }
         .section-content{
-            @include flex-center-space-between;
             width: 100%;
             margin: 73px 0;
             //THIS ONE I WAS WORKING ON (Fix Projects section to make it Flex-oriented and RESPONSIVE)

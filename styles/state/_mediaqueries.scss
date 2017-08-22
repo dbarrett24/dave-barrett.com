@@ -34,6 +34,12 @@
         height: 75%;
         @include flex-center-top;
     }
+    .job-logo{
+        display: none;
+    }
+    .job-desc{
+        margin-left: 0;
+    }
 
     .section-text{
         padding: 0px 25px;
@@ -44,6 +50,9 @@
     .carousel-cell {
         width: 100%;
         
+    }
+    .job-mini-logo{
+        display: block;
     }
 }
 
@@ -117,6 +126,15 @@
     }
     .carousel-cell {
         width: 33%;
+    }
+    .job-logo{
+        display: block;
+    }
+    .job-desc{
+        margin-left: 75px;
+    }
+    .job-mini-logo{
+        display: none;
     }
 
 }

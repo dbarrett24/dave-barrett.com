@@ -1,0 +1,23 @@
+[{
+   "experience": [
+        {
+            "id": 0,
+            "job_title": "Student Developer",
+            "job_description": "./images/photoshop/ianschoen.png",
+            "job_accomplishments": "DevMountain",
+            "job_date_range": "February 2017 - July 2017",
+            "company_name": "DevMountain Student Developers",
+            "company_logo": "./images/logos/devmtn-logo.png"
+        },
+        {
+            "id": 1,
+            "job_title": "Student Developer",
+            "job_description": "./images/photoshop/ianschoen.png",
+            "job_accomplishments": "DevMountain",
+            "job_date_range": "February 2017 - July 2017",
+            "company_name": "DevMountain Student Developers",
+            "company_logo": "./images/logos/devmtn-logo.png"
+        }
+        
+    ]
+}]

@@ -1,0 +1,18 @@
+[{
+   "quotes": [
+        {
+            "id": 0,
+            "author": "Ian Schoen",
+            "author_image": "./images/photoshop/ianschoen.png",
+            "relationship": "DevMountain",
+            "quote": "Dave is one of the most stylistically inclined individuals I have ever come across. He works hard, he cares about how things look, and he is an absolute delight to work with. I would recommend him to anyone who wants things done well."
+        },
+        {
+            "id": 1,
+            "author": "Robert Wakefield",
+            "author_image": "./images/photoshop/robertwakefield.jpg",
+            "relationship": "BYU",
+            "quote": "He's a great dude. Gnarly, brah."
+        }
+    ]
+}]

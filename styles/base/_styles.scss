@@ -21,3 +21,11 @@ img{
 // a:hover{
 
 // }
+
+
+::selection {
+  background: $brand-teal; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $brand-teal; /* Gecko Browsers */
+}
