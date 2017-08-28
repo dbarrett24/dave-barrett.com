@@ -7,15 +7,19 @@ section{
         padding: 100px 15px;
 
         .section-text{
-            width: auto;
+            @include flex-center-top;
+            width: 100%;
         }
         .section-content{
-            width: 100%;
-            margin: 73px 0;
-            //THIS ONE I WAS WORKING ON (Fix Projects section to make it Flex-oriented and RESPONSIVE)
+            width: auto;
             flex-wrap: wrap;
+            position: relative;
         }
     }
+}
+
+hr{
+    margin: 35px;
 }
 
 .black-text{
@@ -28,11 +32,18 @@ section{
 }
 .bg-white-paper{
     background: url('../images/backgrounds/white_paper_texture.jpg') no-repeat center center;
+    // background: white;
 }
 .bg-gradient-paper{
     background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
 }
 
+.autoH{
+    height: auto;
+}
+.fixedH-900{
+    height: 900px;
+}
 
 
 .rip-separator{
@@ -59,7 +70,58 @@ section{
     height: 600px;
     z-index: 2;
 }
-            
+
+
+.filter-menu{
+    @include flex-center-top;
+    width: 100%;
+}
+
+
+
+.logos-container{
+    @include flex-top-center-column;
+    margin: 12px;
+    position: relative;
+
+    // border-radius: 4px;
+    // padding: 5px;
+    // background-color: white;
+    // box-shadow:0 0 5px rgba(0,0,0,0.8);
+    // height: auto;
+    .skills-logo{
+        height: 50px;
+        margin: 15px;
+    }
+    .skill-name{
+        // position: absolute;
+        // bottom: -15px;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+//Animate Skills on Enter/Leave
+.logos-container.ng-enter{
+    transition: 0.3s ease-out all;
+    opacity: 0;
+    transform: translateX(50px);
+}
+.logos-container.ng-enter.ng-enter-active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.logos-container.ng-enter-stagger{
+    transition-delay: 0.03s;
+    transition-duration: 0;
+}
+
+
+
+
+
+
 
 
 .project-card{
@@ -70,7 +132,7 @@ section{
     // margin-right: 66px;
     overflow: hidden;
     position: relative;
-
+    
     .project-thumbnail{
         width: 100%;
         height: 100%;
@@ -93,7 +155,7 @@ section{
             }
             p{
                 color: $brand-black;
-
+                
             }
         }
     }
@@ -106,7 +168,7 @@ section{
         bottom: -9px;
         left: 0;
         transform: skewY(-4.2deg);
-
+        
     }
 }
 
@@ -164,12 +226,12 @@ section{
 .bg-splash-1:hover .project-card{
     transform: scale(1.05,1.05);
     transition: all 1s;
-  
+    
 }
 .bg-splash-2:hover .project-card{
     transform: scale(1.05,1.05);
     transition: all 1s;
-
+    
 }
 .bg-splash-3:hover .project-card{
     transform: scale(1.05,1.05);
@@ -178,5 +240,5 @@ section{
 .bg-splash-4:hover .project-card{
     transform: scale(1.05,1.05);
     transition: all 1s;
-  
+    
 }

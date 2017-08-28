@@ -1934,6 +1934,9 @@ img {
   align-items: center;
   flex-direction: row; }
 
+.flex-wrap {
+  flex-wrap: wrap; }
+
 .p200 {
   padding: 200px 0; }
 
@@ -2165,14 +2168,6 @@ img {
   background: url("../images/backgrounds/pw_maze_black_2X.png") left top repeat;
   transition: all 0.5s; }
 
-.is-active {
-  background: linear-gradient(135deg, #13A89E 0%, #857BCE 100%);
-  box-shadow: 1px 2px 3px rgba(34, 34, 34, 0.5);
-  transition: all 0.5s; }
-
-.is-active:hover {
-  color: #000; }
-
 section {
   position: relative;
   overflow: visible; }
@@ -2180,11 +2175,16 @@ section {
     width: 100%;
     padding: 100px 15px; }
     section .section-content-wrapper .section-text {
-      width: auto; }
+      display: flex;
+      justify-content: center;
+      width: 100%; }
     section .section-content-wrapper .section-content {
-      width: 100%;
-      margin: 73px 0;
-      flex-wrap: wrap; }
+      width: auto;
+      flex-wrap: wrap;
+      position: relative; }
+
+hr {
+  margin: 35px; }
 
 .black-text {
   color: black; }
@@ -2197,6 +2197,12 @@ section {
 
 .bg-gradient-paper {
   background: url("../images/backgrounds/gradient_white_background.png") no-repeat center center; }
+
+.autoH {
+  height: auto; }
+
+.fixedH-900 {
+  height: 900px; }
 
 .rip-separator {
   width: 100%; }
@@ -2219,6 +2225,39 @@ section {
   left: 65.10416666%;
   height: 600px;
   z-index: 2; }
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.logos-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px;
+  position: relative; }
+  .logos-container .skills-logo {
+    height: 50px;
+    margin: 15px; }
+  .logos-container .skill-name {
+    color: black;
+    text-align: center;
+    margin: 0 auto; }
+
+.logos-container.ng-enter {
+  transition: 0.3s ease-out all;
+  opacity: 0;
+  transform: translateX(50px); }
+
+.logos-container.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateX(0px); }
+
+.logos-container.ng-enter-stagger {
+  transition-delay: 0.03s;
+  transition-duration: 0; }
 
 .project-card {
   width: 250px;
@@ -2327,7 +2366,16 @@ button {
   text-shadow: rgba(0, 0, 0, 0.9) 0px 1px 1px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-user-select: none;
+  /* Safari, iOS, and Android */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                               supported by Chrome and Opera */ }
 
 button:focus {
   outline: none; }
@@ -2338,6 +2386,17 @@ button:hover {
 button:active {
   box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(255, 255, 255, 0) 0px 1px 0px, inset rgba(0, 0, 0, 0.5) 0px 0px 5px, inset rgba(255, 255, 255, 0.03) 0px 20px 0px, inset rgba(0, 0, 0, 0.15) 0px -20px 20px, inset rgba(255, 255, 255, 0.05) 0px 20px 20px; }
 
+.btn-filter-teal {
+  background-color: transparent;
+  color: #000;
+  box-shadow: none;
+  text-shadow: none; }
+
+.btn-filter-teal:hover {
+  background-color: #333;
+  color: #FFF;
+  box-shadow: none; }
+
 .btn-round {
   border-radius: 100px;
   padding: 9px 15px; }
@@ -2345,6 +2404,16 @@ button:active {
 .btn-square {
   border-radius: 3px;
   padding: 12px 24px; }
+
+.btn-square-sm {
+  border-radius: 3px;
+  padding: 8px 20px;
+  height: 35px; }
+
+.btn-round-sm {
+  border-radius: 100px;
+  padding: 8px 20px;
+  height: 35px; }
 
 .btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default:active:focus, .btn-default:active:hover, .btn-default.active:focus, .btn-default.active:hover,
 .open > .btn-default.dropdown-toggle,
@@ -2824,6 +2893,25 @@ a:hover {
 .quote-end {
   font-size: 45px !important; }
 
+.is-filtered {
+  background-color: #13A89E;
+  color: #FFF;
+  box-shadow: none;
+  text-shadow: none;
+  transition: all 0.1s; }
+
+.is-filtered:hover {
+  color: #000;
+  box-shadow: none; }
+
+.is-active {
+  background: linear-gradient(135deg, #13A89E 0%, #857BCE 100%);
+  box-shadow: 1px 2px 3px rgba(34, 34, 34, 0.5);
+  transition: all 0.5s; }
+
+.is-active:hover {
+  color: #000; }
+
 @media (min-width: 0px) {
   .nav-left {
     display: none; }
@@ -2852,6 +2940,8 @@ a:hover {
     margin-left: 0; }
   .section-text {
     padding: 0px 25px; }
+  .section-content {
+    padding: 0px 10px; }
   .dave-silho {
     display: none; }
   .carousel-cell {
@@ -2873,6 +2963,8 @@ a:hover {
     height: 85%; }
   .section-text {
     padding: 0px 75px; }
+  .section-content {
+    padding: 0px 50px; }
   .carousel-cell {
     width: 49%; } }
 
@@ -2888,7 +2980,9 @@ a:hover {
   .hero-container {
     height: 100%; }
   .section-text {
-    padding: 0px 200px; } }
+    padding: 0px 200px; }
+  .section-content {
+    padding: 0px 100px; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
@@ -2904,6 +2998,8 @@ a:hover {
 
 @media (min-width: 1400px) {
   .section-text {
+    padding: 0px 400px; }
+  .section-content {
     padding: 0px 400px; } }
 
 @media (min-width: 1800px) {

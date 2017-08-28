@@ -1,0 +1,26 @@
+//filter menu
+.is-filtered{
+    background-color: $brand-teal;
+    color: $brand-white;
+    box-shadow: none;
+    text-shadow: none;
+    transition: all 0.1s;
+}
+
+.is-filtered:hover{
+    color: $brand-black;
+    box-shadow: none;
+}
+
+//nav-bar links highlight on scroll
+.is-active{
+    background: linear-gradient(135deg, #13A89E 0%, #857BCE 100%);
+    box-shadow: 1px 2px 3px rgba(34,34,34,.5);
+    
+    transition: all 0.5s;
+
+}
+
+.is-active:hover{
+    color: $brand-black;
+}

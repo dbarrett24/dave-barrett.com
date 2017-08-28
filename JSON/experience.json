@@ -1,5 +1,4 @@
-[{
-   "experience": [
+[
         {
             "id": 0,
             "job_title": "Student Developer",
@@ -19,5 +18,4 @@
             "company_logo": "./images/logos/devmtn-logo.png"
         }
         
-    ]
-}]
+]

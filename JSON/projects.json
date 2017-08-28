@@ -1,5 +1,4 @@
-[{
-   "projects": [
+[
         {
             "id": 0,
             "project_name": "Basketbrawwl",
@@ -49,5 +48,4 @@
             "file": "jpg, png, mp4"
         }
       
-    ]
-}]
+]

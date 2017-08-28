@@ -61,7 +61,9 @@
 .flex-center-space-between{
     @include flex-center-space-between;
 }
-
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 
 //padding and margin for section content

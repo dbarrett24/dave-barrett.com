@@ -44,6 +44,9 @@
     .section-text{
         padding: 0px 25px;
     }
+    .section-content{
+        padding: 0px 10px;
+    }
     .dave-silho{
         display: none;
     }
@@ -84,6 +87,9 @@
     .section-text{
         padding: 0px 75px;
     }
+    .section-content{
+        padding: 0px 50px;
+    }
     .carousel-cell {
         width: 49%;
     
@@ -118,6 +124,9 @@
     .section-text{
         padding: 0px 200px;
     }
+    .section-content{
+        padding: 0px 100px;
+    }
 
 }
 @media (min-width: 1100px){
@@ -140,6 +149,9 @@
 }
 @media (min-width: 1400px){
     .section-text{
+        padding: 0px 400px;
+    }
+    .section-content{
         padding: 0px 400px;
     }
 

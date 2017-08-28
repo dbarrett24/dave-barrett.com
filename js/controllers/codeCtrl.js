@@ -1,10 +1,18 @@
 angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 
 
-    mainService.getSkills().then(function (skills) {
-        $scope.skills = skills;
-        console.log("skills", skills);
-    });
+    $scope.getSkills = function(){
+        mainService.getSkills().then(function (skills) {
+            $scope.skills = skills;
+            $scope.learning = skills;
+            console.log("skills", skills);
+    
+            $scope.skillMap = skills.map(function(skill){
+                return skill;
+            })
+        });
+    }
+    $scope.getSkills();
 
     mainService.getExperience().then(function (experience) {
         $scope.experience = experience;
@@ -20,6 +28,22 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         $scope.projects = projects;
         console.log("projects", projects);
     });
+
+
+//FILTER SKILLS
+
+    $scope.skillFilter = function(category){
+        $scope.skills = $scope.skills.filter(function(skill){
+            return skill.skill_category === category;
+        })
+    }
+    $scope.filterSkills = function(category){
+       
+        $scope.skills = $scope.skillMap.map(function(skill){
+            return skill;
+        })
+        $scope.skillFilter(category);
+    }
 
 
     $(document).ready(function () {
@@ -67,7 +91,14 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             });
 
 
-
+        //Filtering
+        $('.btn-filter-teal').on('click', function(){
+            $(this).addClass('is-filtered');
+            $(this).removeClass('btn-filter-teal');
+            $(this).siblings().removeClass('is-filtered');
+            $(this).siblings().addClass('btn-filter-teal');
+            
+        })
 
     })
 

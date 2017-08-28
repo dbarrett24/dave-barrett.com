@@ -8,6 +8,12 @@ button{
     text-shadow: rgba(0,0,0,0.9) 0px 1px 1px;
     
     @include flex-center-center;
+
+    -webkit-user-select: none; /* Safari, iOS, and Android */
+    -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer/Edge */
+         user-select: none; /* Non-prefixed version, currently
+                               supported by Chrome and Opera */
 }
 button:focus{
     outline: none;
@@ -20,6 +26,19 @@ button:active {
     box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0) 0px 1px 0px, inset rgba(0,0,0,0.5) 0px 0px 5px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
 }
 
+
+.btn-filter-teal{
+    background-color: transparent;
+    color: $brand-black;
+    box-shadow: none;
+    text-shadow: none;
+}
+.btn-filter-teal:hover{
+    background-color: $brand-gray;
+    color: $brand-white;
+    box-shadow: none;
+}
+
 .btn-round{
     border-radius: $border-radius-cir;
     padding: $round-padding;
@@ -28,6 +47,18 @@ button:active {
 .btn-square{
     border-radius: $border-radius-sq;
     padding: $square-padding;
+}
+
+.btn-square-sm{
+    border-radius: $border-radius-sq;
+    padding: $square-padding-sm;
+    height: 35px;
+}
+
+.btn-round-sm{
+    border-radius: $border-radius-cir;
+    padding: $square-padding-sm;
+    height: 35px;
 }
 
 
@@ -74,6 +105,8 @@ button:active {
         background: transparent;
         box-shadow: none;
     }
+
+
 
 } // social buttons
 &.btn-facebook {
