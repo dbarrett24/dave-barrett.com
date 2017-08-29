@@ -11,7 +11,9 @@
 .flex-left-bottom{
     @include flex-left-bottom;
 }
-
+.align-middle{
+    @include align-middle;
+}
 
 //////CENTER///////
 .flex-center-top{
@@ -40,6 +42,9 @@
 
 .flex-top-center-column{
     @include flex-top-center-column;
+}
+.flex-left-top-column{
+    @include flex-left-top-column;
 }
 .flex-top-center-row{
     @include flex-top-center-row;

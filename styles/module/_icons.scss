@@ -1,6 +1,19 @@
 .icon{
 
 }
-.icon-btn-long{
-    margin: 0 7px 0 0px;
+.icon-btn-long-left{
+    margin: 0 8px 0 0px;
+}
+
+.icon-btn-long-right{
+    margin-left: 8px;
+}
+.icon{
+    padding: 0 5px;
+}
+.icon-red{
+    color: $brand-red;
+}
+.icon-black{
+    color: $brand-black;
 }

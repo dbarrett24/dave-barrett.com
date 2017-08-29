@@ -27,6 +27,30 @@ button:active {
 }
 
 
+.social-link{
+    border-radius: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 0px;
+    transition: all 0.3s;
+    .fa{
+        display: inline-block;
+        width: auto;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.social-link:hover{
+    background: $brand-teal;
+    transition: all 0.3s;
+}
+
 .btn-filter-teal{
     background-color: transparent;
     color: $brand-black;
@@ -60,7 +84,17 @@ button:active {
     padding: $square-padding-sm;
     height: 35px;
 }
-
+.btn-gradient{
+    background: linear-gradient(135deg, #13A89E 0%, #857BCE 100%);
+    color: white;
+    text-shadow: none;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    transition: all 0.5s;
+}
+.btn-gradient:hover{
+    background: linear-gradient(135deg, #857BCE 0%, #10A89D 100%);
+    transition: all 0.5s;
+}
 
 &.btn-default {
     @include btn-styles($gray-light);
@@ -155,4 +189,113 @@ button:active {
 
 &.btn-behance {
     @include social-buttons-color($social-behance);
+}
+
+//just hover color
+.facebook {
+    
+}
+
+.twitter {
+  
+}
+
+.pinterest {
+    
+}
+
+.google {
+}
+
+.linkedin {
+}
+
+.dribbble {
+}
+
+.github {
+}
+
+.youtube {
+}
+
+.instagram {
+}
+
+.reddit {
+}
+
+.tumblr {
+}
+
+.behance {
+}
+
+.codepen {
+}
+
+
+
+.facebook:hover {
+    @include social-buttons-color($social-facebook);
+    transition: all 0.3s;
+}
+
+.twitter:hover {
+    @include social-buttons-color($social-twitter);
+    transition: all 0.3s;
+}
+
+.pinterest:hover {
+    @include social-buttons-color($social-pinterest);
+    transition: all 0.3s;
+}
+
+.google:hover {
+    @include social-buttons-color($social-google);
+    transition: all 0.3s;
+}
+
+.linkedin:hover {
+    @include social-buttons-color($social-linkedin);
+    transition: all 0.3s;
+}
+
+.dribbble:hover {
+    @include social-buttons-color($social-dribbble);
+    transition: all 0.3s;
+}
+
+.github:hover {
+    @include social-buttons-color($social-github);
+    transition: all 0.3s;
+}
+
+.youtube:hover {
+    @include social-buttons-color($social-youtube);
+    transition: all 0.3s;
+}
+
+.instagram:hover {
+    @include social-buttons-color($social-instagram);
+    transition: all 0.3s;
+}
+
+.reddit:hover {
+    @include social-buttons-color($social-reddit);
+    transition: all 0.3s;
+}
+
+.tumblr:hover {
+    @include social-buttons-color($social-tumblr);
+    transition: all 0.3s;
+}
+
+.behance:hover {
+    @include social-buttons-color($social-behance);
+    transition: all 0.3s;
+}
+.codepen:hover {
+    @include social-buttons-color($social-reddit);
+    transition: all 0.3s;
 }

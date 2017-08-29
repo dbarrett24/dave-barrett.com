@@ -242,3 +242,43 @@ hr{
     transition: all 1s;
     
 }
+
+.social-links{
+    @include flex-center-center;
+    display: inline-block;
+    width: 100%;
+}
+
+.content-inner{
+    width: 100%;
+}
+
+.contact-info-container{
+    display: inline-block;
+    width: 33%;
+}
+
+.contact-info-box{
+    width: 100%;
+    @include flex-left-top;
+    @include align-middle;
+    h6{
+        font-size: 12px;
+        margin-right: 15px;
+        float: left;
+        width: 75px;
+        // line-height: 28px;
+        font-family: $primary-font-family;
+        i{
+            font-size: 18px;
+        }
+    }
+    .info{
+        display: block;
+        width: 202px;
+        line-height: 28px;
+        // font-family: $primary-font-family;
+
+    }
+    
+}
