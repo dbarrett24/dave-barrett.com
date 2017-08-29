@@ -10,7 +10,28 @@ h1, h2, h3, a, button, html, body{
     line-height: $line-height;
     
 }
+.bold{
+    font-weight: 700;
+}
 
+.brackets:before{
+    content: "{";
+    font-weight: 400;
+    font-size: 90px;
+    padding-right: 15px;
+    background: -webkit-linear-gradient(135deg, #857BCE 0%, #10A89D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.brackets:after{
+    content: "}";
+    font-weight: 400;
+    font-size: 90px;
+    padding-left: 15px;
+    background: -webkit-linear-gradient(135deg, #857BCE 0%, #10A89D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 h4, h5, h6{
     font-family: $secondary-font-family;
     font-weight: $app-font-weight;

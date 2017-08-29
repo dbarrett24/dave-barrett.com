@@ -30,23 +30,54 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     });
 
 
-//FILTER SKILLS
-
+    //FILTER SKILLS
+    
     $scope.skillFilter = function(category){
         $scope.skills = $scope.skills.filter(function(skill){
             return skill.skill_category === category;
         })
     }
     $scope.filterSkills = function(category){
-       
+        
         $scope.skills = $scope.skillMap.map(function(skill){
             return skill;
         })
         $scope.skillFilter(category);
     }
+    
+
+//////////////////////////////////////////////////////////////////////////////
+//JQUERY THINGS
+//////////////////////////////////////////////////////////////////////////////
+
+//SCROLL REVEAL
+    window.sr = ScrollReveal({
+        origin: 'bottom',
+        duration: 500,
+        delay: 250,
+        easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)',
+        scale: 0.9
+    },50);
+    sr.reveal('.section-text');
+    sr.reveal('.section-content');
+    sr.reveal('.projects-carousel');
+//END/////////////////
+
 
 
     $(document).ready(function () {
+        //TRIGGER OVERLAY
+        $('.trigger-overlay').on('click', function(){
+            $('.overlay').addClass('open');
+            $(".overlay-huge").hasClass("open", function () {
+                $("body").addClass("no-scroll");
+            });
+        })
+        $('.overlay').on('click', function(){
+            $(this).removeClass('open');
+        })
+        
+
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
