@@ -4,7 +4,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: $brand-black;
+    background: $brand-gradient;
     z-index: 1500;
 }
 
@@ -14,27 +14,106 @@
     transition: opacity 0.5s, visibility 0s 0.5s;
 }
 .overlay-huge.open{
-    opacity: 0.90;
+    opacity: 0.75;
     visibility: visible;
     transition: opacity 0.5s;
 }
-.download-modal{
+.project-modal.open{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+.project-modal{
+    padding: 20px;
+    overflow: hidden;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
     width: 70%;
     height: 80%;
-    background: $brand-blue;
+    background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
     border-radius: $border-radius-card;
+    box-shadow: $card-shadow;
+    z-index: 1501;
+    display: flex;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-.option-container{
-
-}
-
-.option-card{
+.project-container-left{
+    position: relative;
     width: 100%;
-    height: 300px;
-    border-radius: $border-radius-card;
-    background: white;
+    height: 100%;
+    .project-media-container{
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+        // background: white;
+        overflow: hidden;
+        video, iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .project-title{
 
+    }
+    .project-description{
+
+    }
+    
+}
+.project-container-right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .project-sidebar{
+        width: 100%;
+        height: 100%;
+        background: $brand-gray;
+        padding: 45px 20px 0 20px;
+
+        .sidebar-section{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .project-tech{
+            // height: 49%;
+        }
+        .project-github{
+            // height: 49%;
+    
+        }
+    }
+}
+
+
+
+
+
+
+//Gaussian BLUR?! can't get it to work
+.blur-bg{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+    -webkit-filter: blur(10px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'3\'/></filter></svg>#blur");
+    filter: blur(10px);
+}
+.blur-bg.open{
+    opacity: 0.5;
+    visibility: visible;
+    transition: opacity 0.5s;
 }
 
 .no-scroll {

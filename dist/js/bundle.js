@@ -78,12 +78,16 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         //TRIGGER OVERLAY
         $('.trigger-overlay').on('click', function () {
             $('.overlay').addClass('open');
+            $('.project-modal').addClass('open');
+            $('.blur-bg').addClass('open');
             $(".overlay-huge").hasClass("open", function () {
                 $("body").addClass("no-scroll");
             });
         });
         $('.overlay').on('click', function () {
             $(this).removeClass('open');
+            $('.project-modal').removeClass('open');
+            $('.blur-bg').removeClass('open');
         });
 
         //Intro Header Scroll Fade Effect
