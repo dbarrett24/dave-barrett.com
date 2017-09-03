@@ -53,15 +53,23 @@
     height: 100%;
     .project-media-container{
         width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
+        // height: 100%;
+        // padding-bottom: 56.25%;
         position: relative;
         // background: white;
-        overflow: hidden;
-        video, iframe{
-            position: absolute;
-            width: 100%;
-            height: 100%;
+        // overflow: hidden;
+        .carousel-media-cell{
+
+            iframe{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            video, img{
+                width: 100% !important;
+                height: auto !important;
+            }
+           
         }
     }
     .project-title{
@@ -77,6 +85,8 @@
     width: 100%;
     height: 100%;
     .project-sidebar{
+        color: gray;
+        font-size: 12px;
         width: 100%;
         height: 100%;
         background: $brand-gray;

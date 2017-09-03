@@ -124,6 +124,16 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             autoPlay: false,
             contain: true
         });
+        $('.project-media-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            pageDots: true,
+            // groupCells: 3,
+            adaptiveHeight: true,
+            imagesLoaded: false,
+            autoPlay: true,
+            contain: true
+        });
 
         $('.project-card').hover(function () {
             $(this).addClass("hover");

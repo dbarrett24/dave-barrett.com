@@ -9,7 +9,32 @@
             "bg_img": "./images/watercolor/splash1-color.png",
             "project_url": "null",
             "category": "code",
-            "file": "jpg, png, mp4"
+            "tech_used": [
+                "Html5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+
+            ],
+            "files": [
+                {
+                    "video": "./video/basketbrawwl.mp4",
+                    "screenshots":[
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png"
+                        
+                    ]
+                }
+            ]
         },
         {
             "id": 1,
@@ -21,7 +46,28 @@
             "bg_img": "./images/watercolor/splash2-color.png",
             "project_url": "null",
             "category": "code",
-            "file": "jpg, png, mp4"
+            "tech_used": [
+                "Html5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Sass",
+                "jQuery",
+                "Gulp"
+
+            ],
+            "files": [
+                {
+                    "video": "./video/basketbrawwl.mp4",
+                    "screenshots":[
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png"
+                        
+                    ]
+                }
+            ]
         },
         {
             "id": 1,
@@ -33,7 +79,30 @@
             "bg_img": "./images/watercolor/splash3-color.png",
             "project_url": "null",
             "category": "code",
-            "file": "jpg, png, mp4"
+            "tech_used": [
+                "Html5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+            ],
+            "files": [
+                {
+                    "video": "./video/basketbrawwl.mp4",
+                    "screenshots":[
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png"
+                    ]
+                }
+            ]
         },
         {
             "id": 1,
@@ -45,7 +114,30 @@
             "bg_img": "./images/watercolor/splash4-color.png",
             "project_url": "null",
             "category": "code",
-            "file": "jpg, png, mp4"
+            "tech_used": [
+                "Html5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+            ],
+            "files": [
+                {
+                    "video": "./video/basketbrawwl.mp4",
+                    "screenshots":[
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png",
+                        "./images/screenshots/basketbrawwl.png"
+                    ]
+                }
+            ]
         }
       
 ]

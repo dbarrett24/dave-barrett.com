@@ -2282,13 +2282,26 @@ hr {
   flex-direction: column;
   margin: 12px;
   position: relative; }
-  .logos-container .skills-logo {
-    height: 50px;
-    margin: 15px; }
-  .logos-container .skill-name {
-    color: black;
-    text-align: center;
-    margin: 0 auto; }
+
+.logos-container-sm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 7px;
+  position: relative; }
+
+.skills-logo {
+  height: 50px;
+  margin: 15px; }
+
+.skills-logo-sm {
+  height: 40px; }
+
+.skill-name {
+  color: black;
+  text-align: center;
+  margin: 0 auto; }
 
 .logos-container.ng-enter {
   transition: 0.3s ease-out all;
@@ -3271,20 +3284,22 @@ a:hover {
   height: 100%; }
   .project-container-left .project-media-container {
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    overflow: hidden; }
-    .project-container-left .project-media-container video, .project-container-left .project-media-container iframe {
+    position: relative; }
+    .project-container-left .project-media-container .carousel-media-cell iframe {
       position: absolute;
       width: 100%;
       height: 100%; }
+    .project-container-left .project-media-container .carousel-media-cell video, .project-container-left .project-media-container .carousel-media-cell img {
+      width: 100% !important;
+      height: auto !important; }
 
 .project-container-right {
   position: relative;
   width: 100%;
   height: 100%; }
   .project-container-right .project-sidebar {
+    color: gray;
+    font-size: 12px;
     width: 100%;
     height: 100%;
     background: #333;
@@ -3426,7 +3441,16 @@ a:hover {
   margin-top: 75px;
   margin-bottom: 50px; }
 
+.project-media-carousel {
+  width: 100%;
+  max-height: 550px;
+  margin-bottom: 50px; }
+
 .carousel-cell {
   height: 600px; }
+
+.carousel-media-cell {
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=maps/styles.css.map */

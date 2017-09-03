@@ -136,8 +136,7 @@
 				<h2>Projects</h2>
 				<h5>Look at the awesome stuff I've coded...</h5>
 			</div>
-			<div class="projects-carousel">
-				
+			<div class="projects-carousel" >
 				
 				<div class="card-wrapper bg-splash-1 carousel-cell">
 					<div class="project-card">
@@ -145,7 +144,7 @@
 							<div class="card-info-wrapper">
 								<div class="card-info">
 									<h4>Basketbrawwl</h4>
-									<p>More stuff in here</p>
+									<p>NBA Stats Comparison App</p>
 								</div>
 							</div>
 						</div>
@@ -158,7 +157,7 @@
 							<div class="card-info-wrapper">
 								<div class="card-info">
 									<h4>Evolve</h4>
-									<p>More stuff in here</p>
+									<p>Life Management System</p>
 								</div>
 							</div>
 						</div>
@@ -171,7 +170,7 @@
 							<div class="card-info-wrapper">
 								<div class="card-info">
 									<h4>Scribble-Frames</h4>
-									<p>More stuff in here</p>
+									<p>Wireframe Creation Tool</p>
 								</div>
 							</div>
 						</div>
@@ -183,7 +182,7 @@
 							<div class="card-info-wrapper">
 								<div class="card-info">
 									<h4>Canva</h4>
-									<p>More stuff in here</p>
+									<p>Canva.com Clone</p>
 								</div>
 							</div>
 						</div>
@@ -262,13 +261,30 @@
 
 			<div class="project-container-left col-xs-8">
 				<div class="flex-left-top">
-					<h3>My Projects</h3>
+					<h3>Project Screenshots</h3>
 				</div>
 				<div class="project-media-container">
-					<!-- <video controls>
-						<source src="https://www.youtube.com/watch?v=4SoHfT37MG8" type="video/mp4" />
-					</video> -->
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/4SoHfT37MG8?rel=0" frameborder="0" allowfullscreen></iframe>
+					<div class="project-media-carousel">
+						<div class="carousel-media-cell">
+							<video src="./images/videos/dayz-light-leaks.mp4" controls></video>
+							<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4SoHfT37MG8?rel=0" frameborder="0" allowfullscreen></iframe> -->
+
+						</div>
+						<div class="carousel-media-cell">
+							<img src="./images/screenshots/Evolve.png"></img>
+						</div>
+						<div class="carousel-media-cell">
+							<img src="./images/screenshots/Evolve2.png"></img>
+						</div>
+						
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2>Basketbrawwl</h2>
+						<p>Date Published: 12/26/1988</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque et id illum dicta, commodi cupiditate? Explicabo fugiat sint nisi hic repellat eaque temporibus dolores officiis harum culpa! Veritatis, culpa, nihil.</p>
 				</div>
 			</div>
 			
@@ -280,12 +296,17 @@
 					<div class="sidebar-section flex-top-left-column">
 						<h3>Visit the Github Repo:</h3>
 						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar">Download<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
-						</div>
+					</div>
 						
 						
 					<div class="sidebar-section flex-top-left-column">
 						<h3>Technology Used:</h3>
-						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar">Download<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
+						<div class="flex-left-top flex-wrap">
+							<div class="logos-container-sm" ng-repeat="skill in skills | filter: {skill_category: '!learning' }">
+								<img class="skills-logo-sm" ng-src="{{skill.skill_logo}}" alt="{{skill.skill_name}}">
+							</div>
+
+						</div>
 							
 					</div>
 						
@@ -294,7 +315,7 @@
 						
 					<div class="sidebar-section">
 						<h3>More Questions?</h3>
-						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button></a>
+						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gradient btn-sidebar"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button></a>
 					</div>
 
 
