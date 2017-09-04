@@ -1,0 +1,78 @@
+<div class="project-modal">
+        
+                    <div class="project-container-left col-xs-8">
+                        <div class="flex-left-top">
+                            <h3>Project Screenshots</h3>
+                        </div>
+                        <div class="project-media-container">
+                            <div class="project-media-carousel" bc-flickity="{{flickityOptions}}">
+                                <!-- <div class="carousel-media-cell"> -->
+                                        <!-- <video src="./images/videos/dayz-light-leaks.mp4" controls></video> -->
+                                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4SoHfT37MG8?rel=0" frameborder="0" allowfullscreen></iframe> -->
+                                <!-- </div> -->
+
+                                <div class="carousel-media-cell" ng-repeat="file in selectedProject.files track by $index">
+                                    <img ng-src="{{file}}">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>{{selectedProject.project_name}}</h2>
+                                <p>Date Published: {{selectedProject.project_date}}</p>
+                            </div>
+                            <p>{{selectedProject.project_desc}}</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="project-container-right col-xs-4">
+                        <div class="project-sidebar">
+        
+                            
+                            <div class="sidebar-section flex-top-left-column">
+                                <h3>Visit the Github Repo:</h3>
+                                <a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar">Download<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
+                            </div>
+                                
+                                
+                            <div class="sidebar-section flex-top-left-column">
+                                <h3>Technology Used:</h3>
+                                <div class="flex-left-top flex-wrap">
+                                    <div class="logos-container-sm" ng-repeat="skill in skills | filter: {skill_category: '!learning' }">
+                                        <img class="skills-logo-sm" ng-src="{{skill.skill_logo}}" alt="{{skill.skill_name}}">
+                                    </div>
+        
+                                </div>
+                                    
+                            </div>
+                                
+                                <hr>
+                            
+                                
+                            <div class="sidebar-section">
+                                <h3>More Questions?</h3>
+                                
+                                <a href="https://github.com/dbarrett24"><button class="btn-square btn-gradient btn-sidebar"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button></a>
+                                
+                                <div class="social-links mt5 ml5">
+                                    <div class="contact-info-box mb5">
+                                        <h6 class="flex align-middle"><i class="material-icons icon icon-black">email</i>EMAIL:</h6>
+                                        <span class="info">dbarrett24@gmail.com</span>
+                                    </div>
+                                    <div class="contact-info-box mb5">
+                                        <h6 class="flex align-middle"><i class="material-icons icon icon-black">phone</i>PHONE:</h6>
+                                        <span class="info">(303)-803-2553</span>
+                                    </div>
+                                    <a href="https://github.com/dbarrett24"><button class="social-link-sm github"><span class="fa fa-github "></span></button></a>
+                                    <!-- <a href="https://www.facebook.com/dbarrett24"><button class="social-link-sm facebook"><span class="fa fa-facebook"></span></button></a> -->
+                                    <a href="https://twitter.com/dbarrett24"><button class="social-link-sm twitter"><span class="fa fa-twitter"></span></button></a>
+                                    <!-- <a href="https://www.instagram.com/dave.the.dev/"><button class="social-link-sm instagram"><span class="fa fa-instagram "></span></button></a> -->
+                                    <a href="https://www.linkedin.com/in/dave-barrett/"><button class="social-link-sm linkedin"><span class="fa fa-linkedin"></span></button></a>
+                                    <!-- <a href="https://www.youtube.com/channel/UCnGNlra1OdJAn3IRaB_B7-g?view_as=subscriber/"><button class="social-link-sm youtube"><span class="fa fa-youtube "></span></button></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>

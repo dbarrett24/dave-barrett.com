@@ -24,16 +24,11 @@
 
             ],
             "files": [
-                {
-                    "video": "./video/basketbrawwl.mp4",
-                    "screenshots":[
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png"
-                        
-                    ]
-                }
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Basketbrawl.png",
+                "./images/screenshots/Basketbrawl-1.png",
+                "./images/screenshots/Basketbrawl-2.png",
+                "./images/screenshots/Basketbrawl3.png"   
             ]
         },
         {
@@ -57,16 +52,11 @@
 
             ],
             "files": [
-                {
-                    "video": "./video/basketbrawwl.mp4",
-                    "screenshots":[
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png"
-                        
-                    ]
-                }
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Evolve.png",
+                "./images/screenshots/Evolve2.png",
+                "./images/screenshots/Evolve3.png",
+                "./images/screenshots/Evolve4.png"   
             ]
         },
         {
@@ -93,15 +83,11 @@
 
             ],
             "files": [
-                {
-                    "video": "./video/basketbrawwl.mp4",
-                    "screenshots":[
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png"
-                    ]
-                }
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Evolve.png",
+                "./images/screenshots/Evolve2.png",
+                "./images/screenshots/Evolve3.png",
+                "./images/screenshots/Evolve4.png"   
             ]
         },
         {
@@ -128,15 +114,14 @@
 
             ],
             "files": [
-                {
-                    "video": "./video/basketbrawwl.mp4",
-                    "screenshots":[
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png",
-                        "./images/screenshots/basketbrawwl.png"
-                    ]
-                }
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/ScribbleFrames.png",
+                "./images/screenshots/scribble-frames1.png",
+                "./images/screenshots/scribble-frames2.png",
+                "./images/screenshots/scribble-frames3.png",
+                "./images/screenshots/scribble-frames4.png",
+                "./images/screenshots/scribble-frames5.png"
+      
             ]
         }
       

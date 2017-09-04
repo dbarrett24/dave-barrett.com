@@ -11,17 +11,20 @@
 .overlay-huge{
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
+    transform: translate(0, -25%);
+    transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
 }
 .overlay-huge.open{
     opacity: 0.75;
     visibility: visible;
-    transition: opacity 0.5s;
+    transform: translate(0, 0);
+    transition: opacity 0.5s, transform 0.5s;
 }
 .project-modal.open{
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s;
+    transform: translate(0, 0);
+    transition: opacity 0.5s, transform 0.5s;
 }
 .project-modal{
     padding: 20px;
@@ -35,16 +38,17 @@
     left: 0;
     right: 0;
     width: 70%;
-    height: 80%;
+    height: 864px;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
     border-radius: $border-radius-card;
     box-shadow: $card-shadow;
     z-index: 1501;
     display: flex;
-
+    
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
+    transform: translate(0, -25%);
+    transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
 }
 
 .project-container-left{

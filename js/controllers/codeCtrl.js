@@ -30,6 +30,7 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     });
 
 
+
     //FILTER SKILLS
     
     $scope.skillFilter = function(category){
@@ -45,6 +46,29 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         $scope.skillFilter(category);
     }
     
+
+    //PROJECTS
+    $scope.findProjectInfo = function(projectName){
+        $scope.projects.filter(function(project){
+            if(project.project_name === projectName){
+                $scope.selectedProject = project;
+                console.log($scope.selectedProject.files[0]);
+            }
+        })
+
+        // if(projectName === 'Basketbrawwl'){
+        //     $scope.selectedProject = $scope.projects[0];
+        // }
+    }
+
+
+
+
+
+
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////
 //JQUERY THINGS
@@ -66,20 +90,20 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 
 
     $(document).ready(function () {
-        //TRIGGER OVERLAY
-        $('.trigger-overlay').on('click', function(){
-            $('.overlay').addClass('open');
-            $('.project-modal').addClass('open');
-            $('.blur-bg').addClass('open');
-            $(".overlay-huge").hasClass("open", function () {
-                $("body").addClass("no-scroll");
-            });
-        })
-        $('.overlay').on('click', function(){
-            $(this).removeClass('open');
-            $('.project-modal').removeClass('open');
-            $('.blur-bg').removeClass('open');
-        })
+        // //TRIGGER OVERLAY
+        // $('.trigger-overlay').on('click', function(){
+        //     $('.overlay').addClass('open');
+        //     $('.project-modal').addClass('open');
+        //     $('.blur-bg').addClass('open');
+        //     $(".overlay-huge").hasClass("open", function () {
+        //         $("body").addClass("no-scroll");
+        //     });
+        // })
+        // $('.overlay').on('click', function(){
+        //     $(this).removeClass('open');
+        //     $('.project-modal').removeClass('open');
+        //     $('.blur-bg').removeClass('open');
+        // })
         
 
 
@@ -113,19 +137,12 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             // groupCells: 3,
             adaptiveHeight: false,
             imagesLoaded: true,
-            autoPlay: false,
-            contain: true
-        });
-        $('.project-media-carousel').flickity({
-            // options
-            cellAlign: 'left',
-            pageDots: true,
-            // groupCells: 3,
-            adaptiveHeight: true,
-            imagesLoaded: false,
             autoPlay: true,
             contain: true
         });
+
+   
+       
 
         $('.project-card').hover(
             function () {

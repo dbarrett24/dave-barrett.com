@@ -136,9 +136,9 @@
 				<h2>Projects</h2>
 				<h5>Look at the awesome stuff I've coded...</h5>
 			</div>
-			<div class="projects-carousel" >
+			<div class="projects-carousel">
 				
-				<div class="card-wrapper bg-splash-1 carousel-cell">
+				<div class="card-wrapper bg-splash-1 carousel-cell trigger-overlay" ng-click="findProjectInfo('Basketbrawwl')">
 					<div class="project-card">
 						<div class="project-thumbnail">
 							<div class="card-info-wrapper">
@@ -151,7 +151,7 @@
 					</div>
 				</div>
 				
-				<div class="card-wrapper bg-splash-2 carousel-cell">
+				<div class="card-wrapper bg-splash-2 carousel-cell trigger-overlay" ng-click="findProjectInfo('Evolve')">
 					<div class="project-card">
 						<div class="project-thumbnail">
 							<div class="card-info-wrapper">
@@ -164,7 +164,7 @@
 					</div>
 				</div>
 				
-				<div class="card-wrapper bg-splash-3 carousel-cell">
+				<div class="card-wrapper bg-splash-3 carousel-cell trigger-overlay" ng-click="findProjectInfo('Scribble-Frames')">
 					<div class="project-card">
 						<div class="project-thumbnail">
 							<div class="card-info-wrapper">
@@ -176,7 +176,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card-wrapper bg-splash-4 carousel-cell">
+				<div class="card-wrapper bg-splash-4 carousel-cell trigger-overlay" ng-click="findProjectInfo('Canva')">
 					<div class="project-card">
 						<div class="project-thumbnail">
 							<div class="card-info-wrapper">
@@ -257,72 +257,4 @@
 
 
 	<div class="overlay overlay-huge flex-center-center"></div>
-	<div class="project-modal">
-
-			<div class="project-container-left col-xs-8">
-				<div class="flex-left-top">
-					<h3>Project Screenshots</h3>
-				</div>
-				<div class="project-media-container">
-					<div class="project-media-carousel">
-						<div class="carousel-media-cell">
-							<video src="./images/videos/dayz-light-leaks.mp4" controls></video>
-							<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4SoHfT37MG8?rel=0" frameborder="0" allowfullscreen></iframe> -->
-
-						</div>
-						<div class="carousel-media-cell">
-							<img src="./images/screenshots/Evolve.png"></img>
-						</div>
-						<div class="carousel-media-cell">
-							<img src="./images/screenshots/Evolve2.png"></img>
-						</div>
-						
-					</div>
-				</div>
-				<div>
-					<div>
-						<h2>Basketbrawwl</h2>
-						<p>Date Published: 12/26/1988</p>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque et id illum dicta, commodi cupiditate? Explicabo fugiat sint nisi hic repellat eaque temporibus dolores officiis harum culpa! Veritatis, culpa, nihil.</p>
-				</div>
-			</div>
-			
-			
-			<div class="project-container-right col-xs-4">
-				<div class="project-sidebar">
-
-					
-					<div class="sidebar-section flex-top-left-column">
-						<h3>Visit the Github Repo:</h3>
-						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar">Download<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
-					</div>
-						
-						
-					<div class="sidebar-section flex-top-left-column">
-						<h3>Technology Used:</h3>
-						<div class="flex-left-top flex-wrap">
-							<div class="logos-container-sm" ng-repeat="skill in skills | filter: {skill_category: '!learning' }">
-								<img class="skills-logo-sm" ng-src="{{skill.skill_logo}}" alt="{{skill.skill_name}}">
-							</div>
-
-						</div>
-							
-					</div>
-						
-						<hr>
-					
-						
-					<div class="sidebar-section">
-						<h3>More Questions?</h3>
-						<a href="https://github.com/dbarrett24"><button class="btn-square btn-gradient btn-sidebar"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button></a>
-					</div>
-
-
-				</div>
-
-			</div>
-			
-		
-		
-	</div>
+	<project-modal-dir></project-modal-dir>

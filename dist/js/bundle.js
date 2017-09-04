@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ui.router', 'ngAnimate']).config(function ($stateProvider, $urlRouterProvider) {
+angular.module('app', ['ui.router', 'ngAnimate', 'bc.Flickity']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('code', {
         url: '/',
         templateUrl: '../views/code.html',
@@ -56,6 +56,20 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         $scope.skillFilter(category);
     };
 
+    //PROJECTS
+    $scope.findProjectInfo = function (projectName) {
+        $scope.projects.filter(function (project) {
+            if (project.project_name === projectName) {
+                $scope.selectedProject = project;
+                console.log($scope.selectedProject.files[0]);
+            }
+        });
+
+        // if(projectName === 'Basketbrawwl'){
+        //     $scope.selectedProject = $scope.projects[0];
+        // }
+    };
+
     //////////////////////////////////////////////////////////////////////////////
     //JQUERY THINGS
     //////////////////////////////////////////////////////////////////////////////
@@ -75,20 +89,21 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 
 
     $(document).ready(function () {
-        //TRIGGER OVERLAY
-        $('.trigger-overlay').on('click', function () {
-            $('.overlay').addClass('open');
-            $('.project-modal').addClass('open');
-            $('.blur-bg').addClass('open');
-            $(".overlay-huge").hasClass("open", function () {
-                $("body").addClass("no-scroll");
-            });
-        });
-        $('.overlay').on('click', function () {
-            $(this).removeClass('open');
-            $('.project-modal').removeClass('open');
-            $('.blur-bg').removeClass('open');
-        });
+        // //TRIGGER OVERLAY
+        // $('.trigger-overlay').on('click', function(){
+        //     $('.overlay').addClass('open');
+        //     $('.project-modal').addClass('open');
+        //     $('.blur-bg').addClass('open');
+        //     $(".overlay-huge").hasClass("open", function () {
+        //         $("body").addClass("no-scroll");
+        //     });
+        // })
+        // $('.overlay').on('click', function(){
+        //     $(this).removeClass('open');
+        //     $('.project-modal').removeClass('open');
+        //     $('.blur-bg').removeClass('open');
+        // })
+
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
@@ -121,16 +136,6 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             // groupCells: 3,
             adaptiveHeight: false,
             imagesLoaded: true,
-            autoPlay: false,
-            contain: true
-        });
-        $('.project-media-carousel').flickity({
-            // options
-            cellAlign: 'left',
-            pageDots: true,
-            // groupCells: 3,
-            adaptiveHeight: true,
-            imagesLoaded: false,
             autoPlay: true,
             contain: true
         });
@@ -946,6 +951,55 @@ angular.module('app').directive('navDir', function () {
                     }
                 });
             });
+        }
+    };
+});
+'use strict';
+
+angular.module('app').directive('projectModalDir', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './views/directives/projectModal.html',
+        link: function link(scope, elem, attrs) {
+            //TRIGGER OVERLAY
+            $('.trigger-overlay').on('click', function () {
+                $('.overlay').addClass('open');
+                $('.project-modal').addClass('open');
+                $('.blur-bg').addClass('open');
+                $(".overlay-huge").hasClass("open", function () {
+                    $("body").addClass("no-scroll");
+                });
+            });
+            $('.overlay').on('click', function () {
+                $(this).removeClass('open');
+                $('.project-modal').removeClass('open');
+                $('.blur-bg').removeClass('open');
+            });
+
+            // $('.project-media-carousel').flickity({
+            //     // options
+            //     cellAlign: 'left',
+            //     pageDots: true,
+            //     // groupCells: 3,
+            //     adaptiveHeight: true,
+            //     imagesLoaded: true,
+            //     autoPlay: true,
+            //     contain: true
+            // });
+
+        },
+        controller: function controller($scope) {
+
+            $scope.flickityOptions = {
+                cellSelector: '.carousel-media-cell',
+                cellAlign: 'left',
+                pageDots: true,
+                // groupCells: 3,
+                adaptiveHeight: true,
+                imagesLoaded: true,
+                autoPlay: true,
+                contain: true
+            };
         }
     };
 });
