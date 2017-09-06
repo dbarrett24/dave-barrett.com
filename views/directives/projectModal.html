@@ -5,14 +5,23 @@
                             <h3>Project Screenshots</h3>
                         </div>
                         <div class="project-media-container">
-                            <div class="project-media-carousel" bc-flickity="{{flickityOptions}}">
-                                <!-- <div class="carousel-media-cell"> -->
-                                        <!-- <video src="./images/videos/dayz-light-leaks.mp4" controls></video> -->
+                            <div class="project-media-carousel">
+                                <div class="carousel-media-cell">
+                                        <video src="{{selectedProject.files[0]}}" controls></video>
                                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4SoHfT37MG8?rel=0" frameborder="0" allowfullscreen></iframe> -->
-                                <!-- </div> -->
+                                </div>
 
-                                <div class="carousel-media-cell" ng-repeat="file in selectedProject.files track by $index">
-                                    <img ng-src="{{file}}">
+                                <div class="carousel-media-cell">
+                                    <img ng-src="{{selectedProject.files[1]}}">
+                                </div>
+                                <div class="carousel-media-cell">
+                                    <img ng-src="{{selectedProject.files[2]}}">
+                                </div>
+                                <div class="carousel-media-cell">
+                                    <img ng-src="{{selectedProject.files[3]}}">
+                                </div>
+                                <div class="carousel-media-cell">
+                                    <img ng-src="{{selectedProject.files[4]}}">
                                 </div>
                                 
                             </div>
@@ -29,12 +38,16 @@
                     
                     <div class="project-container-right col-xs-4">
                         <div class="project-sidebar">
-        
+                            
                             
                             <div class="sidebar-section flex-top-left-column">
                                 <h3>Visit the Github Repo:</h3>
-                                <a href="https://github.com/dbarrett24"><button class="btn-square btn-gray btn-sidebar">Download<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
+                                <a ng-href="{{selectedProject.project_github}}"><button class="btn-square btn-gray btn-sidebar">Github<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
+                                <div class="mt15">
+                                    <a ng-href="{{selectedProject.project_github}}"><button class="btn-square btn-teal btn-sidebar">View Demo</button></a>
+                                </div>
                             </div>
+                         
                                 
                                 
                             <div class="sidebar-section flex-top-left-column">
@@ -49,7 +62,7 @@
                             </div>
                                 
                                 <hr>
-                            
+                      
                                 
                             <div class="sidebar-section">
                                 <h3>More Questions?</h3>

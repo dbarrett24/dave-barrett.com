@@ -149,23 +149,38 @@ hr{
         // background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
         background: black;
         background-size: cover;
-    }
-    .card-info-wrapper{
-        overflow: hidden;
-        z-index: 1;
-        height: 100%;
-        position: relative;
-        .card-info{
-            padding: 0 10px;
+        
+        .thumbnail-img{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+        .thumbnail-img-2{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            opacity: 0;
+            transition: all 1.5s ease;
+        }
+        .card-info-wrapper{
+            overflow: hidden;
+            z-index: 1;
+            height: 100%;
             position: relative;
-            top: 76.5%;
-            text-align: center;
-            h4{
-                color: $brand-black;
-            }
-            p{
-                color: $brand-black;
-                
+            .card-info{
+                padding: 0 10px;
+                position: relative;
+                top: 76.5%;
+                text-align: center;
+                h4{
+                    color: $brand-black;
+                }
+                p{
+                    color: $brand-black;
+                    
+                }
             }
         }
     }
@@ -250,6 +265,33 @@ hr{
 .bg-splash-4:hover .project-card{
     transform: scale(1.05,1.05);
     transition: all 1s;
+    
+}
+.bg-splash-1:hover .thumbnail-img-2{
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 10s;
+    transition-delay: 1.5s;
+    
+}
+.bg-splash-2:hover .thumbnail-img-2{
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 10s;
+    transition-delay: 1.5s;
+    
+}
+.bg-splash-3:hover .thumbnail-img-2{
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 10s;
+    transition-delay: 1.5s;
+}
+.bg-splash-4:hover .thumbnail-img-2{
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 10s;
+    transition-delay: 1.5s;
     
 }
 

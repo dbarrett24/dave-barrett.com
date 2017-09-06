@@ -2340,20 +2340,32 @@ hr {
     height: 100%;
     background: black;
     background-size: cover; }
-  .project-card .card-info-wrapper {
-    overflow: hidden;
-    z-index: 1;
-    height: 100%;
-    position: relative; }
-    .project-card .card-info-wrapper .card-info {
-      padding: 0 10px;
-      position: relative;
-      top: 76.5%;
-      text-align: center; }
-      .project-card .card-info-wrapper .card-info h4 {
-        color: #000; }
-      .project-card .card-info-wrapper .card-info p {
-        color: #000; }
+    .project-card .project-thumbnail .thumbnail-img {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      height: 100%; }
+    .project-card .project-thumbnail .thumbnail-img-2 {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      opacity: 0;
+      transition: all 1.5s ease; }
+    .project-card .project-thumbnail .card-info-wrapper {
+      overflow: hidden;
+      z-index: 1;
+      height: 100%;
+      position: relative; }
+      .project-card .project-thumbnail .card-info-wrapper .card-info {
+        padding: 0 10px;
+        position: relative;
+        top: 76.5%;
+        text-align: center; }
+        .project-card .project-thumbnail .card-info-wrapper .card-info h4 {
+          color: #000; }
+        .project-card .project-thumbnail .card-info-wrapper .card-info p {
+          color: #000; }
   .project-card .card-info-wrapper::before {
     content: '';
     width: 100%;
@@ -2425,6 +2437,30 @@ hr {
 .bg-splash-4:hover .project-card {
   transform: scale(1.05, 1.05);
   transition: all 1s; }
+
+.bg-splash-1:hover .thumbnail-img-2 {
+  transform: translateX(-300px);
+  opacity: 1;
+  transition: all 10s;
+  transition-delay: 1.5s; }
+
+.bg-splash-2:hover .thumbnail-img-2 {
+  transform: translateX(-300px);
+  opacity: 1;
+  transition: all 10s;
+  transition-delay: 1.5s; }
+
+.bg-splash-3:hover .thumbnail-img-2 {
+  transform: translateX(-300px);
+  opacity: 1;
+  transition: all 10s;
+  transition-delay: 1.5s; }
+
+.bg-splash-4:hover .thumbnail-img-2 {
+  transform: translateX(-300px);
+  opacity: 1;
+  transition: all 10s;
+  transition-delay: 1.5s; }
 
 .social-links {
   display: flex;
@@ -3344,7 +3380,7 @@ a:hover {
     padding: 45px 20px 0 20px; }
     .project-container-right .project-sidebar .sidebar-section {
       width: 100%;
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
 
 .blur-bg {
   opacity: 0;

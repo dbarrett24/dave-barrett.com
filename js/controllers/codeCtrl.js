@@ -53,6 +53,16 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             if(project.project_name === projectName){
                 $scope.selectedProject = project;
                 console.log($scope.selectedProject.files[0]);
+                
+                $scope.selectedProject.tech_used.foreach(function(tech){
+                    if($scope.skill.skill_name === tech){
+                        console.log(skill, tech)
+                        $scope.selectedProjSkills.push(skill);
+                        console.log($scope.selectedProjSkills);
+                        
+                    }
+                    
+                });
             }
         })
 
@@ -61,7 +71,14 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         // }
     }
 
+    $scope.findTechUsed = function(){
+        $scope.skills.filter(function(skill){
 
+
+            $scope.selectedProjSkills = [];
+            return skill.skill_name === tech_used
+        })
+    }
 
 
 
@@ -106,7 +123,6 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         // })
         
 
-
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
         // console.log(scrollPos);
@@ -132,6 +148,7 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         //Projects CAROUSEL
         $('.projects-carousel').flickity({
             // options
+            cellSelector: '.carousel-cell',
             cellAlign: 'left',
             pageDots: true,
             // groupCells: 3,
@@ -141,7 +158,8 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             contain: true
         });
 
-   
+       
+
        
 
         $('.project-card').hover(

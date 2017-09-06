@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ui.router', 'ngAnimate', 'bc.Flickity']).config(function ($stateProvider, $urlRouterProvider) {
+angular.module('app', ['ui.router', 'ngAnimate']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('code', {
         url: '/',
         templateUrl: '../views/code.html',
@@ -62,12 +62,28 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
             if (project.project_name === projectName) {
                 $scope.selectedProject = project;
                 console.log($scope.selectedProject.files[0]);
+
+                $scope.selectedProject.tech_used.foreach(function (tech) {
+                    if ($scope.skill.skill_name === tech) {
+                        console.log(skill, tech);
+                        $scope.selectedProjSkills.push(skill);
+                        console.log($scope.selectedProjSkills);
+                    }
+                });
             }
         });
 
         // if(projectName === 'Basketbrawwl'){
         //     $scope.selectedProject = $scope.projects[0];
         // }
+    };
+
+    $scope.findTechUsed = function () {
+        $scope.skills.filter(function (skill) {
+
+            $scope.selectedProjSkills = [];
+            return skill.skill_name === tech_used;
+        });
     };
 
     //////////////////////////////////////////////////////////////////////////////
@@ -131,6 +147,7 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         //Projects CAROUSEL
         $('.projects-carousel').flickity({
             // options
+            cellSelector: '.carousel-cell',
             cellAlign: 'left',
             pageDots: true,
             // groupCells: 3,
@@ -162,6 +179,49 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
     $scope.test = mainService.test;
     // *****************************
 
+});
+'use strict';
+
+angular.module('app').service('mainService', function ($http) {
+    // *****************************
+    this.test = "Controller & Service are working";
+    // *****************************
+    this.getSkills = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/skills.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getExperience = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/experience.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getQuotes = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/quotes.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getProjects = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/projects.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
 });
 "use strict";
 
@@ -859,49 +919,6 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
 //# sourceMappingURL=angular-animate.min.js.map
 'use strict';
 
-angular.module('app').service('mainService', function ($http) {
-    // *****************************
-    this.test = "Controller & Service are working";
-    // *****************************
-    this.getSkills = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/skills.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getExperience = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/experience.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getQuotes = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/quotes.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getProjects = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/projects.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-});
-'use strict';
-
 angular.module('app').directive('navDir', function () {
     return {
         restrict: 'AE',
@@ -976,31 +993,19 @@ angular.module('app').directive('projectModalDir', function () {
                 $('.blur-bg').removeClass('open');
             });
 
-            // $('.project-media-carousel').flickity({
-            //     // options
-            //     cellAlign: 'left',
-            //     pageDots: true,
-            //     // groupCells: 3,
-            //     adaptiveHeight: true,
-            //     imagesLoaded: true,
-            //     autoPlay: true,
-            //     contain: true
-            // });
-
-        },
-        controller: function controller($scope) {
-
-            $scope.flickityOptions = {
+            $('.project-media-carousel').flickity({
+                // options
                 cellSelector: '.carousel-media-cell',
                 cellAlign: 'left',
                 pageDots: true,
                 // groupCells: 3,
-                adaptiveHeight: true,
                 imagesLoaded: true,
                 autoPlay: true,
-                contain: true
-            };
+                contain: true,
+                wrapAround: true
+            });
         }
+
     };
 });
 //# sourceMappingURL=bundle.js.map

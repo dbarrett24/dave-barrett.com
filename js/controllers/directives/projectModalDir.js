@@ -18,33 +18,20 @@ angular.module('app').directive('projectModalDir', function(){
                 $('.blur-bg').removeClass('open');
             })
 
-            // $('.project-media-carousel').flickity({
-            //     // options
-            //     cellAlign: 'left',
-            //     pageDots: true,
-            //     // groupCells: 3,
-            //     adaptiveHeight: true,
-            //     imagesLoaded: true,
-            //     autoPlay: true,
-            //     contain: true
-            // });
-
-            
-            
-        },
-        controller: function($scope){
-            
-            $scope.flickityOptions={
+            $('.project-media-carousel').flickity({
+                // options
                 cellSelector: '.carousel-media-cell',
                 cellAlign: 'left',
                 pageDots: true,
                 // groupCells: 3,
-                adaptiveHeight: true,
                 imagesLoaded: true,
                 autoPlay: true,
-                contain: true
-            }
-
-        }
+                contain: true,
+                wrapAround: true
+            });
+            
+            
+        },
+   
     }
 })
