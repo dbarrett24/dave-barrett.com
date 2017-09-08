@@ -33,21 +33,32 @@ gulp.task('build-js', function() {
       .pipe(babel({ presets: ['es2015'] }))
       .pipe(concat('bundle.js'))
       //.pipe(uglify())
-      .pipe(sourcemaps.write('./')) 
-      .pipe(gulp.dest('./dist/js')); 
-});
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('./dist/js'));
+    });
+    
+    //npm install --save gulp-babel gulp-print babel-preset-es2015
+gulp.task('build-views', function(){
+    return gulp.src('views/**/*.html')
+        .pipe(gulp.dest('./dist/views'));
+})
+gulp.task('build-images', function(){
+    return gulp.src('images/**/*')
+        .pipe(gulp.dest('./dist/images'));
+})
+gulp.task('build-JSON', function(){
+    return gulp.src('JSON/*.json')
+        .pipe(gulp.dest('./dist/json'));
+})
 
-//npm install --save gulp-babel gulp-print babel-preset-es2015
-
-
-gulp.task('build', ['build-css', 'build-js'], function() {
+gulp.task('build', ['build-css', 'build-js', 'build-views', 'build-images', 'build-JSON'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(['./index.html','./partials/*.html', './styles/*.*css', './js/**/*.js'], ['build']);
+    return gulp.watch(['./index.html','./views/**/*.html', './styles/*.*css', './js/**/*.js', './images/**/*', './JSON/*.json'], ['build']);
 });
 
 gulp.task('start', ['build', 'watch']);

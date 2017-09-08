@@ -3,7 +3,7 @@
 angular.module('app', ['ui.router', 'ngAnimate']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('code', {
         url: '/',
-        templateUrl: '../views/code.html',
+        templateUrl: '../../views/code.html',
         controller: 'codeCtrl'
     });
 
@@ -179,6 +179,49 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
     $scope.test = mainService.test;
     // *****************************
 
+});
+'use strict';
+
+angular.module('app').service('mainService', function ($http) {
+    // *****************************
+    this.test = "Controller & Service are working";
+    // *****************************
+    this.getSkills = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/skills.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getExperience = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/experience.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getQuotes = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/quotes.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getProjects = function () {
+        return $http({
+            method: 'GET',
+            url: "../JSON/projects.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
 });
 "use strict";
 
@@ -876,53 +919,10 @@ angular.module('app').controller('mainCtrl', function ($scope, mainService) {
 //# sourceMappingURL=angular-animate.min.js.map
 'use strict';
 
-angular.module('app').service('mainService', function ($http) {
-    // *****************************
-    this.test = "Controller & Service are working";
-    // *****************************
-    this.getSkills = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/skills.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getExperience = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/experience.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getQuotes = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/quotes.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getProjects = function () {
-        return $http({
-            method: 'GET',
-            url: "../JSON/projects.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-});
-'use strict';
-
 angular.module('app').directive('navDir', function () {
     return {
         restrict: 'AE',
-        templateUrl: './views/directives/navDir.html',
+        templateUrl: '../../views/directives/navDir.html',
         link: function link(scope, elem, attrs) {
 
             //Smooth Scrolling

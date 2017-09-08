@@ -271,8 +271,8 @@ hr{
     transition-delay: 1.5s;
 }
 .carousel-cell:hover .thumbnail-img{
-    transition: all 0.5s;
     filter: grayscale(0%);
+    transition: all 0.5s;
 }
 .carousel-cell:hover .thumbnail-overlay{
     opacity: 0;
