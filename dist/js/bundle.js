@@ -3,7 +3,7 @@
 angular.module('app', ['ui.router', 'ngAnimate']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('code', {
         url: '/',
-        templateUrl: '../views/code.html',
+        templateUrl: '../../views/code.html',
         controller: 'codeCtrl'
     });
 
@@ -922,7 +922,7 @@ angular.module('app').service('mainService', function ($http) {
 angular.module('app').directive('navDir', function () {
     return {
         restrict: 'AE',
-        templateUrl: './views/directives/navDir.html',
+        templateUrl: '../../views/directives/navDir.html',
         link: function link(scope, elem, attrs) {
 
             //Smooth Scrolling

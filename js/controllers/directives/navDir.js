@@ -1,7 +1,7 @@
 angular.module('app').directive('navDir', function(){
     return{
         restrict: 'AE',
-        templateUrl: './views/directives/navDir.html',
+        templateUrl: '../../views/directives/navDir.html',
         link: function(scope, elem, attrs){
 
 

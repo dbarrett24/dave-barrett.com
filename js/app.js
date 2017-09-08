@@ -3,7 +3,7 @@ angular.module('app', ['ui.router', 'ngAnimate'])
         $stateProvider
             .state('code', {
                 url: '/',
-                templateUrl: '../views/code.html',
+                templateUrl: '../../views/code.html',
                 controller: 'codeCtrl'
             })
 
