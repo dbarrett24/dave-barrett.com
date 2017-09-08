@@ -883,7 +883,7 @@ angular.module('app').service('mainService', function ($http) {
     this.getSkills = function () {
         return $http({
             method: 'GET',
-            url: "../JSON/skills.json"
+            url: "../json/skills.json"
         }).then(function (response) {
             // console.log(response.data)
             return response.data;
@@ -892,7 +892,7 @@ angular.module('app').service('mainService', function ($http) {
     this.getExperience = function () {
         return $http({
             method: 'GET',
-            url: "../JSON/experience.json"
+            url: "../json/experience.json"
         }).then(function (response) {
             // console.log(response.data)
             return response.data;
@@ -901,7 +901,7 @@ angular.module('app').service('mainService', function ($http) {
     this.getQuotes = function () {
         return $http({
             method: 'GET',
-            url: "../JSON/quotes.json"
+            url: "../json/quotes.json"
         }).then(function (response) {
             // console.log(response.data)
             return response.data;
@@ -910,7 +910,7 @@ angular.module('app').service('mainService', function ($http) {
     this.getProjects = function () {
         return $http({
             method: 'GET',
-            url: "../JSON/projects.json"
+            url: "../json/projects.json"
         }).then(function (response) {
             // console.log(response.data)
             return response.data;
