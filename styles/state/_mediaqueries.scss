@@ -34,13 +34,19 @@
         height: 75%;
         @include flex-center-top;
     }
+    .filter-menu{
+        margin: 2px;
+    }
+    .section-content-wrapper{
+        overflow: hidden;
+    }
     .job-logo{
         display: none;
     }
     .job-desc{
         margin-left: 0;
     }
-
+    
     .section-text{
         padding: 0px 25px;
     }
@@ -101,6 +107,12 @@
         .carousel-cell {
             width: 49%;
             
+        }
+        .filter-menu{
+            margin: 15px;
+        }
+        .section-content-wrapper{
+            overflow: visible;
         }
     }
     
