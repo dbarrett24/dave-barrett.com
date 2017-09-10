@@ -38,14 +38,14 @@
         overflow: hidden;
     }
     /////////////SKILLS///////////////////
+    .section-content-wrapper hr{
+        display: none;
+    }
     .fixedH-900{
         height: auto;
     }
-    .filter-menu{
-        margin: 2px;
-    }
     .btn-round-sm{
-        margin: 0;
+        margin: 5px;
     }
     .logos-container{
         margin: 4px;
@@ -130,9 +130,6 @@
         .fixedH-900{
             height: 1050px;
         }
-        .filter-menu{
-            margin: 15px;
-        }
         .btn-round-sm{
             margin: 15px;
         }
@@ -194,6 +191,9 @@
             }
             .fixedH-900{
                 height: 900px;
+            }
+            .section-content-wrapper hr{
+                display: visible;
             }
 
 }

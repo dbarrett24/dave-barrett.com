@@ -3489,12 +3489,12 @@ a:hover {
     justify-content: center; }
   .section-content-wrapper {
     overflow: hidden; }
+  .section-content-wrapper hr {
+    display: none; }
   .fixedH-900 {
     height: auto; }
-  .filter-menu {
-    margin: 2px; }
   .btn-round-sm {
-    margin: 0; }
+    margin: 5px; }
   .logos-container {
     margin: 4px; }
   .skill-name {
@@ -3543,8 +3543,6 @@ a:hover {
     width: 49%; }
   .fixedH-900 {
     height: 1050px; }
-  .filter-menu {
-    margin: 15px; }
   .btn-round-sm {
     margin: 15px; }
   .logos-container {
@@ -3579,7 +3577,9 @@ a:hover {
   .currently-learning {
     display: flex; }
   .fixedH-900 {
-    height: 900px; } }
+    height: 900px; }
+  .section-content-wrapper hr {
+    display: visible; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
