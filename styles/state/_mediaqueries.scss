@@ -34,12 +34,30 @@
         height: 75%;
         @include flex-center-top;
     }
-    .filter-menu{
-        margin: 2px;
-    }
     .section-content-wrapper{
         overflow: hidden;
     }
+    /////////////SKILLS///////////////////
+    .fixedH-900{
+        height: auto;
+    }
+    .filter-menu{
+        margin: 2px;
+    }
+    .btn-round-sm{
+        margin: 0;
+    }
+    .logos-container{
+        margin: 4px;
+    }
+    .skill-name{
+        position: absolute;
+        display: none;
+    }
+    .currently-learning{
+        display: none;
+    }
+    /////////////EXPERIENCE///////////////////
     .job-logo{
         display: none;
     }
@@ -108,9 +126,24 @@
             width: 49%;
             
         }
+        /////////SKILLS/////////////
+        .fixedH-900{
+            height: 1050px;
+        }
         .filter-menu{
             margin: 15px;
         }
+        .btn-round-sm{
+            margin: 15px;
+        }
+        .logos-container{
+            margin: 12px;
+        }
+        .skill-name{
+            position: relative;
+            display: flex;
+        }
+        
         .section-content-wrapper{
             overflow: visible;
         }
@@ -128,34 +161,40 @@
             .nav-logo-left {
                 display: none;
             }
-    
+            
             
             .nav-list{
-        display: flex;
-    }
-    .nav-links {
-        display: block;
-    }
-    
-    .hero-container{
-        height: 100%;
-    }
-    
-    .section-text{
-        padding: 0px 200px;
-    }
-    .section-content{
-        padding: 0px 100px;
-    }
-    .quote::before{
-        font-size: 72px;
-        left: -70px;
-
-    }
-    .quote::after{
-        font-size: 72px;
-        right: -55px;
-    }
+                display: flex;
+            }
+            .nav-links {
+                display: block;
+            }
+            
+            .hero-container{
+                height: 100%;
+            }
+            
+            .section-text{
+                padding: 0px 200px;
+            }
+            .section-content{
+                padding: 0px 100px;
+            }
+            .quote::before{
+                font-size: 72px;
+                left: -70px;
+                
+            }
+            .quote::after{
+                font-size: 72px;
+                right: -55px;
+            }
+            .currently-learning{
+                display: flex;
+            }
+            .fixedH-900{
+                height: 900px;
+            }
 
 }
 @media (min-width: 1100px){

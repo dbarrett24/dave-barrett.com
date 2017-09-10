@@ -3487,10 +3487,21 @@ a:hover {
     height: 75%;
     display: flex;
     justify-content: center; }
-  .filter-menu {
-    margin: 2px; }
   .section-content-wrapper {
     overflow: hidden; }
+  .fixedH-900 {
+    height: auto; }
+  .filter-menu {
+    margin: 2px; }
+  .btn-round-sm {
+    margin: 0; }
+  .logos-container {
+    margin: 4px; }
+  .skill-name {
+    position: absolute;
+    display: none; }
+  .currently-learning {
+    display: none; }
   .job-logo {
     display: none; }
   .job-desc {
@@ -3530,8 +3541,17 @@ a:hover {
     padding: 0px 50px; }
   .carousel-cell {
     width: 49%; }
+  .fixedH-900 {
+    height: 1050px; }
   .filter-menu {
     margin: 15px; }
+  .btn-round-sm {
+    margin: 15px; }
+  .logos-container {
+    margin: 12px; }
+  .skill-name {
+    position: relative;
+    display: flex; }
   .section-content-wrapper {
     overflow: visible; } }
 
@@ -3555,7 +3575,11 @@ a:hover {
     left: -70px; }
   .quote::after {
     font-size: 72px;
-    right: -55px; } }
+    right: -55px; }
+  .currently-learning {
+    display: flex; }
+  .fixedH-900 {
+    height: 900px; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
