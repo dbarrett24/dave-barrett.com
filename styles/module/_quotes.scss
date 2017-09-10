@@ -9,7 +9,7 @@
 }
 
 .quote::before{
-    font-size: 72px !important;
+    font-size: 72px;
     transform: rotate(180deg);
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
     opacity: .2;
 }
 .quote::after{
-    font-size: 72px !important;
+    font-size: 72px;
     // transform: rotate(180deg);
     position: absolute;
     top: 0;

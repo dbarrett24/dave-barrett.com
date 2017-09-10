@@ -57,75 +57,92 @@
     .job-mini-logo{
         display: block;
     }
+    .quote::before{
+        font-size: 50px;
+        left: -42px;
+    }
+    .quote::after{
+        font-size: 50px;
+        right: -32px;
+    }
 }
 
 @media (min-width: 640px) {
     // .nav{
-    //     bottom: 0;
-    //     top: auto;
-    //     // position: absolute;
-    // }
-   
-    .nav-logo-left {
-        display: block;
-    }
-    .nav-center{
-        margin-right: 0;
-    }
-    .nav-logo-mid{
-        display: none;
-        height: 60px;
-    }
-   
-    .nav-download{
-        display: flex;
-    }
-    .hero-container{
-        height: 85%;
-    }
-
-    .section-text{
-        padding: 0px 75px;
-    }
-    .section-content{
-        padding: 0px 50px;
-    }
-    .carousel-cell {
-        width: 49%;
-    
-    }
-}
-
-@media (min-width: 1000px){
-    // .nav{
-    //     bottom: 0;
-    //     top: auto;
-    //     position: absolute;
-    // }
-    .nav-logo {
-        display: block;
-    }
-    .nav-logo-left {
-        display: none;
+        //     bottom: 0;
+        //     top: auto;
+        //     // position: absolute;
+        // }
+        
+        .nav-logo-left {
+            display: block;
+        }
+        .nav-center{
+            margin-right: 0;
+        }
+        .nav-logo-mid{
+            display: none;
+            height: 60px;
+        }
+        
+        .nav-download{
+            display: flex;
+        }
+        .hero-container{
+            height: 85%;
+        }
+        
+        .section-text{
+            padding: 0px 75px;
+        }
+        .section-content{
+            padding: 0px 50px;
+        }
+        .carousel-cell {
+            width: 49%;
+            
+        }
     }
     
-   
-    .nav-list{
+    @media (min-width: 1000px){
+        // .nav{
+            //     bottom: 0;
+            //     top: auto;
+            //     position: absolute;
+            // }
+            .nav-logo {
+                display: block;
+            }
+            .nav-logo-left {
+                display: none;
+            }
+    
+            
+            .nav-list{
         display: flex;
     }
     .nav-links {
         display: block;
     }
-   
+    
     .hero-container{
         height: 100%;
     }
-
+    
     .section-text{
         padding: 0px 200px;
     }
     .section-content{
         padding: 0px 100px;
+    }
+    .quote::before{
+        font-size: 72px;
+        left: -70px;
+
+    }
+    .quote::after{
+        font-size: 72px;
+        right: -55px;
     }
 
 }

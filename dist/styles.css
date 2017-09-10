@@ -3260,7 +3260,7 @@ a:hover {
   font-size: 24px; }
 
 .quote::before {
-  font-size: 72px !important;
+  font-size: 72px;
   transform: rotate(180deg);
   position: absolute;
   top: 0;
@@ -3270,7 +3270,7 @@ a:hover {
   opacity: .2; }
 
 .quote::after {
-  font-size: 72px !important;
+  font-size: 72px;
   position: absolute;
   top: 0;
   right: -55px;
@@ -3500,7 +3500,13 @@ a:hover {
   .carousel-cell {
     width: 100%; }
   .job-mini-logo {
-    display: block; } }
+    display: block; }
+  .quote::before {
+    font-size: 50px;
+    left: -42px; }
+  .quote::after {
+    font-size: 50px;
+    right: -32px; } }
 
 @media (min-width: 640px) {
   .nav-logo-left {
@@ -3535,7 +3541,13 @@ a:hover {
   .section-text {
     padding: 0px 200px; }
   .section-content {
-    padding: 0px 100px; } }
+    padding: 0px 100px; }
+  .quote::before {
+    font-size: 72px;
+    left: -70px; }
+  .quote::after {
+    font-size: 72px;
+    right: -55px; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
