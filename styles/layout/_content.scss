@@ -69,6 +69,13 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
+.flex-column{
+    @include flex-column;
+}
+.flex-row{
+    @include flex-row;
+
+}
 
 
 //padding and margin for section content

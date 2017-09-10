@@ -7,8 +7,8 @@
             "project_date": "April 2017",
             "thumbnail_img": "./images/thumbnails/basketbrawl.png",
             "bg_img": "./images/watercolor/splash1-color.png",
-            "project_url": "null",
-            "project_github": "https://github.com/dbarrett24/DevMountain/tree/master/Projects/Personal-Project/Basketbrawl",
+            "project_url": "http://basketbrawwl.dave-barrett.com",
+            "project_github": "https://github.com/dbarrett24/basketbrawwl-app",
             "category": "code",
             "tech_used": [
                 "Html5",
@@ -69,7 +69,7 @@
             "project_date": "June 2017",
             "thumbnail_img": "./images/thumbnails/evolve.png",
             "bg_img": "./images/watercolor/splash3-color.png",
-            "project_url": "null",
+            "project_url": "http://evolve.dave-barrett.com",
             "project_github": "https://github.com/dbarrett24/Personal-Project",
             "category": "code",
             "tech_used": [
@@ -101,7 +101,7 @@
             "project_date": "June 2017",
             "thumbnail_img": "./images/thumbnails/scribbleframes.png",
             "bg_img": "./images/watercolor/splash4-color.png",
-            "project_url": "null",
+            "project_url": "http://scribble-frames.com",
             "project_github": "https://github.com/WireFrameDevs/WireFrame-App",
             "category": "code",
             "tech_used": [

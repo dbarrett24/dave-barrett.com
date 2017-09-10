@@ -7,6 +7,15 @@
     background: $brand-gradient;
     z-index: 1500;
 }
+.overlay-warm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    z-index: 1500;
+}
 
 .overlay-huge{
     opacity: 0;
@@ -34,7 +43,7 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 10%;
+    top: 6.5%;
     left: 0;
     right: 0;
     width: 70%;
@@ -51,7 +60,7 @@
     transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
 }
 
-.project-container-left{
+.modal-content{
     position: relative;
     width: 100%;
     height: 100%;
@@ -76,18 +85,6 @@
            
         }
     }
-    .project-title{
-
-    }
-    .project-description{
-
-    }
-    
-}
-.project-container-right{
-    position: relative;
-    width: 100%;
-    height: 100%;
     .project-sidebar{
         color: gray;
         font-size: 12px;
@@ -95,20 +92,27 @@
         height: 100%;
         background: $brand-gray;
         padding: 45px 20px 0 20px;
-
+        
+    
         .sidebar-section{
             width: 100%;
             margin-bottom: 30px;
         }
-        .project-tech{
-            // height: 49%;
-        }
-        .project-github{
-            // height: 49%;
-    
-        }
+       
     }
+    .project-title{
+        
+    }
+    .project-description{
+
+    }
+    
 }
+// .project-container{
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+// }
 
 
 
@@ -132,4 +136,72 @@
 
 .no-scroll {
     overflow: hidden;
+}
+
+
+
+
+/////RESUME MODAL//////////
+.trigger-resume{
+
+}
+
+.resume-modal.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.resume-modal{
+    padding: 20px;
+    // overflow: hidden;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 350px;
+    height: 522px;
+    background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
+    border-radius: $border-radius-card;
+    box-shadow: $card-shadow;
+    z-index: 1501;
+    vertical-align: middle;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, -25%);
+    transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+    .resume-content{
+        width: 100%;
+        height: 86%;
+        position: relative;
+        top: 63px;
+
+    }
+    h3{
+        margin-bottom: 0;
+    }
+    img{
+        position: absolute;
+        top: -56px;
+        height: 130px;
+        border-radius: $border-radius-cir;
+    }
+}
+
+.resume-list{
+    list-style: none;
+    font-size: $font-size-h5;
+    li{
+        margin-bottom: 5px;
+    }
+}
+
+.modal-section{
+    width: 100%;
+    // margin-bottom: 30px;
 }
