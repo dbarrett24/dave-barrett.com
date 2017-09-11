@@ -2,11 +2,11 @@
     margin-top: 75px;
     margin-bottom: 50px;
   }
-  .project-media-carousel{
+.project-media-carousel{
     // margin-top: 75px;
     // margin-bottom: 50px;
     width: 100%;
-    max-height: 550px;
+    // max-height: 550px;
     margin-bottom: 50px;
 }
 
@@ -18,4 +18,9 @@
 .carousel-media-cell {
   width: 100%;
   height: auto;
+}
+
+.flickity-prev-next-button{
+  width: 35px !important;
+  height: 35px !important;
 }

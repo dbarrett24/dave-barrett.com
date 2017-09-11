@@ -2314,6 +2314,9 @@ hr {
 .skills-logo-sm {
   height: 40px; }
 
+.skills-logo-xsm {
+  height: 30px; }
+
 .skill-name {
   color: black;
   text-align: center;
@@ -3362,6 +3365,12 @@ a:hover {
   transform: translate(0, 0);
   transition: opacity 0.5s, transform 0.5s; }
 
+.mobile-project-modal.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+  transition: opacity 0.5s, transform 0.5s; }
+
 .project-modal {
   padding: 20px;
   overflow: hidden;
@@ -3375,6 +3384,28 @@ a:hover {
   right: 0;
   width: 70%;
   height: 864px;
+  background: url("../images/backgrounds/pw_maze_black_2X.png") left top repeat;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
+  z-index: 1501;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -25%);
+  transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s; }
+
+.mobile-project-modal {
+  overflow: hidden;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 6.5%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 87%;
   background: url("../images/backgrounds/pw_maze_black_2X.png") left top repeat;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
@@ -3406,9 +3437,26 @@ a:hover {
     height: 100%;
     background: #333;
     padding: 45px 20px 0 20px; }
-    .modal-content .project-sidebar .sidebar-section {
+  .modal-content .mobile-project-sidebar {
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px 0 15px; }
+    .modal-content .mobile-project-sidebar h2 {
+      font-size: 1.8em;
+      margin-left: 15px; }
+    .modal-content .mobile-project-sidebar h3 {
+      font-size: 1.1em;
+      margin-left: 15px; }
+    .modal-content .mobile-project-sidebar p {
+      font-size: 12px;
+      margin-left: 15px; }
+    .modal-content .mobile-project-sidebar .mobile-sidebar-section {
       width: 100%;
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
+
+.sidebar-section {
+  width: 100%;
+  margin-bottom: 30px; }
 
 .blur-bg {
   opacity: 0;
@@ -3563,7 +3611,13 @@ a:hover {
   .social-links {
     display: none; }
   .social-links-mobile {
-    display: flex; } }
+    display: flex; }
+  .project-media-carousel {
+    margin-bottom: 30px; }
+  .mobile-project-modal {
+    display: flex; }
+  .project-modal {
+    display: none; } }
 
 @media (min-width: 640px) {
   .nav-logo-left {
@@ -3630,7 +3684,13 @@ a:hover {
     font-size: 72px;
     right: -55px; }
   .fixedH-900 {
-    height: 900px; } }
+    height: 900px; }
+  .project-media-carousel {
+    margin-bottom: 50px; }
+  .mobile-project-modal {
+    display: none; }
+  .project-modal {
+    display: flex; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
@@ -3664,7 +3724,6 @@ a:hover {
 
 .project-media-carousel {
   width: 100%;
-  max-height: 550px;
   margin-bottom: 50px; }
 
 .carousel-cell {
@@ -3673,5 +3732,9 @@ a:hover {
 .carousel-media-cell {
   width: 100%;
   height: auto; }
+
+.flickity-prev-next-button {
+  width: 35px !important;
+  height: 35px !important; }
 
 /*# sourceMappingURL=maps/styles.css.map */

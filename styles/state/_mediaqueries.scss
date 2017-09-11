@@ -112,6 +112,15 @@
         display: flex;;
     }
 
+    ////////////PROJECT MODAL////////////
+ 
+    .mobile-project-modal{
+        display: flex;
+    }
+    .project-modal{
+        display: none;
+    }
+
 }
 
 @media (min-width: 640px) {
@@ -233,6 +242,15 @@
             ///////////SKILLS/////////////
             .fixedH-900{
                 height: 900px;
+            }
+///////////////////PROJECT MODAL/////////////
+
+         
+            .mobile-project-modal{
+                display: none;
+            }
+            .project-modal{
+                display: flex;
             }
             
         }
