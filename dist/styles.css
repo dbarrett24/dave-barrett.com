@@ -3448,7 +3448,7 @@ a:hover {
       font-size: 1.1em;
       margin-left: 15px; }
     .modal-content .mobile-project-sidebar p {
-      font-size: 12px;
+      font-size: 16px;
       margin-left: 15px; }
     .modal-content .mobile-project-sidebar .mobile-sidebar-section {
       width: 100%;
@@ -3612,8 +3612,6 @@ a:hover {
     display: none; }
   .social-links-mobile {
     display: flex; }
-  .project-media-carousel {
-    margin-bottom: 30px; }
   .mobile-project-modal {
     display: flex; }
   .project-modal {
@@ -3685,8 +3683,6 @@ a:hover {
     right: -55px; }
   .fixedH-900 {
     height: 900px; }
-  .project-media-carousel {
-    margin-bottom: 50px; }
   .mobile-project-modal {
     display: none; }
   .project-modal {
