@@ -96,7 +96,20 @@
         display: flex;
     }
     .brackets{
-        font-size: 2.8em;
+        font-size: 2.2em;
+        margin: 10px 0 40px 0;
+    }
+    .brackets:after{
+        font-size:  60px;
+    }
+    .brackets:before{
+        font-size:  60px;
+    }
+    .social-links{
+        display: none;
+    }
+    .social-links-mobile{
+        display: flex;;
     }
 
 }
@@ -160,6 +173,19 @@
         }
         .brackets{
             font-size: 3.8em;
+            margin: 50px 0;
+        }
+        .brackets:after{
+            font-size:  90px;
+        }
+        .brackets:before{
+            font-size:  90px;
+        }
+        .social-links{
+            display: block;
+        }
+        .social-links-mobile{
+            display: none;
         }
         
     }

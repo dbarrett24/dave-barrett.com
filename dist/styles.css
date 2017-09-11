@@ -2457,7 +2457,13 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: inline-block;
+  display: block;
+  width: 100%; }
+
+.social-links-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%; }
 
 .content-inner {
@@ -2468,7 +2474,8 @@ hr {
   width: 33%; }
 
 .mobile-container {
-  display: none; }
+  display: none;
+  width: 100%; }
 
 .contact-info-box {
   width: 100%;
@@ -2555,6 +2562,24 @@ button:active {
   margin-left: 0px;
   transition: all 0.3s; }
   .social-link-sm .fa {
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto; }
+
+.social-link-md {
+  border-radius: 100%;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 0px;
+  transition: all 0.3s; }
+  .social-link-md .fa {
     display: inline-block;
     width: auto;
     font-size: 20px;
@@ -3529,7 +3554,16 @@ a:hover {
   .mobile-container {
     display: flex; }
   .brackets {
-    font-size: 2.8em; } }
+    font-size: 2.2em;
+    margin: 10px 0 40px 0; }
+  .brackets:after {
+    font-size: 60px; }
+  .brackets:before {
+    font-size: 60px; }
+  .social-links {
+    display: none; }
+  .social-links-mobile {
+    display: flex; } }
 
 @media (min-width: 640px) {
   .nav-logo-left {
@@ -3563,7 +3597,16 @@ a:hover {
   .mobile-container {
     display: none; }
   .brackets {
-    font-size: 3.8em; } }
+    font-size: 3.8em;
+    margin: 50px 0; }
+  .brackets:after {
+    font-size: 90px; }
+  .brackets:before {
+    font-size: 90px; }
+  .social-links {
+    display: block; }
+  .social-links-mobile {
+    display: none; } }
 
 @media (min-width: 1000px) {
   .nav-logo {

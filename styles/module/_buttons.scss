@@ -73,6 +73,25 @@ button:active {
         margin: 0 auto;
     }
 }
+.social-link-md{
+    border-radius: 100%;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background: black;
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 0px;
+    transition: all 0.3s;
+    .fa{
+        display: inline-block;
+        width: auto;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
 .social-link:hover{
     background: $brand-teal;
     transition: all 0.3s;

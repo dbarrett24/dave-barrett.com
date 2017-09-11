@@ -281,7 +281,11 @@ hr{
 
 .social-links{
     @include flex-center-center;
-    display: inline-block;
+    display: block;
+    width: 100%;
+}
+.social-links-mobile{
+    @include flex-center-center;
     width: 100%;
 }
 
@@ -296,6 +300,7 @@ hr{
 }
 .mobile-container{
     display: none;
+    width: 100%;
 }
 
 .contact-info-box{
