@@ -2467,6 +2467,9 @@ hr {
   display: inline-block;
   width: 33%; }
 
+.mobile-container {
+  display: none; }
+
 .contact-info-box {
   width: 100%;
   display: flex;
@@ -3095,7 +3098,8 @@ fieldset[disabled] .btn-teal.active {
     box-shadow: none; }
 
 form {
-  margin-left: 20px; }
+  margin-left: 20px;
+  width: 100%; }
   form button {
     margin: 0 auto; }
 
@@ -3489,12 +3493,10 @@ a:hover {
     justify-content: center; }
   .section-content-wrapper {
     overflow: hidden; }
-  .section-content-wrapper hr {
-    display: none; }
   .fixedH-900 {
     height: auto; }
   .btn-round-sm {
-    margin: 5px; }
+    margin: 15px 0; }
   .logos-container {
     margin: 4px; }
   .skill-name {
@@ -3521,7 +3523,13 @@ a:hover {
     left: -42px; }
   .quote::after {
     font-size: 50px;
-    right: -32px; } }
+    right: -32px; }
+  .contact-info-container {
+    display: none; }
+  .mobile-container {
+    display: flex; }
+  .brackets {
+    font-size: 2.8em; } }
 
 @media (min-width: 640px) {
   .nav-logo-left {
@@ -3550,8 +3558,12 @@ a:hover {
   .skill-name {
     position: relative;
     display: flex; }
-  .section-content-wrapper {
-    overflow: visible; } }
+  .contact-info-container {
+    display: inline-block; }
+  .mobile-container {
+    display: none; }
+  .brackets {
+    font-size: 3.8em; } }
 
 @media (min-width: 1000px) {
   .nav-logo {
@@ -3574,12 +3586,8 @@ a:hover {
   .quote::after {
     font-size: 72px;
     right: -55px; }
-  .currently-learning {
-    display: flex; }
   .fixedH-900 {
-    height: 900px; }
-  .section-content-wrapper hr {
-    display: visible; } }
+    height: 900px; } }
 
 @media (min-width: 1100px) {
   .dave-silho {
@@ -3591,7 +3599,11 @@ a:hover {
   .job-desc {
     margin-left: 75px; }
   .job-mini-logo {
-    display: none; } }
+    display: none; }
+  .currently-learning {
+    display: flex; }
+  .section-content-wrapper {
+    overflow: visible; } }
 
 @media (min-width: 1400px) {
   .section-text {

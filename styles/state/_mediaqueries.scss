@@ -38,14 +38,11 @@
         overflow: hidden;
     }
     /////////////SKILLS///////////////////
-    .section-content-wrapper hr{
-        display: none;
-    }
     .fixedH-900{
         height: auto;
     }
     .btn-round-sm{
-        margin: 5px;
+        margin: 15px 0;
     }
     .logos-container{
         margin: 4px;
@@ -57,6 +54,7 @@
     .currently-learning{
         display: none;
     }
+ 
     /////////////EXPERIENCE///////////////////
     .job-logo{
         display: none;
@@ -89,6 +87,18 @@
         font-size: 50px;
         right: -32px;
     }
+    //////////CONTACT//////////
+
+    .contact-info-container{
+        display: none;
+    }
+    .mobile-container{
+        display: flex;
+    }
+    .brackets{
+        font-size: 2.8em;
+    }
+
 }
 
 @media (min-width: 640px) {
@@ -140,10 +150,18 @@
             position: relative;
             display: flex;
         }
-        
-        .section-content-wrapper{
-            overflow: visible;
+          //////////CONTACT//////////
+
+        .contact-info-container{
+            display: inline-block;
         }
+        .mobile-container{
+            display: none;
+        }
+        .brackets{
+            font-size: 3.8em;
+        }
+        
     }
     
     @media (min-width: 1000px){
@@ -186,34 +204,36 @@
                 font-size: 72px;
                 right: -55px;
             }
-            .currently-learning{
-                display: flex;
-            }
+            ///////////SKILLS/////////////
             .fixedH-900{
                 height: 900px;
             }
-            .section-content-wrapper hr{
-                display: visible;
+            
+        }
+        @media (min-width: 1100px){
+            .dave-silho{
+                display: block;
             }
-
-}
-@media (min-width: 1100px){
-    .dave-silho{
-        display: block;
-    }
-    .carousel-cell {
-        width: 33%;
-    }
-    .job-logo{
-        display: block;
-    }
-    .job-desc{
-        margin-left: 75px;
-    }
-    .job-mini-logo{
-        display: none;
-    }
-
+            .carousel-cell {
+                width: 33%;
+            }
+            .job-logo{
+                display: block;
+            }
+            .job-desc{
+                margin-left: 75px;
+            }
+            .job-mini-logo{
+                display: none;
+            }
+            .currently-learning{
+                display: flex;
+            }
+            .section-content-wrapper{
+                overflow: visible;
+            }
+           
+            
 }
 @media (min-width: 1400px){
     .section-text{

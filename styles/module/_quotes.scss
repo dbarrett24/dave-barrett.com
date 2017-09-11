@@ -45,10 +45,9 @@
     width: 100px;
     height: 100px;
     overflow: hidden;
-    border-radius: 100px;
+    border-radius: $border-radius-cir;
     position: relative;
     img{
-        // object-fit: cover;
         width: 100px;
         height: 100px;
     }
