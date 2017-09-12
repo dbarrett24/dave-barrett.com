@@ -1,3 +1,7 @@
+body.open{
+    overflow: hidden;
+}
+
 .overlay{
     position: fixed;
     width: 100%;
@@ -49,9 +53,11 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 6.5%;
+    top: 0;
     left: 0;
+    max-height: calc(100% - 100px);
     right: 0;
+    bottom: 0;
     width: 70%;
     height: 864px;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
@@ -63,6 +69,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translate(0, -25%);
+    // transform: translate(-50%, -50%);
     transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
 }
 
@@ -73,9 +80,11 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 6.5%;
+    top: 0;
     left: 0;
+    max-height: calc(100% - 100px);
     right: 0;
+    bottom: 0;
     width: 90%;
     height: 87%;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
@@ -87,6 +96,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translate(0, -25%);
+    // transform: translate(-50%, -50%);
     transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
    
 }
@@ -220,9 +230,10 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 20%;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 350px;
     height: 522px;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;

@@ -5,6 +5,7 @@ angular.module('app').directive('projectModalDir', function(){
         link: function(scope, elem, attrs){
                 //TRIGGER OVERLAY
             $('.trigger-overlay').on('click', function(){
+                $('body').addClass('open');
                 $('.overlay').addClass('open');
                 $('.project-modal').addClass('open');
                 $('.mobile-project-modal').addClass('open');
@@ -15,6 +16,7 @@ angular.module('app').directive('projectModalDir', function(){
             })
             $('.overlay').on('click', function(){
                 $(this).removeClass('open');
+                $('body').removeClass('open');
                 $('.project-modal').removeClass('open');
                 $('.mobile-project-modal').removeClass('open');
                 $('.blur-bg').removeClass('open');
