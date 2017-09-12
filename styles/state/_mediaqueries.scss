@@ -120,6 +120,9 @@
     .project-modal{
         display: none;
     }
+    .logos-container-sm img{
+        height: 15px;
+    }
 
 }
 
@@ -252,6 +255,7 @@
             .project-modal{
                 display: flex;
             }
+           
             
         }
         @media (min-width: 1100px){
@@ -276,6 +280,9 @@
             .section-content-wrapper{
                 overflow: visible;
             }
+            .logos-container-sm img{
+                height: 28px;
+            }
            
             
 }
@@ -286,7 +293,9 @@
     .section-content{
         padding: 0px 400px;
     }
-
+    .logos-container-sm img{
+        height: 40px;
+    }
 }
 
 @media (min-width: 1800px){

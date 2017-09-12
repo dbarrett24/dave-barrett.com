@@ -3632,7 +3632,9 @@ body.open {
   .mobile-project-modal {
     display: flex; }
   .project-modal {
-    display: none; } }
+    display: none; }
+  .logos-container-sm img {
+    height: 15px; } }
 
 @media (min-width: 640px) {
   .nav-logo-left {
@@ -3719,13 +3721,17 @@ body.open {
   .currently-learning {
     display: flex; }
   .section-content-wrapper {
-    overflow: visible; } }
+    overflow: visible; }
+  .logos-container-sm img {
+    height: 28px; } }
 
 @media (min-width: 1400px) {
   .section-text {
     padding: 0px 400px; }
   .section-content {
-    padding: 0px 400px; } }
+    padding: 0px 400px; }
+  .logos-container-sm img {
+    height: 40px; } }
 
 @media (min-width: 1800px) {
   .section-text {
