@@ -71,13 +71,13 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         })
        
         $scope.selectedProject = selectedProj.pop()
-        console.log($scope.selectedProject);
+        // console.log($scope.selectedProject);
 
         
 
 
         $scope.selectedProjSkills = $scope.skills.diff($scope.selectedProject.tech_used);
-        console.log($scope.selectedProjSkills);
+        // console.log($scope.selectedProjSkills);
     }
 
     // $scope.findTechUsed = function(){

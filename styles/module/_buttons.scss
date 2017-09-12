@@ -25,7 +25,19 @@ button:hover {
 button:active {
     box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0) 0px 1px 0px, inset rgba(0,0,0,0.5) 0px 0px 5px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
 }
-
+.btn-corner-cancel {
+    background: #F0544E;
+    border-radius: 100px;
+    border: 2.2px solid white;
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: fixed;
+    top: -32px;
+    right: -32px;
+    z-index: 10;
+    @include flex-center-center;
+}
 .btn-sidebar{
     margin: 0 auto;
     width: 95%;

@@ -21,6 +21,13 @@ angular.module('app').directive('projectModalDir', function(){
                 $('.mobile-project-modal').removeClass('open');
                 $('.blur-bg').removeClass('open');
             })
+            $('.btn-corner-cancel').on('click', function(){
+                $('.overlay').removeClass('open');
+                $('body').removeClass('open');
+                $('.project-modal').removeClass('open');
+                $('.mobile-project-modal').removeClass('open');
+                $('.blur-bg').removeClass('open');
+            })
 
             $('.project-media-carousel').flickity({
                 // options

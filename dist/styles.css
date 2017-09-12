@@ -2169,6 +2169,12 @@ img {
 .icon-black {
   color: #000; }
 
+.icon-white {
+  color: #FFF; }
+
+.fa18 {
+  font-size: 18px; }
+
 .nav {
   height: 100px;
   width: 100%;
@@ -2526,6 +2532,21 @@ button:hover {
 
 button:active {
   box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(255, 255, 255, 0) 0px 1px 0px, inset rgba(0, 0, 0, 0.5) 0px 0px 5px, inset rgba(255, 255, 255, 0.03) 0px 20px 0px, inset rgba(0, 0, 0, 0.15) 0px -20px 20px, inset rgba(255, 255, 255, 0.05) 0px 20px 20px; }
+
+.btn-corner-cancel {
+  background: #F0544E;
+  border-radius: 100px;
+  border: 2.2px solid white;
+  width: 40px;
+  height: 40px;
+  color: white;
+  position: fixed;
+  top: -32px;
+  right: -32px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .btn-sidebar {
   margin: 0 auto;
@@ -3376,7 +3397,6 @@ body.open {
 
 .project-modal {
   padding: 20px;
-  overflow: hidden;
   position: fixed;
   margin-left: auto;
   margin-right: auto;

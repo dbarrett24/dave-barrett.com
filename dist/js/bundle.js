@@ -77,10 +77,11 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         });
 
         $scope.selectedProject = selectedProj.pop();
-        console.log($scope.selectedProject);
+        // console.log($scope.selectedProject);
+
 
         $scope.selectedProjSkills = $scope.skills.diff($scope.selectedProject.tech_used);
-        console.log($scope.selectedProjSkills);
+        // console.log($scope.selectedProjSkills);
     };
 
     // $scope.findTechUsed = function(){
@@ -998,6 +999,13 @@ angular.module('app').directive('projectModalDir', function () {
             });
             $('.overlay').on('click', function () {
                 $(this).removeClass('open');
+                $('body').removeClass('open');
+                $('.project-modal').removeClass('open');
+                $('.mobile-project-modal').removeClass('open');
+                $('.blur-bg').removeClass('open');
+            });
+            $('.btn-corner-cancel').on('click', function () {
+                $('.overlay').removeClass('open');
                 $('body').removeClass('open');
                 $('.project-modal').removeClass('open');
                 $('.mobile-project-modal').removeClass('open');
