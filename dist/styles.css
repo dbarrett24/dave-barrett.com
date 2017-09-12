@@ -3445,7 +3445,6 @@ body.open {
     background: #333;
     padding: 45px 20px 0 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column; }
   .modal-content .bottom-section {
@@ -3453,6 +3452,11 @@ body.open {
     bottom: 0;
     left: 0;
     padding: 0 15px 0 15px; }
+  .modal-content .bottom-section-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 36px 0 36px; }
   .modal-content .mobile-project-sidebar {
     width: 100%;
     height: 100%;

@@ -134,7 +134,6 @@ body.open{
         background: $brand-gray;
         padding: 45px 20px 0 20px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         flex-direction: column;
     
@@ -146,6 +145,12 @@ body.open{
         bottom: 0;
         left: 0;
         padding: 0 15px 0 15px;
+    }
+    .bottom-section-2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 36px 0 36px;
     }
     .mobile-project-sidebar{
         width: 100%;
