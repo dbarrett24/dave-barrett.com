@@ -53,7 +53,7 @@
                             <div class="sidebar-section flex-top-left-column">
                                 <h3>Technology Used:</h3>
                                 <div class="flex-left-top flex-wrap">
-                                    <div class="logos-container-sm" ng-repeat="skill in skills | filter: {skill_category: '!learning' }">
+                                    <div class="logos-container-sm" ng-repeat="skill in selectedProjSkills | filter: {skill_category: '!learning' }">
                                         <img class="skills-logo-sm" ng-src="{{skill.skill_logo}}" alt="{{skill.skill_name}}">
                                     </div>
         
@@ -67,7 +67,7 @@
                             <div class="sidebar-section">
                                 <h3>More Questions?</h3>
                                 
-                                <a href="https://github.com/dbarrett24"><button class="btn-square btn-gradient btn-sidebar"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button></a>
+                                <button class="btn-square btn-gradient btn-sidebar trigger-resume"><i class="icon-btn-long-left material-icons">cloud_download</i>Download My Resume</button>
                                 
                                 <div class="social-links mt5 ml5">
                                     <div class="contact-info-box mb5">
@@ -127,7 +127,8 @@
                 </div>
                 <p>{{selectedProject.project_desc}}</p>
             </div>
-            <div class="mobile-sidebar-section flex-top-left-column">
+
+            <div class="mobile-sidebar-section bottom-section flex-top-left-column">
                 <h3>Visit the Github Repo:</h3>
                 <a ng-href="{{selectedProject.project_github}}"><button class="btn-square btn-gray btn-sidebar">Github<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
                 <div class="mt15">

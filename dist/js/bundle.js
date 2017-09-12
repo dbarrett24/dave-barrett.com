@@ -56,35 +56,42 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         $scope.skillFilter(category);
     };
 
+    //ARRAY PROTOTYPE
+
+    Array.prototype.diff = function (arr2) {
+        var ret = [];
+        for (var i = 0; i < this.length; i++) {
+            for (var j = 0; j < arr2.length; j++) {
+                if (this[i].skill_name === arr2[j]) {
+                    ret.push(this[i]);
+                }
+            }
+        }
+        return ret;
+    };
+
     //PROJECTS
     $scope.findProjectInfo = function (projectName) {
-        $scope.projects.filter(function (project) {
-            if (project.project_name === projectName) {
-                $scope.selectedProject = project;
-                console.log($scope.selectedProject.files[0]);
-
-                $scope.selectedProject.tech_used.foreach(function (tech) {
-                    if ($scope.skill.skill_name === tech) {
-                        console.log(skill, tech);
-                        $scope.selectedProjSkills.push(skill);
-                        console.log($scope.selectedProjSkills);
-                    }
-                });
-            }
+        var selectedProj = $scope.projects.filter(function (project) {
+            return project.project_name === projectName;
         });
 
-        // if(projectName === 'Basketbrawwl'){
-        //     $scope.selectedProject = $scope.projects[0];
-        // }
+        $scope.selectedProject = selectedProj.pop();
+        console.log($scope.selectedProject);
+
+        $scope.selectedProjSkills = $scope.skills.diff($scope.selectedProject.tech_used);
+        console.log($scope.selectedProjSkills);
     };
 
-    $scope.findTechUsed = function () {
-        $scope.skills.filter(function (skill) {
+    // $scope.findTechUsed = function(){
+    //     $scope.skills.filter(function(skill){
 
-            $scope.selectedProjSkills = [];
-            return skill.skill_name === tech_used;
-        });
-    };
+
+    //         $scope.selectedProjSkills = [];
+    //         return skill.skill_name === tech_used
+    //     })
+    // }
+
 
     //////////////////////////////////////////////////////////////////////////////
     //JQUERY THINGS
