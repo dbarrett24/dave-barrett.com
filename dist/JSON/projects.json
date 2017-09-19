@@ -1,0 +1,132 @@
+[
+        {
+            "id": 0,
+            "project_name": "Basketbrawwl",
+            "project_desc": "NBA Player Stats Comparison App",
+            "project_short_desc": "NBA Stats Comparison App",
+            "project_date": "April 2017",
+            "thumbnail_img": "./images/thumbnails/basketbrawl.png",
+            "bg_img": "./images/watercolor/splash1-color.png",
+            "project_url": "http://basketbrawwl.dave-barrett.com",
+            "project_github": "https://github.com/dbarrett24/basketbrawwl-app",
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+
+            ],
+            "files": [
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Basketbrawl.png",
+                "./images/screenshots/Basketbrawl-1.png",
+                "./images/screenshots/Basketbrawl-2.png",
+                "./images/screenshots/Basketbrawl3.png"   
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Canva",
+            "project_desc": "Miniature clone of Canva.com pages.",
+            "project_short_desc": "Canva.com Clone",
+            "project_date": "May 2017",
+            "thumbnail_img": "./images/thumbnails/canva.png",
+            "bg_img": "./images/watercolor/splash2-color.png",
+            "project_url": "null",
+            "project_github": "https://github.com/dbarrett24/No-server-2",
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Sass",
+                "jQuery",
+                "Gulp"
+
+            ],
+            "files": [
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Evolve.png",
+                "./images/screenshots/Evolve2.png",
+                "./images/screenshots/Evolve3.png",
+                "./images/screenshots/Evolve4.png"   
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Evolve",
+            "project_desc": "A Micro-Operating System for your Life.",
+            "project_short_desc": "Micro-Operating System for your Life",
+            "project_date": "June 2017",
+            "thumbnail_img": "./images/thumbnails/evolve.png",
+            "bg_img": "./images/watercolor/splash3-color.png",
+            "project_url": "http://evolve.dave-barrett.com",
+            "project_github": "https://github.com/dbarrett24/Personal-Project",
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+            ],
+            "files": [
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/Evolve.png",
+                "./images/screenshots/Evolve2.png",
+                "./images/screenshots/Evolve3.png",
+                "./images/screenshots/Evolve4.png"   
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Scribble-Frames",
+            "project_desc": "An online Wireframe Creation Tool for your Mockups.",
+            "project_short_desc": "Wireframe Creation Tool",
+            "project_date": "June 2017",
+            "thumbnail_img": "./images/thumbnails/scribbleframes.png",
+            "bg_img": "./images/watercolor/splash4-color.png",
+            "project_url": "http://scribble-frames.com",
+            "project_github": "https://github.com/WireFrameDevs/WireFrame-App",
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Angular",
+                "Node.js",
+                "Sass",
+                "jQuery",
+                "postgreSQL",
+                "Express",
+                "Gulp"
+
+            ],
+            "files": [
+                "./images/videos/dayz-light-leaks.mp4",
+                "./images/screenshots/ScribbleFrames.png",
+                "./images/screenshots/scribble-frames1.png",
+                "./images/screenshots/scribble-frames2.png",
+                "./images/screenshots/scribble-frames3.png",
+                "./images/screenshots/scribble-frames4.png",
+                "./images/screenshots/scribble-frames5.png"
+      
+            ]
+        }
+      
+]
