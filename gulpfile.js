@@ -50,8 +50,12 @@ gulp.task('build-JSON', function(){
     return gulp.src('JSON/*.json')
         .pipe(gulp.dest('./dist/JSON'));
 })
+gulp.task('build-download', function(){
+    return gulp.src('download/**/*')
+        .pipe(gulp.dest('./dist/download'));
+})
 
-gulp.task('build', ['build-css', 'build-js', 'build-views', 'build-images', 'build-JSON'], function() {
+gulp.task('build', ['build-css', 'build-js', 'build-views', 'build-images', 'build-JSON', 'build-download'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));

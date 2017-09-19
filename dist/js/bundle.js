@@ -42,7 +42,6 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     });
 
     //FILTER SKILLS
-
     $scope.skillFilter = function (category) {
         $scope.skills = $scope.skills.filter(function (skill) {
             return skill.skill_category === category;
@@ -57,7 +56,6 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     };
 
     //ARRAY PROTOTYPE
-
     Array.prototype.diff = function (arr2) {
         var ret = [];
         for (var i = 0; i < this.length; i++) {
@@ -79,20 +77,9 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
         $scope.selectedProject = selectedProj.pop();
         // console.log($scope.selectedProject);
 
-
         $scope.selectedProjSkills = $scope.skills.diff($scope.selectedProject.tech_used);
         // console.log($scope.selectedProjSkills);
     };
-
-    // $scope.findTechUsed = function(){
-    //     $scope.skills.filter(function(skill){
-
-
-    //         $scope.selectedProjSkills = [];
-    //         return skill.skill_name === tech_used
-    //     })
-    // }
-
 
     //////////////////////////////////////////////////////////////////////////////
     //JQUERY THINGS
@@ -113,21 +100,6 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 
 
     $(document).ready(function () {
-        // //TRIGGER OVERLAY
-        // $('.trigger-overlay').on('click', function(){
-        //     $('.overlay').addClass('open');
-        //     $('.project-modal').addClass('open');
-        //     $('.blur-bg').addClass('open');
-        //     $(".overlay-huge").hasClass("open", function () {
-        //         $("body").addClass("no-scroll");
-        //     });
-        // })
-        // $('.overlay').on('click', function(){
-        //     $(this).removeClass('open');
-        //     $('.project-modal').removeClass('open');
-        //     $('.blur-bg').removeClass('open');
-        // })
-
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
