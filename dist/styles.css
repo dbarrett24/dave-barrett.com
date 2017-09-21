@@ -3763,6 +3763,14 @@ body.open {
   .section-text {
     padding: 0px 600px; } }
 
+@media (min-height: 0px) {
+  .bottom-section-2 {
+    display: none; } }
+
+@media (min-height: 660px) {
+  .bottom-section-2 {
+    display: block; } }
+
 .projects-carousel {
   margin-top: 75px;
   margin-bottom: 50px; }

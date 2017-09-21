@@ -305,3 +305,15 @@
     }
 
 }
+
+@media (min-height: 0px){
+    .bottom-section-2{
+        display: none;
+    }
+}
+@media (min-height: 660px){
+    .bottom-section-2{
+        display: block;
+    }
+
+}
