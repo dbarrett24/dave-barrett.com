@@ -3767,7 +3767,7 @@ body.open {
   .bottom-section-2 {
     display: none; } }
 
-@media (min-height: 660px) {
+@media (min-height: 680px) {
   .bottom-section-2 {
     display: block; } }
 
