@@ -3563,6 +3563,8 @@ body.open {
 
 .modal-section {
   width: 100%; }
+  .modal-section a {
+    width: 100%; }
 
 .is-filtered {
   background-color: #13A89E;
