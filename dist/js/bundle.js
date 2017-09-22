@@ -107,10 +107,6 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
     //END/////////////////
 
 
-    $window.onload = function () {
-        $('#frame').fadeOut('slow');
-        $('#loader-overlay').fadeOut(2700);
-    };
     $(function () {
 
         //Intro Header Scroll Fade Effect
@@ -166,11 +162,15 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
 });
 'use strict';
 
-angular.module('app').controller('mainCtrl', function ($scope, mainService) {
+angular.module('app').controller('mainCtrl', function ($scope, $window, mainService) {
     // *****************************
     $scope.test = mainService.test;
     // *****************************
-
+    $window.onload = function () {
+        $('#frame').fadeOut('slow');
+        $('#loader-overlay').fadeOut(2700);
+    };
+    $window.onload();
 });
 "use strict";
 

@@ -101,10 +101,7 @@ sr.reveal('.projects-carousel');
 
 
     
-$window.onload = function(){
-    $('#frame').fadeOut('slow');
-    $('#loader-overlay').fadeOut(2700);
-}
+
     $(function(){
     
 
