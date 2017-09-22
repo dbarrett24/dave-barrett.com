@@ -3696,6 +3696,16 @@ body.open {
 .is-active:hover {
   color: #000; }
 
+.ng-hide-add {
+  -webkit-animation: 0.5s hide;
+  animation: 2.5s hide; }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 @media (min-width: 0px) {
   .nav-left {
     display: none; }

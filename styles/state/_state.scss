@@ -24,3 +24,17 @@
 .is-active:hover{
     color: $brand-black;
 }
+
+.ng-hide-add {
+    -webkit-animation:0.5s hide;
+    animation:2.5s hide;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

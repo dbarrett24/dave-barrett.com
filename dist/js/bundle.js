@@ -162,58 +162,18 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
 });
 'use strict';
 
-angular.module('app').controller('mainCtrl', function ($scope, $window, mainService) {
+angular.module('app').controller('mainCtrl', function ($scope, $window, $timeout, mainService) {
     // *****************************
     $scope.test = mainService.test;
     // *****************************
     $scope.windowLoaded = false;
     console.log('loading completed: ' + $scope.windowLoaded);
-    $window.onload = function () {
-        $scope.windowLoaded = true;
-        console.log('loading completed: ' + $scope.windowLoaded);
-    };
-});
-'use strict';
 
-angular.module('app').service('mainService', function ($http) {
-    // *****************************
-    this.test = "Controller & Service are working";
-    // *****************************
-    this.getSkills = function () {
-        return $http({
-            method: 'GET',
-            url: "../json/skills.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getExperience = function () {
-        return $http({
-            method: 'GET',
-            url: "../json/experience.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getQuotes = function () {
-        return $http({
-            method: 'GET',
-            url: "../json/quotes.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
-    };
-    this.getProjects = function () {
-        return $http({
-            method: 'GET',
-            url: "../json/projects.json"
-        }).then(function (response) {
-            // console.log(response.data)
-            return response.data;
-        });
+    $window.onload = function () {
+        $timeout(function () {
+            $scope.windowLoaded = true;
+            console.log('loading completed: ' + $scope.windowLoaded);
+        }, 1000);
     };
 });
 "use strict";
@@ -910,6 +870,49 @@ angular.module('app').service('mainService', function ($http) {
   }]);
 })(window, window.angular);
 //# sourceMappingURL=angular-animate.min.js.map
+'use strict';
+
+angular.module('app').service('mainService', function ($http) {
+    // *****************************
+    this.test = "Controller & Service are working";
+    // *****************************
+    this.getSkills = function () {
+        return $http({
+            method: 'GET',
+            url: "../json/skills.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getExperience = function () {
+        return $http({
+            method: 'GET',
+            url: "../json/experience.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getQuotes = function () {
+        return $http({
+            method: 'GET',
+            url: "../json/quotes.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+    this.getProjects = function () {
+        return $http({
+            method: 'GET',
+            url: "../json/projects.json"
+        }).then(function (response) {
+            // console.log(response.data)
+            return response.data;
+        });
+    };
+});
 'use strict';
 
 angular.module('app').directive('footerDir', function () {
