@@ -1,11 +1,12 @@
 angular.module('app').controller('mainCtrl', function($scope, $window, mainService){
     // *****************************
         $scope.test = mainService.test;
-    // *****************************
-    // $window.onload = function(){
-    //     $('#frame').fadeOut('slow');
-    //     $('#loader-overlay').fadeOut(2700);
-    // }
-    // $window.onload();
+        // *****************************
+    $scope.windowLoaded = false;
+    console.log('loading completed: ' + $scope.windowLoaded);
+    $window.onload = function(){
+        $scope.windowLoaded = true;
+        console.log('loading completed: ' + $scope.windowLoaded);
+    }
 
 });

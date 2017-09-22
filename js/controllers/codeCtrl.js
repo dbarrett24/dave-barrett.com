@@ -100,13 +100,10 @@ sr.reveal('.projects-carousel');
 //END/////////////////
 
 
-    
+
 
     $(function(){
     
-
-    
-   
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
         // console.log(scrollPos);
