@@ -107,10 +107,11 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     //END/////////////////
 
 
-    $(function () {
+    // $(function(){
+    $(document).ready(function () {
 
         $(window).on('load', function () {
-            $('#frame').fadeOut();
+            $('#frame').fadeOut('slow');
             $('#loader-overlay').fadeOut(2700);
         });
 

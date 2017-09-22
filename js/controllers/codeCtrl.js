@@ -101,10 +101,11 @@ sr.reveal('.projects-carousel');
 
 
     
-    $(function(){
-        
+    // $(function(){
+    $(document).ready(function(){
+
         $(window).on('load', function(){
-            $('#frame').fadeOut();
+            $('#frame').fadeOut('slow');
             $('#loader-overlay').fadeOut(2700);
         })
     
