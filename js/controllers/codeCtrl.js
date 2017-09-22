@@ -101,13 +101,13 @@ sr.reveal('.projects-carousel');
 
 
     
-    // $(function(){
-    $(document).ready(function(){
+$(window).on('load', function(){
+    $('#frame').fadeOut('slow');
+    $('#loader-overlay').fadeOut(2700);
+})
+    $(function(){
+    
 
-        $(window).on('load', function(){
-            $('#frame').fadeOut('slow');
-            $('#loader-overlay').fadeOut(2700);
-        })
     
    
         //Intro Header Scroll Fade Effect

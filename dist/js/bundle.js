@@ -107,13 +107,11 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     //END/////////////////
 
 
-    // $(function(){
-    $(document).ready(function () {
-
-        $(window).on('load', function () {
-            $('#frame').fadeOut('slow');
-            $('#loader-overlay').fadeOut(2700);
-        });
+    $(window).on('load', function () {
+        $('#frame').fadeOut('slow');
+        $('#loader-overlay').fadeOut(2700);
+    });
+    $(function () {
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
