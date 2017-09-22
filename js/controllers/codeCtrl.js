@@ -1,4 +1,4 @@
-angular.module('app').controller('codeCtrl', function ($scope, mainService) {
+angular.module('app').controller('codeCtrl', function ($scope, $window, mainService) {
 
 
     $scope.getSkills = function(){
@@ -101,10 +101,10 @@ sr.reveal('.projects-carousel');
 
 
     
-$(window).on('load', function(){
+$window.onload = function(){
     $('#frame').fadeOut('slow');
     $('#loader-overlay').fadeOut(2700);
-})
+}
     $(function(){
     
 

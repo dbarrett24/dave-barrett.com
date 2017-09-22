@@ -18,7 +18,7 @@ angular.module('app').filter('trusted', ['$sce', function ($sce) {
 }]);
 'use strict';
 
-angular.module('app').controller('codeCtrl', function ($scope, mainService) {
+angular.module('app').controller('codeCtrl', function ($scope, $window, mainService) {
 
     $scope.getSkills = function () {
         mainService.getSkills().then(function (skills) {
@@ -107,10 +107,10 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     //END/////////////////
 
 
-    $(window).on('load', function () {
+    $window.onload = function () {
         $('#frame').fadeOut('slow');
         $('#loader-overlay').fadeOut(2700);
-    });
+    };
     $(function () {
 
         //Intro Header Scroll Fade Effect
