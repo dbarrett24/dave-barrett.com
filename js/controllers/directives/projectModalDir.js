@@ -33,12 +33,13 @@ angular.module('app').directive('projectModalDir', function(){
                 // options
                 cellSelector: '.carousel-media-cell',
                 cellAlign: 'left',
-                pageDots: true,
+                pageDots: false,
                 // groupCells: 3,
                 imagesLoaded: true,
-                autoPlay: true,
-                contain: true,
-                wrapAround: true
+                autoPlay: 4000,
+                // contain: true,
+                wrapAround: true,
+                adaptiveHeight: false
             });
             
             

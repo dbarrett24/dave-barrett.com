@@ -31,6 +31,7 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 
 
 
+
     //FILTER SKILLS
     $scope.skillFilter = function(category){
         $scope.skills = $scope.skills.filter(function(skill){
@@ -84,23 +85,30 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
 //JQUERY THINGS
 //////////////////////////////////////////////////////////////////////////////
 
+
 //SCROLL REVEAL
-    window.sr = ScrollReveal({
-        origin: 'bottom',
-        duration: 500,
-        delay: 250,
-        easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)',
-        scale: 0.9
-    },50);
-    sr.reveal('.section-text');
-    sr.reveal('.section-content');
-    sr.reveal('.projects-carousel');
+window.sr = ScrollReveal({
+    origin: 'bottom',
+    duration: 500,
+    delay: 250,
+    easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)',
+    scale: 0.9
+},50);
+sr.reveal('.section-text');
+sr.reveal('.section-content');
+sr.reveal('.projects-carousel');
 //END/////////////////
 
 
-
-    $(document).ready(function () {
-  
+    
+    $(function(){
+        
+        $(window).on('load', function(){
+            $('#frame').fadeOut();
+            $('#loader-overlay').fadeOut(2700);
+        })
+    
+   
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
         // console.log(scrollPos);

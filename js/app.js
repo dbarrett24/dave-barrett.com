@@ -8,5 +8,12 @@ angular.module('app', ['ui.router', 'ngAnimate'])
             })
 
             $urlRouterProvider.otherwise('/');
-    });
+});
+
+//WHITELIST video source for Angular to use iframe source.
+angular.module('app').filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);
 

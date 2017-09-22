@@ -9,6 +9,13 @@ angular.module('app', ['ui.router', 'ngAnimate']).config(function ($stateProvide
 
     $urlRouterProvider.otherwise('/');
 });
+
+//WHITELIST video source for Angular to use iframe source.
+angular.module('app').filter('trusted', ['$sce', function ($sce) {
+    return function (url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);
 'use strict';
 
 angular.module('app').controller('codeCtrl', function ($scope, mainService) {
@@ -85,6 +92,7 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     //JQUERY THINGS
     //////////////////////////////////////////////////////////////////////////////
 
+
     //SCROLL REVEAL
     window.sr = ScrollReveal({
         origin: 'bottom',
@@ -99,7 +107,12 @@ angular.module('app').controller('codeCtrl', function ($scope, mainService) {
     //END/////////////////
 
 
-    $(document).ready(function () {
+    $(function () {
+
+        $(window).on('load', function () {
+            $('#frame').fadeOut();
+            $('#loader-overlay').fadeOut(2700);
+        });
 
         //Intro Header Scroll Fade Effect
         var scrollPos = $(this).scrollTop();
@@ -899,6 +912,22 @@ angular.module('app').service('mainService', function ($http) {
 });
 'use strict';
 
+angular.module('app').directive('footerDir', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './views/directives/footerDir.html'
+    };
+});
+'use strict';
+
+angular.module('app').directive('loaderDir', function () {
+    return {
+        restrict: 'AE',
+        templateUrl: './views/directives/loaderDir.html'
+    };
+});
+'use strict';
+
 angular.module('app').directive('navDir', function () {
     return {
         restrict: 'AE',
@@ -988,12 +1017,13 @@ angular.module('app').directive('projectModalDir', function () {
                 // options
                 cellSelector: '.carousel-media-cell',
                 cellAlign: 'left',
-                pageDots: true,
+                pageDots: false,
                 // groupCells: 3,
                 imagesLoaded: true,
-                autoPlay: true,
-                contain: true,
-                wrapAround: true
+                autoPlay: 4000,
+                // contain: true,
+                wrapAround: true,
+                adaptiveHeight: false
             });
         }
 
