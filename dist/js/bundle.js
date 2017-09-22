@@ -166,11 +166,11 @@ angular.module('app').controller('mainCtrl', function ($scope, $window, mainServ
     // *****************************
     $scope.test = mainService.test;
     // *****************************
-    $window.onload = function () {
-        $('#frame').fadeOut('slow');
-        $('#loader-overlay').fadeOut(2700);
-    };
-    $window.onload();
+    // $window.onload = function(){
+    //     $('#frame').fadeOut('slow');
+    //     $('#loader-overlay').fadeOut(2700);
+    // }
+    // $window.onload();
 });
 "use strict";
 
