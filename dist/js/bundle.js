@@ -88,6 +88,10 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
         // console.log($scope.selectedProjSkills);
     };
 
+    $scope.stopVideo = function () {
+        $scope.selectedProject = null;
+    };
+
     //////////////////////////////////////////////////////////////////////////////
     //JQUERY THINGS
     //////////////////////////////////////////////////////////////////////////////
@@ -141,7 +145,7 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
             // groupCells: 3,
             adaptiveHeight: false,
             imagesLoaded: true,
-            autoPlay: true,
+            // autoPlay: true,
             contain: true
         });
 
@@ -173,7 +177,7 @@ angular.module('app').controller('mainCtrl', function ($scope, $window, $timeout
         $timeout(function () {
             $scope.windowLoaded = true;
             console.log('loading completed: ' + $scope.windowLoaded);
-        }, 1000);
+        }, 500);
     };
 });
 "use strict";
@@ -1025,8 +1029,7 @@ angular.module('app').directive('projectModalDir', function () {
                 imagesLoaded: true,
                 autoPlay: 4000,
                 // contain: true,
-                wrapAround: true,
-                adaptiveHeight: false
+                wrapAround: true
             });
         }
 

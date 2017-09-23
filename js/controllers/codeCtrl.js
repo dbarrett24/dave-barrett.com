@@ -74,7 +74,9 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
         // console.log($scope.selectedProjSkills);
     }
 
-
+    $scope.stopVideo = function(){
+        $scope.selectedProject = null;
+    }
 
 
 
@@ -135,7 +137,7 @@ sr.reveal('.projects-carousel');
             // groupCells: 3,
             adaptiveHeight: false,
             imagesLoaded: true,
-            autoPlay: true,
+            // autoPlay: true,
             contain: true
         });
 

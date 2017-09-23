@@ -3697,8 +3697,8 @@ body.open {
   color: #000; }
 
 .ng-hide-add {
-  -webkit-animation: 0.5s hide;
-  animation: 2.5s hide; }
+  -webkit-animation: 1.5s hide;
+  animation: 1.5s hide; }
 
 @keyframes hide {
   0% {
@@ -3908,7 +3908,17 @@ body.open {
   height: auto; }
 
 .flickity-prev-next-button {
+  opacity: 0;
   width: 35px !important;
-  height: 35px !important; }
+  height: 35px !important;
+  transition: opacity 0.2s; }
+
+.project-media-container:hover .flickity-prev-next-button {
+  opacity: 1;
+  transition: opacity 0.2s; }
+
+.projects-carousel:hover .flickity-prev-next-button {
+  opacity: 1;
+  transition: opacity 0.2s; }
 
 /*# sourceMappingURL=maps/styles.css.map */

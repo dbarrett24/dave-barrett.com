@@ -25,9 +25,10 @@
     color: $brand-black;
 }
 
+
 .ng-hide-add {
-    -webkit-animation:0.5s hide;
-    animation:2.5s hide;
+    -webkit-animation:1.5s hide;
+    animation:1.5s hide;
 }
 
 @keyframes hide {

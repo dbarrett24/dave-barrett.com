@@ -11,7 +11,8 @@ angular.module('app').controller('mainCtrl', function($scope, $window, $timeout,
             $scope.windowLoaded = true;
             console.log('loading completed: ' + $scope.windowLoaded);
 
-        }, 1000);
+        }, 500);
     }
+
 
 });

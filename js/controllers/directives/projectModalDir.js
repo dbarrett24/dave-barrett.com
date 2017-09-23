@@ -20,6 +20,7 @@ angular.module('app').directive('projectModalDir', function(){
                 $('.project-modal').removeClass('open');
                 $('.mobile-project-modal').removeClass('open');
                 $('.blur-bg').removeClass('open');
+            
             })
             $('.btn-corner-cancel').on('click', function(){
                 $('.overlay').removeClass('open');
@@ -38,8 +39,7 @@ angular.module('app').directive('projectModalDir', function(){
                 imagesLoaded: true,
                 autoPlay: 4000,
                 // contain: true,
-                wrapAround: true,
-                adaptiveHeight: false
+                wrapAround: true
             });
             
             
