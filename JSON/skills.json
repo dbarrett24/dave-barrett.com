@@ -69,7 +69,7 @@
             "id": 11,
             "skill_name": "SMACSS",
             "skill_category": "code",
-            "skill_logo": "../images/logos/skills-logos/smacss/smacss.svg"
+            "skill_logo": "../images/logos/skills-logos/smacss/smacss.png"
         },
         {
             "id": 12,
@@ -124,6 +124,36 @@
             "skill_name": "Digital Marketing",
             "skill_category": "marketing",
             "skill_logo": "../images/logos/skills-logos/digitalmarketing/digital-marketing.svg"
+        },
+        {
+            "id": 21,
+            "skill_name": "PPC/Online Ads",
+            "skill_category": "marketing",
+            "skill_logo": "../images/logos/skills-logos/ppc/ppc.png"
+        },
+        {
+            "id": 22,
+            "skill_name": "Figma",
+            "skill_category": "design",
+            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+        },
+        {
+            "id": 23,
+            "skill_name": "Dell Boomi",
+            "skill_category": "code",
+            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+        },
+        {
+            "id": 24,
+            "skill_name": "Salesforce",
+            "skill_category": "code",
+            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+        },
+        {
+            "id": 25,
+            "skill_name": "NetSuite",
+            "skill_category": "code",
+            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
         }
       
 ]
