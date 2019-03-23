@@ -3444,7 +3444,7 @@ a:hover {
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 100%;
   position: relative; }
   .profile-circle img {
     width: 100px;
@@ -3664,7 +3664,7 @@ body.open {
     position: absolute;
     top: -56px;
     height: 130px;
-    border-radius: 100px; }
+    border-radius: 100%; }
 
 .resume-list {
   list-style: none;

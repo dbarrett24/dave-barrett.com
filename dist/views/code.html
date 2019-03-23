@@ -69,39 +69,39 @@
 				<h2>Experience</h2>
 
 			</div>
-			<div class="section-text flex-top-center-column">
+			<div class="section-text flex-top-center-column" ng-repeat="job in jobs | filter: {job_tags: 'code'}">
 			
 				<div class="flex-top-center-row m35">
 					 <div class="job-logo">
-						<img src="./images/logos/devmtn-logo.png">
+						<img src="{{job.company_logo}}">
 					</div> 
 					<div class="job-desc">
 						<div class="job-title-wrap flex">
-							<img class="job-mini-logo" src="./images/logos/devmtn-logo.png">
+							<img class="job-mini-logo" src="{{job.company_logo}}">
 							<div class="job-title">
-								<h4>DevMountain Front-End</h4>
-								<h5 class="job-date">Feb 2017 - June 2017</h5>
+								<h4>{{job.company_name}}</h4>
+								<h5 class="job-date">{{job.job_date_range}}</h5>
 							</div>
 						</div>
-						<p>Within a 12 week immersive program, I used HTML5, CSS3, JavaScript, and RESTful APIs to create beautiful full-stack applications in front-end frameworks such as Angular and React. See my personal projects below to learn more.</p>
+						<p>{{job.job_description}}</p>
 					</div>
 				</div>
 
-				<div class="flex-top-center-row m35">
+				<!-- <div class="flex-top-center-row m35">
 					 <div class="job-logo">
-						<img src="./images/logos/devmtn-logo.png">
+						<img src="{{company_logo}}">
 					</div> 
 					<div class="job-desc">
 						<div class="job-title-wrap flex">
-							<img class="job-mini-logo" src="./images/logos/devmtn-logo.png">
+							<img class="job-mini-logo" src="{{company_logo}}">
 							<div class="job-title">
-								<h4>DevMountain Back-End</h4>
-								<h5 class="job-date">Feb 2017 - June 2017</h5>
+								<h4>{{job_title}}</h4>
+								<h5 class="job-date">{{job_date_range}}</h5>
 							</div>
 						</div>
-						<p>Within a 12 week immersive program, I used JavaScript to create fully functional back-ends to my applications with Node.js, Express, Massive, and PostgreSql. See my personal projects below to learn more.</p>
+						<p>{{job_description}}</p>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 			<div class="flex-center-center">

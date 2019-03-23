@@ -13,10 +13,10 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
         });
     }
     $scope.getSkills();
-
-    mainService.getExperience().then(function (experience) {
-        $scope.experience = experience;
-        console.log("experience", experience);
+    
+    mainService.getExperience().then(function (jobs) {
+        $scope.jobs = jobs;
+        console.log("experience", jobs);
     });
 
     mainService.getQuotes().then(function (quotes) {
@@ -59,7 +59,35 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
         }
         return ret;
     }
+    
+    //FILTER EXPERIENCE (In Progress)
+    $scope.jobFilter = function(tag){
+        $scope.jobs = $scope.jobs.filter(function(job){
+            return job.job_tags.includes(tag);
+        })
+    }
+    $scope.filterJobs = function(tag){
+        
+        $scope.jobs = $scope.jobMap.map(function(job){
+            return job;
+        })
+        $scope.jobFilter(tag);
+    }
 
+    //FILTER TESTIMONIALS (In Progress)
+
+    // $scope.skillFilter = function(category){
+    //     $scope.skills = $scope.skills.filter(function(skill){
+    //         return skill.skill_category === category;
+    //     })
+    // }
+    // $scope.filterSkills = function(category){
+        
+    //     $scope.skills = $scope.skillMap.map(function(skill){
+    //         return skill;
+    //     })
+    //     $scope.skillFilter(category);
+    // }
 
     //PROJECTS
     $scope.findProjectInfo = function (projectName) {

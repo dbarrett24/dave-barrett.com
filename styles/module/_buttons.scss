@@ -126,7 +126,7 @@ button:active {
 }
 
 .btn-round{
-    border-radius: $border-radius-cir;
+    border-radius: $border-radius-btn-cir;
     padding: $round-padding;
     
 }
@@ -142,7 +142,7 @@ button:active {
 }
 
 .btn-round-sm{
-    border-radius: $border-radius-cir;
+    border-radius: $border-radius-btn-cir;
     padding: $square-padding-sm;
     height: 35px;
 }
