@@ -2,6 +2,10 @@ body.open{
     overflow: hidden;
   
 }
+.main-wrapper{
+    transform: scale(1);
+    transition: all 0.5s;
+}
 
 .overlay{
     position: fixed;
@@ -47,7 +51,7 @@ body.open{
     transition: opacity 0.5s, transform 0.5s;
 }
 .project-modal{
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     // overflow: hidden;
     position: fixed;
     margin-left: auto;
@@ -59,8 +63,10 @@ body.open{
     max-height: calc(100% - 100px);
     right: 0;
     bottom: 0;
-    width: 70%;
-    height: 864px;
+    // width: 70%;
+    // height: 864px;
+    width: 1080px;
+    height: 777px;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
     border-radius: $border-radius-card;
     box-shadow: $card-shadow;
@@ -112,12 +118,12 @@ body.open{
         // padding-bottom: 56.25%;
         position: relative;
         // background: white;
-        // overflow: hidden;
+        border-radius: $border-radius-card;
+        overflow: hidden;
         .carousel-media-cell{
             .video-container{
                 position:relative;
                 padding-bottom:56.25%;
-                padding-top:30px;
                 height:0;
                 overflow:hidden;
                 iframe{
@@ -135,13 +141,18 @@ body.open{
            
         }
     }
+    .project-information{
+        padding-top: 20px;
+    }
     .project-sidebar{
         color: gray;
         font-size: 12px;
         width: 100%;
         height: 100%;
+        border-radius: $border-radius-card;
         background: $brand-gray;
         padding: 45px 20px 0 20px;
+        margin: 0 20px 0 0;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -199,20 +210,10 @@ body.open{
 // }
 
 
-
-//Gaussian BLUR?! can't get it to work
-.blur-bg{
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
-    -webkit-filter: blur(10px);
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'3\'/></filter></svg>#blur");
-    filter: blur(10px);
-}
-.blur-bg.open{
-    opacity: 0.5;
-    visibility: visible;
-    transition: opacity 0.5s;
+.is-blurred{
+    filter: blur(7px);
+    transform: scale(0.9);
+    transition: all 0.5s;
 }
 
 .no-scroll {
@@ -220,13 +221,10 @@ body.open{
 }
 
 
-
-
 /////RESUME MODAL//////////
 .trigger-resume{
 
 }
-
 .resume-modal.open{
     opacity: 1;
     visibility: visible;
@@ -262,7 +260,7 @@ body.open{
         height: 86%;
         position: relative;
         top: 63px;
-
+        
     }
     h3{
         margin-bottom: 0;

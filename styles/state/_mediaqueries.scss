@@ -34,6 +34,7 @@
         height: 75%;
         @include flex-center-top;
     }
+
     .section-content-wrapper{
         overflow: hidden;
     }
@@ -150,7 +151,7 @@
         .hero-container{
             height: 85%;
         }
-        
+
         .section-text{
             padding: 0px 75px;
         }
@@ -226,7 +227,7 @@
             .hero-container{
                 height: 100%;
             }
-            
+
             .section-text{
                 padding: 0px 200px;
             }

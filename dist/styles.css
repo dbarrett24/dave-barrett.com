@@ -96,6 +96,9 @@ h1, h2, h3, a, button, html, body {
   font-weight: 300;
   line-height: 1.4em; }
 
+.font-gray {
+  color: gray; }
+
 .bold {
   font-weight: 700; }
 
@@ -129,6 +132,10 @@ h1 {
 h2 {
   font-size: 2.6em;
   margin-bottom: 15px; }
+
+.h2-sm {
+  font-size: 2.3em;
+  margin-bottom: 0; }
 
 h3 {
   font-size: 1.825em;
@@ -1846,6 +1853,8 @@ img {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
+  transform: scale(1);
+  transition: transform 0.5s;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -1857,9 +1866,14 @@ img {
   position: absolute;
   z-index: 50;
   top: 0;
+  transform: scale(1);
+  transition: transform 0.5s;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.header {
+  position: relative; }
 
 #footer {
   width: 100%;
@@ -2289,7 +2303,8 @@ img {
   align-items: flex-start;
   padding: 10px 20px;
   z-index: 1001;
-  transition: all 0.5s; }
+  transform: scale(1);
+  transition: transform 0.5s; }
   .nav .nav-left {
     height: 100%;
     width: 100%;
@@ -2335,7 +2350,7 @@ img {
   top: 0;
   width: 100%;
   background: url("../images/backgrounds/pw_maze_black_2X.png") left top repeat;
-  transition: all 0.5s; }
+  transition: all 0.75s; }
 
 section {
   position: relative;
@@ -3456,6 +3471,10 @@ a:hover {
 body.open {
   overflow: hidden; }
 
+.main-wrapper {
+  transform: scale(1);
+  transition: all 0.5s; }
+
 .overlay {
   position: fixed;
   width: 100%;
@@ -3499,7 +3518,7 @@ body.open {
   transition: opacity 0.5s, transform 0.5s; }
 
 .project-modal {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   position: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -3510,8 +3529,8 @@ body.open {
   max-height: calc(100% - 100px);
   right: 0;
   bottom: 0;
-  width: 70%;
-  height: 864px;
+  width: 1080px;
+  height: 777px;
   background: url("../images/backgrounds/pw_maze_black_2X.png") left top repeat;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
@@ -3552,11 +3571,12 @@ body.open {
   height: 100%; }
   .modal-content .project-media-container {
     width: 100%;
-    position: relative; }
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden; }
     .modal-content .project-media-container .carousel-media-cell .video-container {
       position: relative;
       padding-bottom: 56.25%;
-      padding-top: 30px;
       height: 0;
       overflow: hidden; }
       .modal-content .project-media-container .carousel-media-cell .video-container iframe {
@@ -3568,13 +3588,17 @@ body.open {
     .modal-content .project-media-container .carousel-media-cell video, .modal-content .project-media-container .carousel-media-cell img {
       width: 100% !important;
       height: auto !important; }
+  .modal-content .project-information {
+    padding-top: 20px; }
   .modal-content .project-sidebar {
     color: gray;
     font-size: 12px;
     width: 100%;
     height: 100%;
+    border-radius: 6px;
     background: #333;
     padding: 45px 20px 0 20px;
+    margin: 0 20px 0 0;
     display: flex;
     align-items: center;
     flex-direction: column; }
@@ -3609,18 +3633,10 @@ body.open {
   width: 100%;
   margin-bottom: 30px; }
 
-.blur-bg {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0s 0.5s;
-  -webkit-filter: blur(10px);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='3'/></filter></svg>#blur");
-  filter: blur(10px); }
-
-.blur-bg.open {
-  opacity: 0.5;
-  visibility: visible;
-  transition: opacity 0.5s; }
+.is-blurred {
+  filter: blur(7px);
+  transform: scale(0.9);
+  transition: all 0.5s; }
 
 .no-scroll {
   overflow: hidden; }
@@ -3897,7 +3913,7 @@ body.open {
   margin-bottom: 50px; }
 
 .project-media-carousel {
-  width: 100%;
+  width: 102%;
   margin-bottom: 0px; }
 
 .carousel-cell {

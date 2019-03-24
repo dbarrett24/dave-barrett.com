@@ -1,0 +1,17 @@
+<section id="testimonials">
+	<img class="rip-separator rip-abs-top" src='./images/ripped_strips/rip_strip_1.png'>
+	<div class="section-content-wrapper bg-gradient-paper">
+		<div class="section-text flex-top-center-column m150 carousel-cell" ng-repeat="quote in quotes">
+			<div class="profile-circle m15">
+				<img src="{{quote.author_image}}">
+			</div>
+			<div class="quote-container flex-top-center-column m15">
+				<p class="quote">{{quote.quote}}</p>
+				<p class="quote-by m25">-- {{quote.author}} ({{quote.relationship}})</p>
+
+			</div>
+		</div>
+	</div>
+	<img class="rip-separator rip-abs-bottom" src='./images/ripped_strips/rip_strip_7.png'>
+	<img class="dave-silho" src="./images/photoshop/dave-silho.png">
+</section>

@@ -170,7 +170,20 @@ sr.reveal('.projects-carousel');
         });
 
        
-
+        //Quotes CAROUSEL
+        $('.quotes-carousel').flickity({
+            // options
+            cellSelector: '.quote-carousel-cell',
+            cellAlign: 'left',
+            pageDots: false,
+            // groupCells: 3,
+            adaptiveHeight: true,
+            imagesLoaded: true,
+            // autoPlay: true,
+            autoPlay: 4000,
+            contain: true,
+            wrapAround: true
+        });
        
 
         $('.project-card').hover(

@@ -10,6 +10,10 @@ h1, h2, h3, a, button, html, body{
     line-height: $line-height;
     
 }
+.font-gray{
+    color: gray;
+}
+
 .bold{
     font-weight: 700;
 }
@@ -48,6 +52,10 @@ h1{
 h2{
     font-size: $font-size-h2;
     margin-bottom: 15px;
+}
+.h2-sm{
+    font-size: $font-size-h2-sm;
+    margin-bottom: 0;
 }
 
 h3{

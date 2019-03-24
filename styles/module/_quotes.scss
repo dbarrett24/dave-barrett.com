@@ -1,6 +1,7 @@
 .quote-container{
     width: auto;
     position: relative;
+
 }
 .quote{
     font-family: $primary-font-family;
@@ -57,4 +58,9 @@
 }
 .quote-end{
     font-size: 45px !important;
+}
+.quotes-carousel{
+    // height: 63vh;
+    // margin-top: 75px;
+    // margin-bottom: 50px;
 }

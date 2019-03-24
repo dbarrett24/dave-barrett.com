@@ -7,7 +7,8 @@
     @include flex-space-between;
     padding: 10px 20px;
     z-index: 1001;
-    transition: all 0.5s;
+    transform: scale(1);
+    transition: transform 0.5s;
     .nav-left{
         height: 100%;
         width: 100%;
@@ -64,7 +65,7 @@
     // background: url('../images/backgrounds/x-color-bg.jpg') no-repeat center center;
     // background-size: cover;
     background: url('../images/backgrounds/pw_maze_black_2X.png') left top repeat;
-    transition: all 0.5s;
+    transition: all 0.75s;
     
 }
 // .is-absolute{

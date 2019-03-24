@@ -29,7 +29,7 @@ angular.module('app').directive('navDir', function(){
                 var scrollPos = $(this).scrollTop();
                 // console.log(scrollPos);
 
-                if(scrollPos > 879){
+                if(scrollPos > 940){ //877 was old value (not as good on mobile)
                     // $('.nav').removeClass('is-absolute');
                     $('.nav').addClass('is-fixed');
                 }

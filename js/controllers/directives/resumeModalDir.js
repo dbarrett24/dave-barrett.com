@@ -8,7 +8,8 @@ angular.module('app').directive('resumeModalDir', function(){
                 $('body').addClass('open');
                 $('.overlay-warm').addClass('open');
                 $('.resume-modal').addClass('open');
-                $('.blur-bg').addClass('open');
+                $('.main-wrapper').addClass('is-blurred');
+                $('.project-modal').addClass('is-blurred');
                 $(".overlay-warm").hasClass("open", function () {
                     $("body").addClass("no-scroll");
                 });
@@ -16,8 +17,9 @@ angular.module('app').directive('resumeModalDir', function(){
             $('.overlay-warm').on('click', function(){
                 $(this).removeClass('open');
                 $('body').removeClass('open');
+                $('.main-wrapper').removeClass('is-blurred');
+                $('.project-modal').removeClass('is-blurred');
                 $('.resume-modal').removeClass('open');
-                $('.blur-bg').removeClass('open');
             })
         }
     }
