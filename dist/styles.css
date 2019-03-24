@@ -3468,6 +3468,18 @@ a:hover {
 .quote-end {
   font-size: 45px !important; }
 
+.quote-carousel-cell {
+  width: 100%;
+  /* full width */
+  height: auto;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.quotes-carousel {
+  height: 63vh; }
+
 body.open {
   overflow: hidden; }
 

@@ -177,7 +177,7 @@ sr.reveal('.projects-carousel');
             cellAlign: 'left',
             pageDots: false,
             // groupCells: 3,
-            adaptiveHeight: true,
+            adaptiveHeight: false,
             imagesLoaded: true,
             // autoPlay: true,
             autoPlay: 4000,
