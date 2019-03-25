@@ -3469,6 +3469,8 @@ a:hover {
   font-size: 45px !important; }
 
 .quote-carousel-cell {
+  display: flex;
+  justify-content: center;
   width: 100%;
   /* full width */
   height: auto;
@@ -3773,7 +3775,7 @@ body.open {
     display: none; }
   .job-desc {
     margin-left: 0; }
-  .section-text {
+  .section-text, .quote-carousel-cell {
     padding: 0px 25px; }
   .section-content {
     padding: 0px 10px; }
@@ -3823,7 +3825,7 @@ body.open {
     display: flex; }
   .hero-container {
     height: 85%; }
-  .section-text {
+  .section-text, .quote-carousel-cell {
     padding: 0px 75px; }
   .section-content {
     padding: 0px 50px; }
@@ -3865,7 +3867,7 @@ body.open {
     display: block; }
   .hero-container {
     height: 100%; }
-  .section-text {
+  .section-text, .quote-carousel-cell {
     padding: 0px 200px; }
   .section-content {
     padding: 0px 100px; }
@@ -3901,7 +3903,7 @@ body.open {
     height: 28px; } }
 
 @media (min-width: 1400px) {
-  .section-text {
+  .section-text, .quote-carousel-cell {
     padding: 0px 400px; }
   .section-content {
     padding: 0px 400px; }
@@ -3909,7 +3911,7 @@ body.open {
     height: 40px; } }
 
 @media (min-width: 1800px) {
-  .section-text {
+  .section-text, .quote-carousel-cell {
     padding: 0px 600px; } }
 
 @media (min-height: 0px) {

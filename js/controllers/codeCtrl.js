@@ -127,6 +127,7 @@ window.sr = ScrollReveal({
 sr.reveal('.section-text');
 sr.reveal('.section-content');
 sr.reveal('.projects-carousel');
+sr.reveal('.quotes-carousel');
 //END/////////////////
 
 
@@ -182,7 +183,8 @@ sr.reveal('.projects-carousel');
             // autoPlay: true,
             autoPlay: 4000,
             contain: true,
-            wrapAround: true
+            wrapAround: true,
+            // setGallerySize: false
         });
        
 

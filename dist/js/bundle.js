@@ -137,6 +137,7 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
     sr.reveal('.section-text');
     sr.reveal('.section-content');
     sr.reveal('.projects-carousel');
+    sr.reveal('.quotes-carousel');
     //END/////////////////
 
 
@@ -191,6 +192,7 @@ angular.module('app').controller('codeCtrl', function ($scope, $window, mainServ
             autoPlay: 4000,
             contain: true,
             wrapAround: true
+            // setGallerySize: false
         });
 
         $('.project-card').hover(function () {

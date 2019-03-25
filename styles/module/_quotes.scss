@@ -60,8 +60,10 @@
     font-size: 45px !important;
 }
 .quote-carousel-cell{
+    @include flex-center-top;
     width: 100%; /* full width */
     height: auto;
+
     /* center images in cells with flexbox */
     display: flex;
     align-items: center;
@@ -69,5 +71,10 @@
 
 }
 .quotes-carousel{
+    // padding-bottom: 15.3%;
     height: 63vh;
+
+    .flickity-viewport{
+     
+    }
 }

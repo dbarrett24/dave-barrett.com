@@ -101,15 +101,38 @@
 		<div class="section-content-wrapper bg-gradient-paper">
 			<div class="quotes-carousel">
 
-				<div class="section-text flex-top-center-column m150 quote-carousel-cell" ng-repeat="quote in quotes">
+
+				<div class="flex-top-center-column m150 quote-carousel-cell">
 					<div class="profile-circle m15">
-						<img src="{{quote.author_image}}">
+						<img ng-src="{{quotes[0].author_image}}">
 					</div>
 					<div class="quote-container flex-top-center-column m15">
-						<p class="quote">{{quote.quote}}</p>
-						<p class="quote-by m25">-- {{quote.author}} ({{quote.relationship}})</p>
+						<p class="quote">{{quotes[0].quote}}</p>
+						<p class="quote-by m25">-- {{quotes[0].author}} ({{quotes[0].relationship}})</p>
 					</div>
 				</div>
+
+				<div class="flex-top-center-column m150 quote-carousel-cell">
+					<div class="profile-circle m15">
+						<img ng-src="{{quotes[1].author_image}}">
+					</div>
+					<div class="quote-container flex-top-center-column m15">
+						<p class="quote">{{quotes[1].quote}}</p>
+						<p class="quote-by m25">-- {{quotes[1].author}} ({{quotes[1].relationship}})</p>
+					</div>
+				</div>
+
+				<div class="flex-top-center-column m150 quote-carousel-cell">
+					<div class="profile-circle m15">
+						<img ng-src="{{quotes[2].author_image}}">
+					</div>
+					<div class="quote-container flex-top-center-column m15">
+						<p class="quote">{{quotes[2].quote}}</p>
+						<p class="quote-by m25">-- {{quotes[2].author}} ({{quotes[2].relationship}})</p>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 		<img class="rip-separator rip-abs-bottom" src='./images/ripped_strips/rip_strip_7.png'>
