@@ -141,19 +141,19 @@
             "id": 23,
             "skill_name": "Dell Boomi",
             "skill_category": "code",
-            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+            "skill_logo": "../images/logos/skills-logos/boomi/boomi.svg"
         },
         {
             "id": 24,
             "skill_name": "Salesforce",
             "skill_category": "code",
-            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+            "skill_logo": "../images/logos/skills-logos/salesforce/salesforce.svg"
         },
         {
             "id": 25,
             "skill_name": "NetSuite",
             "skill_category": "code",
-            "skill_logo": "../images/logos/skills-logos/figma/figma.svg"
+            "skill_logo": "../images/logos/skills-logos/netsuite/netsuite.svg"
         }
       
 ]

@@ -212,11 +212,12 @@ body.open{
 // }
 
 
-.is-blurred{
-    filter: blur(7px);
-    transform: scale(0.9);
-    transition: all 0.5s;
-}
+//Unused because of Filter(Blur) css performance issues
+// .is-blurred{
+//     // filter: blur(7px);
+//     transform: scale(0.9);
+//     transition: all 0.5s;
+// }
 
 .no-scroll {
     overflow: hidden;

@@ -9,7 +9,6 @@ angular.module('app').directive('projectModalDir', function(){
                 $('.overlay').addClass('open');
                 $('.project-modal').addClass('open');
                 $('.mobile-project-modal').addClass('open');
-                $('.blur-bg').addClass('open');
                 $(".overlay-huge").hasClass("open", function () {
                     $("body").addClass("no-scroll");
                 });
@@ -19,7 +18,7 @@ angular.module('app').directive('projectModalDir', function(){
                 $('body').removeClass('open');
                 $('.project-modal').removeClass('open');
                 $('.mobile-project-modal').removeClass('open');
-                $('.blur-bg').removeClass('open');
+              
             
             })
             $('.btn-corner-cancel').on('click', function(){
@@ -27,7 +26,7 @@ angular.module('app').directive('projectModalDir', function(){
                 $('body').removeClass('open');
                 $('.project-modal').removeClass('open');
                 $('.mobile-project-modal').removeClass('open');
-                $('.blur-bg').removeClass('open');
+                
             })
 
             $('.project-media-carousel').flickity({
