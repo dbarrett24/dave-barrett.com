@@ -7,11 +7,11 @@ angular.module('app').controller('mainCtrl', function($scope, $window, $timeout,
 
   
     $window.onload = function(){
-        $timeout(function(){
+        // $timeout(function(){
             $scope.windowLoaded = true;
             console.log('loading completed: ' + $scope.windowLoaded);
 
-        }, 500);
+        // }, 500);
     }
 
 
