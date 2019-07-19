@@ -13,6 +13,4 @@ angular.module('app').controller('mainCtrl', function($scope, $window, $timeout,
 
         }, 500);
     }
-
-
 });
