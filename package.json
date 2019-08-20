@@ -21,9 +21,11 @@
     "gulp-cachebust": "*",
     "gulp-concat": "*",
     "gulp-print": "*",
-    "gulp-sass": "*",
+    "gulp-sass": "^4.0.2",
     "gulp-scss": "*",
-    "gulp-sourcemaps": "*"
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0"
   },
   "description": "Personal Portfolio of Dev Projects for Employers and Clients",
   "devDependencies": {}

@@ -80,13 +80,13 @@
         {
             "id": 13,
             "skill_name": "Electron",
-            "skill_category": "learning",
+            "skill_category": "code",
             "skill_logo": "../images/logos/skills-logos/electron/electron-original.svg"
         },
         {
             "id": 14,
             "skill_name": "GSAP",
-            "skill_category": "learning",
+            "skill_category": "code",
             "skill_logo": "../images/logos/skills-logos/gsap/gsap-logo-man.svg"
         },
         {

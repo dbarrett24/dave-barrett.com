@@ -1,4 +1,4 @@
-angular.module('app').controller('mainCtrl', function($scope, $window, $timeout, mainService){
+angular.module('app').controller('mainCtrl', ['$scope', '$window', '$timeout','mainService', function($scope, $window, $timeout, mainService){
     // *****************************
         $scope.test = mainService.test;
         // *****************************
@@ -13,4 +13,4 @@ angular.module('app').controller('mainCtrl', function($scope, $window, $timeout,
 
         }, 500);
     }
-});
+}]);

@@ -158,38 +158,38 @@ button:active {
     transition: all 0.5s;
 }
 
-&.btn-default {
+.btn-default {
     @include btn-styles($gray-light);
 }
 
-&.btn-primary {
+.btn-primary {
     @include btn-styles($brand-black);
 }
 
-&.btn-info {
+.btn-info {
     @include btn-styles($brand-orange);
 }
 
-&.btn-success {
+.btn-success {
     @include btn-styles($brand-green);
 }
 
-&.btn-gray {
+.btn-gray {
     @include btn-styles($brand-charcoal);
 }
 
-&.btn-danger {
+.btn-danger {
     @include btn-styles($brand-purple);
 }
 
-&.btn-red {
+.btn-red {
     @include btn-styles($brand-red);
 }
-&.btn-teal {
+.btn-teal {
     @include btn-styles($brand-teal);
 }
 
-&.btn-white {
+.btn-white {
     &,
     &:focus,
     &:hover {
@@ -205,96 +205,96 @@ button:active {
 
 
 } // social buttons
-&.btn-facebook {
+.btn-facebook {
     @include social-buttons-color($social-facebook);
 }
 
-&.btn-twitter {
+.btn-twitter {
     @include social-buttons-color($social-twitter);
 }
 
-&.btn-pinterest {
+.btn-pinterest {
     @include social-buttons-color($social-pinterest);
 }
 
-&.btn-google {
+.btn-google {
     @include social-buttons-color($social-google);
 }
 
-&.btn-linkedin {
+.btn-linkedin {
     @include social-buttons-color($social-linkedin);
 }
 
-&.btn-dribbble {
+.btn-dribbble {
     @include social-buttons-color($social-dribbble);
 }
 
-&.btn-github {
+.btn-github {
     @include social-buttons-color($social-github);
 }
 
-&.btn-youtube {
+.btn-youtube {
     @include social-buttons-color($social-youtube);
 }
 
-&.btn-instagram {
+.btn-instagram {
     @include social-buttons-color($social-instagram);
 }
 
-&.btn-reddit {
+.btn-reddit {
     @include social-buttons-color($social-reddit);
 }
 
-&.btn-tumblr {
+.btn-tumblr {
     @include social-buttons-color($social-tumblr);
 }
 
-&.btn-behance {
+.btn-behance {
     @include social-buttons-color($social-behance);
 }
 
 //just hover color
-.facebook {
+// .facebook {
     
-}
+// }
 
-.twitter {
+// .twitter {
   
-}
+// }
 
-.pinterest {
+// .pinterest {
     
-}
+// }
 
-.google {
-}
+// .google {
+// }
 
-.linkedin {
-}
+// .linkedin {
+// }
 
-.dribbble {
-}
+// .dribbble {
+// }
 
-.github {
-}
+// .github {
+// }
 
-.youtube {
-}
+// .youtube {
+// }
 
-.instagram {
-}
+// .instagram {
+// }
 
-.reddit {
-}
+// .reddit {
+// }
 
-.tumblr {
-}
+// .tumblr {
+// }
 
-.behance {
-}
+// .behance {
+// }
 
-.codepen {
-}
+// .codepen {
+// }
 
 
 

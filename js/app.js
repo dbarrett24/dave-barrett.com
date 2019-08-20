@@ -1,5 +1,5 @@
 angular.module('app', ['ui.router', 'ngAnimate'])
-    .config(function($stateProvider, $urlRouterProvider){
+    .config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('code', {
                 url: '/',
@@ -8,7 +8,7 @@ angular.module('app', ['ui.router', 'ngAnimate'])
             })
 
             $urlRouterProvider.otherwise('/');
-});
+}]);
 
 //WHITELIST video source for Angular to use iframe source.
 angular.module('app').filter('trusted', ['$sce', function ($sce) {

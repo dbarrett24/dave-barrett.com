@@ -1,4 +1,4 @@
-angular.module('app').controller('codeCtrl', function ($scope, $window, mainService) {
+angular.module('app').controller('codeCtrl', ['$scope', '$window', 'mainService', function ($scope, $window, mainService) {
 
 
     $scope.getSkills = function(){
@@ -132,7 +132,7 @@ sr.reveal('.quotes-carousel');
 
 
 
-
+$(document).ready(function(){
     $(function(){
     
         //Intro Header Scroll Fade Effect
@@ -208,4 +208,6 @@ sr.reveal('.quotes-carousel');
 
     })
 
-});
+})
+
+}]);

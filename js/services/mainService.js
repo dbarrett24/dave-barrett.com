@@ -1,4 +1,4 @@
-angular.module('app').service('mainService', function($http){
+angular.module('app').service('mainService', ['$http', function($http){
     // *****************************
         this.test = "Controller & Service are working";
     // *****************************
@@ -38,4 +38,4 @@ angular.module('app').service('mainService', function($http){
                 return response.data
             })
         }
-});
+}]);

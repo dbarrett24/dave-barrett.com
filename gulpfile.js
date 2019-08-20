@@ -7,6 +7,7 @@ var gulp = require('gulp')
 ,   concat = require('gulp-concat')
 ,   CacheBuster = require('gulp-cachebust') //capitalized because it is a constructor function
 ,   print = require('gulp-print')
+,   uglify = require('gulp-uglify')
 
 var cachebust = new CacheBuster();  //need this constructor function
 
@@ -34,7 +35,7 @@ function buildJS() {
     .pipe(print())                        
     .pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(concat('bundle.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/js'));
 }
@@ -77,9 +78,6 @@ function watch() {
     gulp.watch('download/**/*', buildDL);
 };
 
-gulp.task("build", gulp.series(buildCSS, buildJS, buildViews, buildImages, buildJSON, buildDL, build));
-gulp.task('start', gulp.series(build, watch));
+// gulp.task(series(build, watch));
 
-gulp.task('default', function start(done){
-    done();
-});
+gulp.task('default', gulp.series(buildCSS, buildJS, buildViews, buildImages, buildJSON, buildDL, build, watch));
