@@ -11,10 +11,11 @@ angular.module('app').directive('navDir', function(){
             scrollLink.click(function(event){
                 event.preventDefault();
                 $('body,html').animate({
-                    scrollTop: $(this.hash).offset().top - 100
+                    scrollTop: $(this.hash).offset().top
                 }, 500)
 
             })
+         
 
 
             //Sticky Nav
@@ -29,7 +30,7 @@ angular.module('app').directive('navDir', function(){
                 var scrollPos = $(this).scrollTop();
                 // console.log(scrollPos);
 
-                if(scrollPos > 940){ //877 was old value (not as good on mobile)
+                if(scrollPos > ($(window).innerHeight() - 100) ){ //877 was old value (not as good on mobile)
                     // $('.nav').removeClass('is-absolute');
                     $('.nav').addClass('is-fixed');
                 }
