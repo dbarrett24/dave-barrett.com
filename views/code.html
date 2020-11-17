@@ -70,9 +70,9 @@
 				<h2>Experience</h2>
 
 			</div>
-			<div class="section-text flex-top-center-column" ng-repeat="job in jobs | filter: {job_tags: 'code'}">
+			<div class="section-text flex-top-center-column" ng-repeat="job in jobs | orderBy: 'id':true">
 			
-				<div class="flex-top-center-row m35">
+				<div class="job-row flex-space-between m35">
 					 <div class="job-logo">
 						<img src="{{job.company_logo}}">
 					</div> 
@@ -300,8 +300,8 @@
 								<!-- <a href="https://www.youtube.com/channel/UCnGNlra1OdJAn3IRaB_B7-g?view_as=subscriber/"><button class="social-link-md youtube"><span class="fa fa-youtube "></span></button></a> -->
 							</div>
 
-							<form style="margin: 0">
-								<input class="input-text" placeholder="Your Name">
+							<form style="margin: 0" action="mailto:dev.davebarrett@gmail.com">
+								<input class="input-text" placeholder="Your Name" name="name">
 								<input class="input-text" placeholder="Your Email">
 								<input class="input-text" placeholder="Subject">
 								<textarea class="input-text" placeholder="Message" rows="5" style="height: 200px"></textarea>

@@ -1,10 +1,14 @@
-.job-logo{
-    img{
-        height: 150px;
+.job-row{
+    width: 100%;
+    .job-logo{
+        img{
+            height: 150px;
+        }
     }
 }
 .job-desc{
     margin-left: 75px;
+    width: 100%;
     .job-title-wrap{
         .job-title{
 

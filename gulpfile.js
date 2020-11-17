@@ -55,7 +55,7 @@ function buildImages(){
 function buildJSON(){
     console.log("Gulp: Rebuilding JSON with your changes");
     return gulp.src('JSON/*.json')
-    .pipe(gulp.dest('./dist/JSON'));
+    .pipe(gulp.dest('./dist/json'));
 }
 function buildDL(){
     console.log("Gulp: Rebuilding Downloads with your changes");
@@ -80,4 +80,4 @@ function watch() {
 
 // gulp.task(series(build, watch));
 
-gulp.task('default', gulp.series(buildCSS, buildJS, buildViews, buildImages, buildJSON, buildDL, build, watch));
+gulp.task('default', gulp.series(buildCSS, buildJS, buildImages, buildJSON, buildDL, buildViews, build, watch));

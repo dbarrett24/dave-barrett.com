@@ -32,10 +32,12 @@ hr{
 }
 .bg-white-paper{
     background: url('../images/backgrounds/white_paper_texture.jpg') no-repeat center center;
+    background-repeat: repeat-x;
     // background: white;
 }
 .bg-gradient-paper{
     background: url('../images/backgrounds/gradient_white_background.png') no-repeat center center;
+    background-repeat: repeat-x;
 }
 
 .autoH{

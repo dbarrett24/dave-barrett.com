@@ -63,7 +63,8 @@
     @include flex-center-top;
     width: 100%; /* full width */
     height: auto;
-    margin-top: 6%;
+    // margin-top: 6%;
+    margin: 2rem auto 0;
     /* center images in cells with flexbox */
     display: flex;
     align-items: center;

@@ -20,6 +20,28 @@
             "job_tags": "code back-end",
             "company_name": "DevMountain Back-End",
             "company_logo": "./images/logos/devmtn-logo.png"
+        },
+        {
+            "id": 2,
+            "job_title": "System Operations | Integration Engineer",
+            "job_description": "Managed user cases and provided in-depth admin support for over 5 systems and tools, including Salesforce, NetSuite, Quip, LucidChart, DocuSign, and more. I also managed, developed and maintained integration between Eide Bailly's SQL Database of critical company data and Salesforce.",
+            "job_accomplishments": "",
+            "job_awards": "",
+            "job_date_range": "November 2017 - April 2019",
+            "job_tags": "code back-end integration systems data migration",
+            "company_name": "Eide Bailly Technology Consulting",
+            "company_logo": "./images/logos/devmtn-logo.png"
+        },
+        {
+            "id": 3,
+            "job_title": "Frontend Developer",
+            "job_description": "I designed and developed responsive UI themes and UI components. Created  a check template generator with dynamic accounting/routing information which is used by hundreds of the client's store locations to print disbursement checks for their customers. Reskinned our entire Admin Dashboard to use a more DRY CSS structure and implemented a beautiful dark theme :)",
+            "job_accomplishments": "Created a check template generator with dynamic accounting/routing information which is used by hundreds of the client's store locations to print disbursement checks for their customers. Reskinned several dashboard UIs to use reusable variables and DRY CSS structure with a Dark Theme.",
+            "job_awards": "Promoted to UI Team Lead",
+            "job_date_range": "February 2020 - Present",
+            "job_tags": "code back-end front-end web-development ui ux design",
+            "company_name": "Alchemy Technology",
+            "company_logo": "./images/logos/alchemy-logo-orange.png"
         }
         
 ]

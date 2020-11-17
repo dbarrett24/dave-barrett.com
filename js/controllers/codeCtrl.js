@@ -74,6 +74,7 @@ angular.module('app').controller('codeCtrl', ['$scope', '$window', 'mainService'
         $scope.jobFilter(tag);
     }
 
+
     //FILTER TESTIMONIALS (In Progress)
 
     // $scope.skillFilter = function(category){
