@@ -14,7 +14,8 @@ body.open{
     height: 100%;
     top: 0;
     left: 0;
-    background: $brand-gradient;
+    // background: $brand-gradient;
+    background: linear-gradient(135deg, #13a89eb5 0%, #857bcef2 100%);
     z-index: 1500;
 }
 .overlay-warm{
@@ -23,7 +24,9 @@ body.open{
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #fc466b, #3f5efb);
+    // background: linear-gradient(to right, #fc466b, #3f5efb);
+    background: linear-gradient(to right, #fc466b9e, #3f5efba6);
+    backdrop-filter: blur(3px);
     z-index: 1520;
 }
 
@@ -34,7 +37,7 @@ body.open{
     transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
 }
 .overlay-huge.open{
-    opacity: 0.75;
+    opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
     transition: opacity 0.5s, transform 0.5s;

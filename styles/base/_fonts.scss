@@ -3,7 +3,9 @@
 //Open-Sans from Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
-
+html{
+    overflow-x: hidden;
+}
 h1, h2, h3, a, button, html, body{
     font-family: $primary-font-family;
     font-weight: $app-font-weight;

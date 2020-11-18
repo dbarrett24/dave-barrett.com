@@ -22,6 +22,7 @@ angular.module('app').directive('navDir', function(){
             var targetPos = $('.nav').offset().top;
             // console.log(targetPos);
 
+
             $(window).resize(function(){
                 targetPos = $('.nav').offset().top;
             });
@@ -29,6 +30,14 @@ angular.module('app').directive('navDir', function(){
             $(window).scroll(function(){
                 var scrollPos = $(this).scrollTop();
                 // console.log(scrollPos);
+                if(scrollPos > 100){
+                    $(":root").css("--scrollbar-track-color", "linear-gradient(180deg, #fc466b, #3f5efb)");
+                    // $('#scrollbar-overlay').css('opacity', '0');
+                } else{
+                    $(":root").css("--scrollbar-track-color", "transparent");
+                    // $('#scrollbar-overlay').css('opacity', '1');
+
+                }
 
                 if(scrollPos > ($(window).innerHeight() - 100) ){ //877 was old value (not as good on mobile)
                     // $('.nav').removeClass('is-absolute');
