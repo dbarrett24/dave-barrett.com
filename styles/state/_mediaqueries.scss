@@ -80,6 +80,13 @@
     .job-mini-logo{
         display: block;
     }
+    .profile-circle{
+        height: 80px;
+        width: 80px;
+    }
+    .quote{
+        font-size: 18px;
+    }
     .quote::before{
         font-size: 50px;
         left: -42px;
@@ -162,6 +169,9 @@
             width: 49%;
             
         }
+        .quote{
+            font-size: 20px;
+        }
         /////////SKILLS/////////////
         .fixedH-900{
             height: 1050px;
@@ -233,6 +243,13 @@
             }
             .section-content{
                 padding: 0px 100px;
+            }
+            .profile-circle{
+                height: 100px;
+                width: 100px;
+            }
+            .quote{
+                font-size: 24px;
             }
             .quote::before{
                 font-size: 72px;

@@ -17,16 +17,6 @@ angular.module('app').directive('navDir', function(){
             })
          
 
-
-            //Sticky Nav
-            var targetPos = $('.nav').offset().top;
-            // console.log(targetPos);
-
-
-            $(window).resize(function(){
-                targetPos = $('.nav').offset().top;
-            });
-
             $(window).scroll(function(){
                 var scrollPos = $(this).scrollTop();
                 // console.log(scrollPos);
@@ -50,7 +40,7 @@ angular.module('app').directive('navDir', function(){
 
                 scrollLink.each(function(){
                     var sectionOffset = $(this.hash).offset().top - 250;
-
+                    console.log( $(this.hash).offset().top)
                     if(sectionOffset <= scrollPos){
                         if($(this).hasClass('scroll-js')){
                             $(this).css('background', 'transparent');
