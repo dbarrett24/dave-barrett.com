@@ -1,7 +1,7 @@
 section{
     position: relative;
     overflow: visible;
-
+    
     .section-content-wrapper{
         width: 100%;
         padding: 100px 15px;
@@ -15,6 +15,9 @@ section{
             flex-wrap: wrap;
             position: relative;
         }
+    }
+    .adaptableHeight-section{
+        height: 86vh;
     }
 }
 

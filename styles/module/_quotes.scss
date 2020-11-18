@@ -1,3 +1,4 @@
+
 .quote-container{
     width: auto;
     position: relative;
@@ -75,9 +76,8 @@
 }
 .quotes-carousel{
     // padding-bottom: 15.3%;
-    // height: 63vh;
-    height: calc(100vh - 350px);
-
+    transform: translateY(-50%) !important;
+    top: 50%;
     .flickity-viewport{
      
     }

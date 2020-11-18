@@ -11,7 +11,7 @@ angular.module('app').directive('navDir', function(){
             scrollLink.click(function(event){
                 event.preventDefault();
                 $('body,html').animate({
-                    scrollTop: $(this.hash).offset().top
+                    scrollTop: $(this.hash).offset().top - 100
                 }, 500)
 
             })
