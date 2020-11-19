@@ -62,7 +62,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 2,
             "project_name": "Evolve",
             "project_desc": "A Micro-Operating System for your Life.",
             "project_short_desc": "Micro-Operating System for your Life",
@@ -94,7 +94,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 3,
             "project_name": "Scribble-Frames",
             "project_desc": "An online Wireframe Creation Tool for your Mockups.",
             "project_short_desc": "Wireframe Creation Tool",
@@ -126,6 +126,38 @@
                 "./images/screenshots/scribble-frames4.png",
                 "./images/screenshots/scribble-frames5.png"
       
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Alchemy Backoffice",
+            "project_desc": "A complete overhaul of a dashboard UI. Restructured the CSS to follow more DRY architecture using CSS Variables. This allowed me to also easily implement a Dark Mode feature.",
+            "project_short_desc": "Wireframe Creation Tool",
+            "project_date": "Sept 2020",
+            "thumbnail_img": "./images/thumbnails/alchemydashboard.png",
+            "bg_img": "./images/watercolor/splash4-color.png",
+            "project_url": "https://youtu.be/bTxd_R_cYM8",
+            "project_github": null,
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Sails",
+                "Nunjucks",
+                "Node.js",
+                "jQuery",
+                "MongoDB"
+            ],
+            "files": [
+                "https://www.youtube.com/embed/bTxd_R_cYM8",
+                "./images/screenshots/AlchemyDashboard.png",
+                "./images/screenshots/alchemydashboard1.png",
+                "./images/screenshots/alchemydashboard2.png",
+                "./images/screenshots/alchemydashboard3.png",
+                "./images/screenshots/alchemydashboard4.png"
+               
+            
             ]
         }
       

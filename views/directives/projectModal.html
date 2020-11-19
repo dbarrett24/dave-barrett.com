@@ -29,6 +29,7 @@
                                 <div class="carousel-media-cell">
                                     <img ng-src="{{selectedProject.files[4]}}">
                                 </div>
+                           
                                 
                             </div>
                         </div>
@@ -46,8 +47,10 @@
                         <div class="project-sidebar">
                             
                             <div class="sidebar-section flex-top-left-column">
+                                <div ng-if="selectedProject.project_github !== null">
                                 <h3>Visit the Github Repo:</h3>
                                 <a ng-href="{{selectedProject.project_github}}"><button class="btn-square btn-gray btn-sidebar">Github<span class="fa fa-github fa-2x icon-btn-long-right"></button></a>
+                                </div>
                                     <div class="mt15">
                                         <a ng-href="{{selectedProject.project_url}}"><button class="btn-square btn-teal btn-sidebar">View Demo</button></a>
                                     </div>
@@ -78,7 +81,7 @@
                                 <div class="social-links mt5 ml5">
                                     <div class="contact-info-box mb5">
                                         <h6 class="flex align-middle"><i class="material-icons icon">email</i>EMAIL:</h6>
-                                        <span class="info">dbarrett24@gmail.com</span>
+                                        <span class="info">dev.davebarrett@gmail.com</span>
                                     </div>
                                     <div class="contact-info-box mb5">
                                         <h6 class="flex align-middle"><i class="material-icons icon">phone</i>PHONE:</h6>

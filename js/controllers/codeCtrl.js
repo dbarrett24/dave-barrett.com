@@ -163,12 +163,13 @@ $(document).ready(function(){
             // options
             cellSelector: '.carousel-cell',
             cellAlign: 'left',
-            pageDots: true,
+            // pageDots: true,
             // groupCells: 3,
             adaptiveHeight: false,
             imagesLoaded: true,
-            // autoPlay: true,
-            contain: true
+            autoPlay: 4000,
+            contain: true,
+            // wrapAround: true
         });
 
        
