@@ -40,7 +40,7 @@ angular.module('app').directive('navDir', function(){
 
                 scrollLink.each(function(){
                     var sectionOffset = $(this.hash).offset().top - 250;
-                    console.log( $(this.hash).offset().top)
+                    // console.log( $(this.hash).offset().top)
                     if(sectionOffset <= scrollPos){
                         if($(this).hasClass('scroll-js')){
                             $(this).css('background', 'transparent');
