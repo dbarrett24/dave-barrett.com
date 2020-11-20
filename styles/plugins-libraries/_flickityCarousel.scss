@@ -35,4 +35,17 @@
 .projects-carousel:hover .flickity-prev-next-button{
   opacity: 1;
   transition: opacity 0.2s;
+  background: #25AFA6 !important;
+
+}
+
+.swipe-instruction{
+  width: 100%;
+  font-size: 24px;
+  p{
+    margin: 0 15px;
+  }
+  i{
+    font-size: 24px;
+  }
 }

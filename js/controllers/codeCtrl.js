@@ -162,18 +162,17 @@ $(document).ready(function(){
         $('.projects-carousel').flickity({
             // options
             cellSelector: '.carousel-cell',
-            cellAlign: 'center',
+            cellAlign: 'left',
             pageDots: false,
             // groupCells: 3,
-            fullscreen: true,
-            groupCells: '33%',
-            percentPosition: true,
+            // groupCells: '33%',
+            // percentPosition: true,
             lazyLoad: true,
             adaptiveHeight: false,
             imagesLoaded: true,
-            autoPlay: 4000,
+            // autoPlay: 4000,
             contain: true,
-            wrapAround: true
+            // wrapAround: true
         });
 
        
