@@ -153,9 +153,38 @@
                 "https://www.youtube.com/embed/bTxd_R_cYM8",
                 "./images/screenshots/AlchemyDashboard.png",
                 "./images/screenshots/alchemydashboard1.png",
-                "./images/screenshots/alchemydashboard2.png",
                 "./images/screenshots/alchemydashboard3.png",
-                "./images/screenshots/alchemydashboard4.png"
+                "./images/screenshots/alchemydashboard4.jpg"
+               
+            
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "DesignCode",
+            "project_desc": "A clone of Meng To's DesignCode website using React, Styled-Componenets, Gatsby and React Hooks. I used plenty of advanced CSS features including backdrop-filter, keyframe animations and transforms. I used DesignCode's official Figma design system to simulate cloning from the handoff from a UI designer.",
+            "project_short_desc": "React Clone w/ Gatsby",
+            "project_date": "Feb 2021",
+            "thumbnail_img": "./images/thumbnails/designcode.png",
+            "bg_img": "./images/watercolor/splash2-color.png",
+            "project_url": "https://designcodeclone.netlify.app/",
+            "project_github": "https://github.com/dbarrett24/Courses/tree/master/Web%20Development/React/React_Gatsby_Hooks_Contentful/designcodeweb",
+            "category": "code",
+            "tech_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "React",
+                "Styled-Components",
+                "Gatsby",
+                "Netlify"
+            ],
+            "files": [
+                "https://www.youtube.com/embed/Dwm4O_9YsEQ",
+                "./images/screenshots/designcode.png",
+                "./images/screenshots/designcode2.png",
+                "./images/screenshots/designcode3.png",
+                "./images/screenshots/designcode4.png"
                
             
             ]
