@@ -82,7 +82,6 @@ gulp.task(
     buildJSON,
     buildDL,
     buildViews,
-    build,
-    watch
+    build
   )
 );
